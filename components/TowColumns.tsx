@@ -11,10 +11,10 @@ export default function TowColumns({
   return (
     <Row className="w-full" gutter={[16, 16]} justify="center">
       <Col flex="0 1 600px">
-        <Card style={{ width: "100%", margin: "0 auto" }}>{children1}</Card>
+        <Card className="w-full">{children1}</Card>
       </Col>
       <Col flex="0 1 600px">
-        <Card style={{ width: "100%", margin: "0 auto" }}>{children2}</Card>
+        <Card className="w-full">{children2}</Card>
       </Col>
     </Row>
   );

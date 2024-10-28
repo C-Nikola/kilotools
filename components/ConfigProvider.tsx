@@ -22,7 +22,7 @@ export default function ConfigProvider({ children }: ConfigProviderProps) {
   if (!mounted) {
     return (
       <AntdConfigProvider>
-        <div style={{ opacity: 0 }}>{children}</div>
+        <div className="opacity-0">{children}</div>
       </AntdConfigProvider>
     );
   }

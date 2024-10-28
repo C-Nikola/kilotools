@@ -67,7 +67,7 @@ export default function CSVToJson() {
         output={output}
         isError={isError}
       >
-        <div style={{ textAlign: "right" }}>
+        <div className="text-right">
           <Checkbox id="lowercase" onChange={toggleLowercase} className="mr-1">
             lowercase keys
           </Checkbox>

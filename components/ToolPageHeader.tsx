@@ -47,7 +47,7 @@ export default function ToolPageHeader({
       {title}
       <Button
         onClick={handleChange}
-        style={{ marginLeft: 16 }}
+        className="ml-4"
         icon={
           <IconHeartFilled
             color={

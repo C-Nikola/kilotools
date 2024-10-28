@@ -27,16 +27,7 @@ export default function TextAreaUI({
   ) : (
     <>
       <TextArea status={isErr ? "error" : ""} {...props} />
-      {isErr && (
-        <div
-          className="text-center"
-          style={{
-            color: "var(--ant-color-error)",
-          }}
-        >
-          {errMsg}
-        </div>
-      )}
+      {isErr && <ErrorMsg errMsg={errMsg} />}
     </>
   );
 }

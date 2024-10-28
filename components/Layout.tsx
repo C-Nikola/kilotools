@@ -42,11 +42,7 @@ export default function Layout({ children }: { children?: ReactNode }) {
       </Col>
 
       <Col className={styles.indexMain} flex={1}>
-        <Row
-          style={{ margin: "0 26px 25px", paddingTop: 26 }}
-          gutter={8}
-          wrap={false}
-        >
+        <Row className="mx-[26px] mb-[25px] pt-[26px]" gutter={8} wrap={false}>
           <Col xs={{ flex: "0px" }} sm={{ flex: 0 }}>
             <Button onClick={handleShowMenu} icon={<MenuOutlined />} />
           </Col>

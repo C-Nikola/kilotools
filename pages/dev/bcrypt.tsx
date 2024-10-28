@@ -56,7 +56,7 @@ export default function Bcrypt() {
       <ToolPageHeader title="Bcrypt" toolName="bcrypt" />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <Space direction="vertical" className="w-full">
               <Title level={2}>Hash</Title>
               <Row>
@@ -86,7 +86,7 @@ export default function Bcrypt() {
           </Card>
         </Col>
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <Space direction="vertical" className="w-full">
               <Title level={2}>Compare string with hash</Title>
               <Row>

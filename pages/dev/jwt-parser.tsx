@@ -39,7 +39,7 @@ export default function JwtParser() {
       <ToolPageHeader title="JWT Parser" toolName="jwt-parser" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <Space direction="vertical" className="w-full">
               <div>
                 <Text strong>JWT Token</Text>

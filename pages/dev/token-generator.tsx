@@ -41,7 +41,7 @@ export default function TokenGenerator() {
       <ToolPageHeader title="Token generator" toolName="token-generator" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <Space direction="vertical" className="w-full" size="middle">
               <Flex justify="space-around" wrap>
                 <Space direction="vertical" size="middle">

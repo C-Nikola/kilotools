@@ -6,7 +6,6 @@ import {
 import { useEffect, useRef } from "react";
 
 export default function JSONEditorUI(props: JSONEditorPropsOptional) {
-  const { content } = props;
   const refContainer = useRef(null);
   //   Usage note: if you need the result of useRef to be directly mutable, include | null in the type of the generic argument.
   // TODO: cloudflare 报错Type error: 'JSONEditor' refers to a value, but is being used as a type here. Did you mean 'typeof JSONEditor'?
@@ -34,10 +33,10 @@ export default function JSONEditorUI(props: JSONEditorPropsOptional) {
 
   // update props
   useEffect(() => {
-    if (content && refEditor.current) {
+    if (props.content && refEditor.current) {
       refEditor.current.set(props.content as Content);
     }
-  }, [content]);
+  }, [props.content]);
 
-  return <div style={{ height: "100%" }} ref={refContainer}></div>;
+  return <div className="h-full" ref={refContainer}></div>;
 }

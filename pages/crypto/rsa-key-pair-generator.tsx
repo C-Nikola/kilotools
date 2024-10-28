@@ -1,3 +1,4 @@
+import ErrorMsg from "@/components/ErrorMsg";
 import OneColumn from "@/components/OneColumn";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
@@ -112,17 +113,7 @@ export default function RsaKeyPairGenerator() {
               </Button>
             </Col>
           </Row>
-
-          {output.isErr && (
-            <div
-              className="text-center"
-              style={{
-                color: "var(--ant-color-error)",
-              }}
-            >
-              {output.errMsg}
-            </div>
-          )}
+          {output.isErr && <ErrorMsg errMsg={output.errMsg ?? ""} />}
           <Row justify="center" gutter={[16, 16]}>
             <Col flex="0 1 600px">
               <Space direction="vertical" className="w-full">

@@ -56,7 +56,7 @@ export default function ImageToBase64() {
       />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <h2 className="text-xl font-bold mb-4">String to base64</h2>
             <Space direction="vertical" className="w-full">
               <Dragger

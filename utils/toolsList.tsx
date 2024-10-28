@@ -80,10 +80,9 @@ function getItem(
     icon,
     label: (
       <Link
+        className="truncate"
         style={{
           maxWidth: "calc(100% - 24px)",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
         }}
         href={link}
         title={label}
@@ -107,10 +106,9 @@ function getSubMenu(
     children,
     label: (
       <span
+        className="truncate"
         style={{
           maxWidth: "calc(100% - 24px)",
-          overflow: "hidden",
-          textOverflow: "ellipsis",
         }}
         title={label}
       >

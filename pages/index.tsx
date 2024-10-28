@@ -37,7 +37,7 @@ function Home() {
         {favoriteTools.map((card) => (
           <Col xs={24} md={12} lg={8} xl={6} key={card.title}>
             <Link href={card.link}>
-              <Card style={{ height: "100%", borderWidth: 2 }}>
+              <Card className="h-full border-2">
                 <Space direction="vertical">
                   {card.icon}
                   <h3 className="text-lg font-bold mb-2">{card.title}</h3>
@@ -53,7 +53,7 @@ function Home() {
         {tools.map((card) => (
           <Col xs={24} md={12} lg={8} xl={6} key={card.title}>
             <Link href={card.link}>
-              <Card style={{ height: "100%", borderWidth: 2 }}>
+              <Card className="h-full border-2">
                 <Space direction="vertical">
                   {card.icon}
                   <h3 className="text-lg font-bold mb-2">{card.title}</h3>

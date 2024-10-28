@@ -181,7 +181,7 @@ export default function DateTimeConverter() {
       />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <Space direction="vertical" className="w-full">
               <Row gutter={8}>
                 <Col flex={1}>

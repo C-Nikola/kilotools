@@ -40,7 +40,7 @@ export default function UrlEncoder() {
       <ToolPageHeader title="URL encoder/decoder" toolName="url-encoder" />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <h2>URL encoder</h2>
             <Space direction="vertical" className="w-full">
               <TextArea
@@ -58,7 +58,7 @@ export default function UrlEncoder() {
           </Card>
         </Col>
         <Col flex="0 1 600px">
-          <Card style={{ width: "100%", margin: "0 auto" }}>
+          <Card className="w-full">
             <h2>URL decoder</h2>
             <Space direction="vertical" className="w-full">
               <TextArea

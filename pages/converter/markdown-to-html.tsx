@@ -47,10 +47,7 @@ export default function MarkdownToHtml() {
           <Panel>
             <Title
               level={2}
-              className="pl-[24px] !mt-2 !mb-2"
-              style={{
-                borderBottom: "1px solid var(--ant-color-border)",
-              }}
+              className="pl-[24px] !mt-2 !mb-2 border-b border-solid border-[var(--ant-color-border)]"
             >
               Markdown
             </Title>
@@ -76,10 +73,7 @@ export default function MarkdownToHtml() {
           <Panel>
             <Title
               level={2}
-              className="pl-[24px] !mt-2 !mb-2 relative"
-              style={{
-                borderBottom: "1px solid var(--ant-color-border)",
-              }}
+              className="pl-[24px] !mt-2 !mb-2 relative border-b border-solid border-[var(--ant-color-border)]"
             >
               HTML
               <Button

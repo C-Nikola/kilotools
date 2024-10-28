@@ -51,7 +51,7 @@ const SideMenu: React.FC = () => {
   }, [localFavoriteTools]);
 
   return (
-    <div style={{ height: "100%" }}>
+    <div className="h-full">
       <Link href="/" className={styles.heroWrap}>
         <div className={styles.textWrapperWrapper}>
           <div className={styles.textWrapper}>
