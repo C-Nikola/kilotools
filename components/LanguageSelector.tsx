@@ -1,6 +1,6 @@
 import { Select } from "antd";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const options = [
   {
@@ -10,6 +10,54 @@ const options = [
   {
     label: "简体中文",
     value: "zh-CN",
+  },
+  {
+    label: "Deutsch",
+    value: "de_DE",
+  },
+  {
+    label: "Español",
+    value: "es",
+  },
+  {
+    label: "Français",
+    value: "fr",
+  },
+  {
+    label: "Italian",
+    value: "it",
+  },
+  {
+    label: "Português",
+    value: "pt",
+  },
+  {
+    label: "Nederlands",
+    value: "nl",
+  },
+  {
+    label: "Polski",
+    value: "pl",
+  },
+  {
+    label: "Svenska",
+    value: "sv",
+  },
+  {
+    label: "Türkçe",
+    value: "tr",
+  },
+  {
+    label: "Русский",
+    value: "ru",
+  },
+  {
+    label: "日本語",
+    value: "ja",
+  },
+  {
+    label: "한국어",
+    value: "ko",
   },
 ];
 
