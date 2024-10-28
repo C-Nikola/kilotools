@@ -1,0 +1,13 @@
+body {
+  --selected-bg: rgba(135, 165, 239, 0.15);
+  --selected-color: #87a5efff;
+  --split-border-color: rgba(0, 0, 0, 0.1);
+}
+
+.light body {
+  --custom-color-bg-main: #f7f9ff;
+}
+
+html.dark body {
+  --split-border-color: rgba(255, 255, 255, 0.1);
+}

@@ -1,0 +1,19 @@
+.index {
+  height: 100vh;
+}
+
+.sideMenuCol {
+  overflow: hidden;
+  transition: flex 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.indexMain {
+  background-color: var(--custom-color-bg-main);
+}
+
+@media (min-width: 576px) {
+  .drawerMenu {
+    display: none;
+  }
+}
