@@ -1,7 +1,7 @@
 import { Button, Col, Drawer, Row } from "antd";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import SideMenu from "./SideMenu";
-import { MenuOutlined } from "@ant-design/icons";
+import { GithubOutlined, MenuOutlined } from "@ant-design/icons";
 import CMDK from "./CMDK";
 import ThemeToggle from "./ThemeToggle";
 import { ReactNode, useEffect, useState } from "react";
@@ -49,6 +49,11 @@ export default function Layout({ children }: { children?: ReactNode }) {
           <Col flex={1}>
             <CMDK />
           </Col>
+          <Button
+            icon={<GithubOutlined />}
+            href="https://github.com/C-Nikola/kilotools"
+            target="_blank"
+          />
           <Col>
             <LanguageSelector />
           </Col>

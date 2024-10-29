@@ -4,7 +4,6 @@ const lightTheme = {
   token: {
     colorPrimary: "#395bc7",
     borderRadius: 4,
-    colorPrimaryBorderHover: "#87A5EFFF",
   },
   components: {
     Card: {
