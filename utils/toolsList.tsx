@@ -123,10 +123,9 @@ const toolsByCategory: Array<ToolCategory> = [
     name: "Crypto/Encode",
     components: [
       {
-        title: "RSA key pair generator",
+        title: "rsa.title",
         key: "rsa-key-pair-generator",
-        description:
-          "Generate a new random RSA private and public pem certificate key pair.",
+        description: "rsa.description",
         link: "/crypto/rsa-key-pair-generator",
         icon: IconId,
       },

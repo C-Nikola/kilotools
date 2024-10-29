@@ -1,0 +1,6 @@
+{
+  "rsa": {
+    "title": "RSA key pair generator",
+    "description": "Generate a new random RSA private and public pem certificate key pair."
+  }
+}

@@ -6,10 +6,17 @@ import { NextSeo } from "next-seo";
 import { useEffect, useState } from "react";
 import useLocalStorageListener from "@/hooks/useLocalStorageListener";
 import { LOCAL_STORAGE_KEY } from "@/utils/const";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "react-i18next";
 
 const { Title } = Typography;
 
+interface Locale {
+  locale: string;
+}
+
 function Home() {
+  const { t } = useTranslation("toolList");
   const { value: localFavoriteTools } = useLocalStorageListener<string[]>(
     LOCAL_STORAGE_KEY.FAVORITE_TOOL_NAME,
     "array"
@@ -56,8 +63,8 @@ function Home() {
               <Card className="h-full border-2">
                 <Space direction="vertical">
                   {card.icon}
-                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                  <p className={styles.cardDesc}>{card.description}</p>
+                  <h3 className="text-lg font-bold mb-2">{t(card.title)}</h3>
+                  <p className={styles.cardDesc}>{t(card.description)}</p>
                 </Space>
               </Card>
             </Link>
@@ -69,3 +76,11 @@ function Home() {
 }
 
 export default Home;
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
+}
