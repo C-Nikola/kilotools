@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import useLocalStorageListener from "@/hooks/useLocalStorageListener";
 import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 
 const { Title } = Typography;
 
