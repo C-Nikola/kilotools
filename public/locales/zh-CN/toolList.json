@@ -1,6 +1,190 @@
 {
   "rsa": {
-    "title": "RSA公私钥生成",
-    "description": "快速生成非对称加密的RSA密钥对"
+    "title": "RSA 公私钥生成",
+    "description": "本工具是一款在线 RSA 密钥生成器，旨在帮助用户快速生成安全的 RSA 公钥和私钥。RSA（Rivest-Shamir-Adleman）是一种广泛使用的公钥加密算法，主要用于数据加密和数字签名。"
+  },
+  "MD5": {
+    "title": "MD5 加密",
+    "description": "使用MD5 (Message-Digest Algorithm 5)对文本内容进行哈希/散列计算。"
+  },
+  "SHA": {
+    "title": "SHA encrypt",
+    "description": "使用 SHA1、SHA3、SHA224、SHA256、SHA384、SHA512 对文本内容进行哈希 / 散列计算。"
+  },
+  "RIPEMD": {
+    "title": "RIPEMD",
+    "description": "基于MD4结构的散列函数，输出160位（20字节）哈希值"
+  },
+  "AESEncrypt": {
+    "title": "AES 加密",
+    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。"
+  },
+  "AESDecrypt": {
+    "title": "AES 解密",
+    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。"
+  },
+  "base64EncodeDecode": {
+    "title": "Base64 编码/解码",
+    "description": "Base64 编码/解码工具用于将二进制数据编码为文本字符串或将 Base64 编码的文本解码回二进制数据，常用于数据传输和存储。"
+  },
+  "CSVToJSON": {
+    "title": "CSV 转 JSON",
+    "description": "csv是一种纯文本文件格式，通常用于存储表格数据。它由逗号分隔的值组成，每个值用双引号括起来，并且每行表示一个记录。"
+  },
+  "JSONToCSV": {
+    "title": "JSON 转 CSV",
+    "description": "csv是一种纯文本文件格式，通常用于存储表格数据。它由逗号分隔的值组成，每个值用双引号括起来，并且每行表示一个记录。"
+  },
+  "YAMLToJSON": {
+    "title": "YAML 转 JSON",
+    "description": "YAML/JSON 互相转换是一款易于使用的在线工具，将YAML格式的文件转换为JSON格式，它可以轻松实现JSON与YAML数据转化，操作简单，适合对数据操作传播校验有需求的用户。"
+  },
+  "JSONToYAML": {
+    "title": "JSON 转 YAML",
+    "description": "YAML/JSON 互相转换是一款易于使用的在线工具，将YAML格式的文件转换为JSON格式，它可以轻松实现JSON与YAML数据转化，操作简单，适合对数据操作传播校验有需求的用户。"
+  },
+  "dateTimeConverter": {
+    "title": "日期格式转换器",
+    "description": "这是一款方便地把多种时间格式互相转换的工具"
+  },
+  "queryParamsToJSON": {
+    "title": "请求参数转 JSON",
+    "description": "非常方便地把输入的 url 查询参数转成 JSON，便于用户查看和使用"
+  },
+  "envToNetlifyToml": {
+    "title": "env 转 Netlify toml 文件",
+    "description": "该工具可以把前端中的 .env 配置方便快速地转换成 toml 配置。TOML 旨在成为一个语义明显且易于阅读的最小化配置文件格式。TOML 被设计成可以无歧义地映射为哈希表。TOML 能很容易地被解析成各种语言中的数据结构。"
+  },
+  "imageToBase64Converter": {
+    "title": "图片转 Base64",
+    "description": "图片转 BASE64 编码工具可以方便地把各种图片格式转为 Base64，你只需拖动图片到指定区域，即可完成操作！图片的 BASE64 编码就是可以将一幅图片数据编码成一串字符串，使用该字符串代替图片地址，从而不需要使用图片的 URL 地址。"
+  },
+  "integerBaseConverter": {
+    "title": "进制转换",
+    "description": "进制转换工具支持用户对整数在任意进制之间进行转换，内置了常用的 2、8、10、16、64 等进制。"
+  },
+  "colorConverter": {
+    "title": "颜色格式转换",
+    "description": "颜色转换工具让用户快速的把自己的颜色值转换为其它格式，并提供该颜色的标准名称。格式包括了 hex、rgb、hsl、hwb、lch、cmyk。"
+  },
+  "caseConverter": {
+    "title": "大小写转换",
+    "description": "大小写转换工具快速地把字符串转换成目标格式，对转换命名格式、标题格式等非常方便。包括了大小写、驼峰、首字母大写、常量、连字符、Pascal 命名、路径格式、下划线格式等"
+  },
+  "textToUnicode": {
+    "title": "文本转 unicode",
+    "description": "文本与 unicode 码转换小工具可以方便查询字符的 unicode 码，或查询 unicode 码对应的字符。可以将文本批量转换为 unicode 码，或 unicode 码批量转换为文本"
+  },
+  "XMLToJSON": {
+    "title": "XML 转 JSON",
+    "description": "该工具方便快速地把 XML 转为 JSON。可扩展标记语言 (XML) 允许您以可共享的方式定义和存储数据。XML 支持计算机系统（如网站、数据库和第三方应用程序）之间的信息交换。预定义的规则简化了在任何网络上以 XML 文件的形式传输数据的过程，接收者可以使用这些规则准确高效地读取数据。"
+  },
+  "JSONToXML": {
+    "title": "JSON 转 XML",
+    "description": "该工具方便快速地把 JSON 转为 XML。可扩展标记语言 (XML) 允许您以可共享的方式定义和存储数据。XML 支持计算机系统（如网站、数据库和第三方应用程序）之间的信息交换。预定义的规则简化了在任何网络上以 XML 文件的形式传输数据的过程，接收者可以使用这些规则准确高效地读取数据。"
+  },
+  "markdownToHTML": {
+    "title": "Markdown 转 HTML",
+    "description": "这个工具可以把你的 Markdown 内容快速地转成 HTML 格式，并且可以下载成 PDF 格式的文件"
+  },
+  "escapeHTMLEntities": {
+    "title": "HTML 转义",
+    "description": "将 HTML 中的 <、>、&、\" 和 ' 进行转义，方便将其放到其它格式的代码中，避免报错。"
+  },
+  "YAMLToTOML": {
+    "title": "YAML 转 TOML",
+    "description": "YAML 转 TOML 在线工具可以方便地把 YAML 格式的代码转成 TOML 格式的代码"
+  },
+  "TOMLToYAML": {
+    "title": "TOML 转 YAML",
+    "description": "TOML 转 YAML 在线工具可以方便地把 TOML 格式的代码转成 YAML 格式的代码"
+  },
+  "JSONToTOML": {
+    "title": "JSON 转 TOML",
+    "description": "该工具方便用户把 JSON 格式的数据转成 TOML 配置，对需要进行不同格式配置文件转换的用户非常有用"
+  },
+  "TOMLToJSON": {
+    "title": "TOML 转 JSON",
+    "description": "该工具方便用户把 TOML 配置转成 JSON 格式，对需要查看 TOML 配置的用户非常方便。"
+  },
+  "JSONFormatter": {
+    "title": "JSON 格式化/查看",
+    "description": "JSON 查看器可以美化你的 JSON 数据，并提供查找、收缩、展开、路径、替换、高亮等非常方便有用的功能"
+  },
+  "URLEncodeDecoder": {
+    "title": "URL 编码/解码",
+    "description": "为了让某些特殊文本能在 URL 中使用，你可以使用该工具对你的 URL 进行编码。也可以使用该工具对获取到的 URL 进行解码"
+  },
+  "URLParser": {
+    "title": "URL 解析",
+    "description": "该工具旨在让用户清晰方便地查看 URL 各个组成部分的数据。例如：协议、域名、端口、query 参数等。"
+  },
+  "MIMETypes": {
+    "title": "MIME 类型查询",
+    "description": "该工具方便用户在文件类型和 MIME 类型之间快速互相转换。并提供了快捷查询表格"
+  },
+  "basicAuthGenerator": {
+    "title": "基本身份验证生成器",
+    "description": "输入用户名密码快速生成基本身份验证，方便在 PostMan 等工具中发起请求"
+  },
+  "XMLFormatter": {
+    "title": "XML 格式化",
+    "description": "方便快速地格式化，高亮 XML，对查看 XML 数据非常有用"
+  },
+  "JWTParser": {
+    "title": "JWT 解析",
+    "description": "方便快速地解析 JWT， 得到 Header、Payload、Signature，可以用于获取 JWT 数据，校验 JWT 数据，对 debug 非常有用"
+  },
+  "tokenGenerator": {
+    "title": "token 生成",
+    "description": "按用户选择的字符种类和长度随机生成 token，可以包含大小写、数字、特殊符号"
+  },
+  "passwordGenerator": {
+    "title": "强密码生成器",
+    "description": "可以按需求生成随机强密码，完全在浏览器本地执行，不会上传数据，安全有效。可以自定义长度，包含大小写、数字、特殊符号"
+  },
+  "hashText": {
+    "title": "Hash 文本",
+    "description": "使用 MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3 或 RIPEMD160 对文本进行加密"
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Bcrypt 作为一个自适应密码哈希函数。它基于 Blowfish 加密算法，并特别设计用于安全存储密码。"
+  },
+  "encryptDecryptText": {
+    "title": "文本加解密",
+    "description": "使用 AES、TripleDES、Rabbit 或 RC4 对文本进行加解密"
+  },
+  "hmacGenerator": {
+    "title": "HMAC 生成器",
+    "description": "HMAC（Hash-based Message Authentication Code）是一种基于哈希函数和密钥的消息认证码，用于验证消息的完整性和真实性。HMAC可以与多种哈希函数结合使用，例如MD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512和RIPEMD160。"
+  },
+  "crontabGenerator": {
+    "title": "cron 表达式生成器",
+    "description": "输入一个 cron 表达式，并使用人类看得懂的语言进行翻译，同时有 cron 表达式快速查询表"
+  },
+  "SQLFormatter": {
+    "title": "SQL 格式化",
+    "description": "将混乱的 SQL 格式化，方便阅读理解，也能在代码提交前对 SQL 进行美化，便于维护"
+  },
+  "javascriptMinify": {
+    "title": "JS 压缩",
+    "description": "JavaScript 代码压缩是指去除源代码里的所有不必要的字符，而不改变其功能的过程。这些不必要的字符通常包括空格字符，换行字符，注释以及块分隔符等用来增加可读性的代码，但并不需要它来执行。"
+  },
+  "YAMLFormatter": {
+    "title": "YAML 格式化",
+    "description": "YAML 格式化工具可以对 YAML 配置进行美化、高亮，提升可读性，方便维护"
+  },
+  "MACAddressLookup": {
+    "title": "MAC 地址查找",
+    "description": "该工具让你方便快速地通过 MAC 地址查找到设备的供应商和制造商"
+  },
+  "textDiff": {
+    "title": "文本差异比较",
+    "description": "在两个编辑器中输入文本，比较算法会标记出差异部分，并高亮。对需要比较文本的用户非常方便"
+  },
+  "xssDefence": {
+    "title": "XSS 防御",
+    "description": "该工具会找出你的代码中可能会受到 XSS 攻击的部分，并高亮。对学习 XSS 知识和防御 XSS 工具非常有用且方便"
   }
 }
