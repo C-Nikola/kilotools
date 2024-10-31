@@ -1,0 +1,190 @@
+{
+  "rsa": {
+    "title": "RSA鍵ペアジェネレーター",
+    "description": "このツールは、ユーザーが安全なRSA公開鍵と秘密鍵を迅速に生成できるように設計されたオンラインRSAキー生成ツールです。RSA（Rivest-Shamir-Adleman）は、データ暗号化やデジタル署名に主に使用される、広く使用されている公開鍵暗号アルゴリズムです。"
+  },
+  "MD5": {
+    "title": "MD5暗号化",
+    "description": "MD5（Message-Digest Algorithm 5）を使用して、テキストコンテンツのハッシュ計算を行います。"
+  },
+  "SHA": {
+    "title": "SHA暗号化",
+    "description": "SHA1、SHA3、SHA224、SHA256、SHA384、SHA512を使用して、テキストコンテンツのハッシュ計算を行います。"
+  },
+  "RIPEMD": {
+    "title": "RIPEMD",
+    "description": "MD4構造に基づいたハッシュ関数で、160ビット（20バイト）のハッシュ値を出力します。"
+  },
+  "AESEncrypt": {
+    "title": "AES暗号化",
+    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換と転置のネットワークに基づく対称暗号化アルゴリズムです。"
+  },
+  "AESDecrypt": {
+    "title": "AES復号化",
+    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換と転置のネットワークに基づく対称暗号化アルゴリズムです。"
+  },
+  "base64EncodeDecode": {
+    "title": "Base64エンコード/デコード",
+    "description": "Base64エンコード/デコードツールは、バイナリデータをテキスト文字列にエンコードしたり、Base64でエンコードされたテキストをバイナリデータにデコードしたりするために使用されます。データの送信や保存に一般的に使用されます。"
+  },
+  "CSVToJSON": {
+    "title": "CSVからJSONへのコンバーター",
+    "description": "CSVは、表形式データを保存するために一般的に使用されるプレーンテキストファイル形式です。カンマで区切られた値で構成され、各値は二重引用符で囲まれており、各行はレコードを表します。"
+  },
+  "JSONToCSV": {
+    "title": "JSONからCSVへのコンバーター",
+    "description": "CSVは、表形式データを保存するために一般的に使用されるプレーンテキストファイル形式です。カンマで区切られた値で構成され、各値は二重引用符で囲まれており、各行はレコードを表します。"
+  },
+  "YAMLToJSON": {
+    "title": "YAMLからJSONへのコンバーター",
+    "description": "YAML/JSON変換は、YAML形式のファイルをJSON形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換を提供し、データの処理、転送、または検証が必要なユーザーに適しています。"
+  },
+  "JSONToYAML": {
+    "title": "JSONからYAMLへのコンバーター",
+    "description": "YAML/JSON変換は、JSON形式のファイルをYAML形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換を提供し、データの処理、転送、または検証が必要なユーザーに適しています。"
+  },
+  "dateTimeConverter": {
+    "title": "日付と時間のコンバーター",
+    "description": "このツールは、さまざまな日付と時間の形式を簡単に変換できます。"
+  },
+  "queryParamsToJSON": {
+    "title": "クエリパラメータからJSONへのコンバーター",
+    "description": "URLのクエリパラメータを簡単にJSON形式に変換し、ユーザーがそれを表示および使用しやすくします。"
+  },
+  "envToNetlifyToml": {
+    "title": ".envからnetlify.tomlへのコンバーター",
+    "description": "このツールを使用すると、.env構成ファイルをTOML構成ファイルに迅速かつ簡単に変換できます。TOMLは、読みやすく、ハッシュテーブルに明確にマッピングされる最小限の構成ファイル形式として設計されています。TOMLは、さまざまな言語のデータ構造に簡単に解析できます。"
+  },
+  "imageToBase64Converter": {
+    "title": "画像からBase64へのコンバーター",
+    "description": "画像をBASE64にエンコードするツールを使用すると、さまざまな画像形式を簡単にBase64に変換できます。指定されたエリアに画像をドラッグするだけで操作が完了します！画像のBase64エンコードは、画像データを文字列にエンコードし、画像URLの代わりに文字列を使用できるようにします。"
+  },
+  "integerBaseConverter": {
+    "title": "整数基数コンバーター",
+    "description": "基数変換ツールを使用すると、ユーザーは任意の基数間で整数を変換できます。2、8、10、16、64などの一般的に使用される基数をサポートしています。"
+  },
+  "colorConverter": {
+    "title": "カラーコンバーター",
+    "description": "カラー変換ツールを使用すると、ユーザーは色の値を他の形式に迅速に変換でき、標準の色名も提供されます。サポートされている形式には、hex、rgb、hsl、hwb、lch、cmykがあります。"
+  },
+  "caseConverter": {
+    "title": "ケースコンバーター",
+    "description": "ケース変換ツールを使用すると、テキストを目的の形式に迅速に変換できます。名前付け規則やタイトル形式の変換に非常に便利です。大文字、小文字、camelCase、titleCase、constantCase、hyphenCase、PascalCase、pathCase、snake_caseが含まれます。"
+  },
+  "textToUnicode": {
+    "title": "テキストからUnicodeへのコンバーター",
+    "description": "テキストからUnicodeへの変換ツールを使用すると、文字のUnicodeコードを簡単に検索したり、Unicodeコードに対応する文字を見つけたりできます。テキストをUnicodeコードに一括変換したり、Unicodeコードをテキストに一括変換したりできます。"
+  },
+  "XMLToJSON": {
+    "title": "XMLからJSONへのコンバーター",
+    "description": "このツールを使用すると、XMLをJSONに迅速に変換できます。拡張可能なマークアップ言語（XML）は、データを共有可能な方法で定義および保存することを可能にします。XMLは、コンピュータシステム間（ウェブサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
+  },
+  "JSONToXML": {
+    "title": "JSONからXMLへのコンバーター",
+    "description": "このツールを使用すると、JSONをXMLに迅速に変換できます。拡張可能なマークアップ言語（XML）は、データを共有可能な方法で定義および保存することを可能にします。XMLは、コンピュータシステム間（ウェブサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
+  },
+  "markdownToHTML": {
+    "title": "MarkdownからHTMLへのコンバーター",
+    "description": "このツールを使用すると、Markdownコンテンツを迅速にHTML形式に変換でき、PDFファイルとしてダウンロードするオプションも提供されます。"
+  },
+  "escapeHTMLEntities": {
+    "title": "HTMLエンティティのエスケープ",
+    "description": "<、>、&、\"、' などのHTMLエンティティをエスケープして、他のコード形式に安全に挿入できるようにし、エラーを防ぎます。"
+  },
+  "YAMLToTOML": {
+    "title": "YAMLからTOMLへのコンバーター",
+    "description": "YAMLからTOMLへのオンラインツールを使用すると、YAML形式のコードを簡単にTOML形式に変換できます。"
+  },
+  "TOMLToYAML": {
+    "title": "TOMLからYAMLへのコンバーター",
+    "description": "TOMLからYAMLへのオンラインツールを使用すると、TOML形式のコードを簡単にYAML形式に変換できます。"
+  },
+  "JSONToTOML": {
+    "title": "JSONからTOMLへのコンバーター",
+    "description": "このツールを使用すると、ユーザーはJSONデータをTOML構成に簡単に変換できます。これは、異なる構成ファイル形式を変換する必要があるユーザーに役立ちます。"
+  },
+  "TOMLToJSON": {
+    "title": "TOMLからJSONへのコンバーター",
+    "description": "このツールを使用すると、ユーザーはTOML構成をJSON形式に簡単に変換できます。TOML構成を表示する必要があるユーザーに便利です。"
+  },
+  "JSONFormatter": {
+    "title": "JSONフォーマッター",
+    "description": "JSONビューアは、JSONデータを美しく整形し、検索、折りたたみ、展開、パス、置換、ハイライトなどの便利な機能を提供します。"
+  },
+  "URLEncodeDecoder": {
+    "title": "URLエンコード/デコード",
+    "description": "特定の特殊なテキストをURLで使用できるようにするために、このツールを使用してURLをエンコードできます。また、このツールを使用して、受信したURLをデコードすることもできます。"
+  },
+  "URLParser": {
+    "title": "URLパーサー",
+    "description": "このツールは、プロトコル、ドメイン、ポート、クエリパラメータなど、URLのさまざまなコンポーネントをユーザーが明確かつ簡単に表示できるように設計されています。"
+  },
+  "MIMETypes": {
+    "title": "MIMEタイプ",
+    "description": "このツールを使用すると、ファイルタイプとMIMEタイプ間で迅速に変換できます。また、クイック検索表も提供しています。"
+  },
+  "basicAuthGenerator": {
+    "title": "ベーシック認証ジェネレーター",
+    "description": "ユーザー名とパスワードを入力して、ベーシック認証資格情報を迅速に生成します。PostManなどのツールでリクエストを送信する際に便利です。"
+  },
+  "XMLFormatter": {
+    "title": "XMLフォーマッター",
+    "description": "XMLを迅速に整形およびハイライトし、XMLデータの表示に便利です。"
+  },
+  "JWTParser": {
+    "title": "JWTパーサー",
+    "description": "JWTを迅速に解析して、ヘッダー、ペイロード、および署名を取得します。JWTデータの抽出や検証に使用でき、デバッグに便利です。"
+  },
+  "tokenGenerator": {
+    "title": "トークンジェネレーター",
+    "description": "ユーザーが選択した文字タイプと長さに基づいて、ランダムにトークンを生成します。大文字、小文字、数字、特殊記号を含めることができます。"
+  },
+  "passwordGenerator": {
+    "title": "パスワードジェネレーター",
+    "description": "必要に応じてランダムで強力なパスワードを生成します。すべての操作はブラウザ内でローカルに実行され、セキュリティとプライバシーが確保されます。長さをカスタマイズし、大文字、小文字、数字、特殊記号を含めることができます。"
+  },
+  "hashText": {
+    "title": "テキストのハッシュ化",
+    "description": "MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3、またはRIPEMD160を使用してテキストを暗号化します。"
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Bcryptは、適応型パスワードハッシュ関数です。Blowfish暗号アルゴリズムに基づいており、安全なパスワードの保存用に特別に設計されています。"
+  },
+  "encryptDecryptText": {
+    "title": "テキストの暗号化/復号化",
+    "description": "AES、TripleDES、Rabbit、またはRC4を使用してテキストを暗号化および復号化します。"
+  },
+  "hmacGenerator": {
+    "title": "HMACジェネレーター",
+    "description": "HMAC（ハッシュベースのメッセージ認証コード）は、ハッシュ関数と秘密鍵に基づくメッセージ認証コードであり、メッセージの完全性と真正性を検証するために使用されます。HMACは、MD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512、RIPEMD160など、さまざまなハッシュ関数とともに使用できます。"
+  },
+  "crontabGenerator": {
+    "title": "Crontabジェネレーター",
+    "description": "cron式を入力し、人間が読みやすい言語に変換します。cron式のクイックリファレンステーブルも提供します。"
+  },
+  "SQLFormatter": {
+    "title": "SQLフォーマッター",
+    "description": "整理されていないSQLを整形して、読みやすく理解しやすくします。コード送信前にSQLを美しく整形することもでき、メンテナンスが容易になります。"
+  },
+  "javascriptMinify": {
+    "title": "JavaScriptの圧縮",
+    "description": "JavaScriptコードの圧縮は、機能を変更せずにソースコードからすべての不要な文字を削除するプロセスを指します。これらの不要な文字には、空白、改行、コメント、ブロック区切りなどがあり、コードの可読性を向上させるために使用されますが、実行には必要ありません。"
+  },
+  "YAMLFormatter": {
+    "title": "YAMLフォーマッター",
+    "description": "YAMLフォーマットツールは、YAML構成を美しく整形し、ハイライトすることで、可読性を向上させ、メンテナンスを容易にします。"
+  },
+  "MACAddressLookup": {
+    "title": "MACアドレス検索",
+    "description": "このツールを使用すると、MACアドレスに基づいてデバイスのベンダーや製造元を迅速かつ簡単に検索できます。"
+  },
+  "textDiff": {
+    "title": "テキストの差分",
+    "description": "2つのエディターにテキストを入力すると、比較アルゴリズムが差分をハイライトします。テキストを比較する必要があるユーザーに非常に便利です。"
+  },
+  "xssDefence": {
+    "title": "XSS防御",
+    "description": "このツールは、XSS攻撃に対して脆弱である可能性のあるコードの部分を特定し、ハイライト表示します。XSSについて学び、XSS攻撃から防御するために非常に便利で役立ちます。"
+  }
+}

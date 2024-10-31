@@ -1,0 +1,190 @@
+{
+  "rsa": {
+    "title": "RSA-nyckelgenerator",
+    "description": "Detta verktyg är en online RSA-nyckelgenerator utformad för att hjälpa användare att snabbt generera säkra RSA offentliga och privata nycklar. RSA (Rivest-Shamir-Adleman) är en allmänt använd krypteringsalgoritm med offentlig nyckel, främst använd för datakryptering och digitala signaturer."
+  },
+  "MD5": {
+    "title": "MD5-kryptering",
+    "description": "Använd MD5 (Message-Digest Algorithm 5) för att utföra hash-beräkningar på textinnehåll."
+  },
+  "SHA": {
+    "title": "SHA-kryptering",
+    "description": "Använd SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 för att utföra hash-beräkningar på textinnehåll."
+  },
+  "RIPEMD": {
+    "title": "RIPEMD",
+    "description": "En hashfunktion baserad på MD4-strukturen som genererar ett 160-bitars (20-byte) hashvärde."
+  },
+  "AESEncrypt": {
+    "title": "AES-kryptering",
+    "description": "Använd AES (Advanced Encryption Standard)-algoritmen för att kryptera och dekryptera text. AES är en symmetrisk krypteringsalgoritm baserad på substitutions- och permuteringsnätverk."
+  },
+  "AESDecrypt": {
+    "title": "AES-dekryptering",
+    "description": "Använd AES (Advanced Encryption Standard)-algoritmen för att kryptera och dekryptera text. AES är en symmetrisk krypteringsalgoritm baserad på substitutions- och permuteringsnätverk."
+  },
+  "base64EncodeDecode": {
+    "title": "Base64-kodning/avkodning",
+    "description": "Base64-kodnings-/avkodningsverktyget används för att koda binära data till en textsträng eller avkoda Base64-kodad text tillbaka till binära data, vanligtvis används för datatransmission och lagring."
+  },
+  "CSVToJSON": {
+    "title": "CSV till JSON-omvandlare",
+    "description": "CSV är ett vanligt textfilformat som används för att lagra tabulära data. Det består av värden separerade med kommatecken, där varje värde är inneslutet i dubbla citattecken och varje rad representerar en post."
+  },
+  "JSONToCSV": {
+    "title": "JSON till CSV-omvandlare",
+    "description": "CSV är ett vanligt textfilformat som används för att lagra tabulära data. Det består av värden separerade med kommatecken, där varje värde är inneslutet i dubbla citattecken och varje rad representerar en post."
+  },
+  "YAMLToJSON": {
+    "title": "YAML till JSON-omvandlare",
+    "description": "YAML/JSON-konvertering är ett lättanvänt onlineverktyg som omvandlar filer från YAML-format till JSON-format. Det möjliggör smidig konvertering mellan JSON och YAML, vilket gör det lämpligt för användare som behöver hantera, överföra eller validera data."
+  },
+  "JSONToYAML": {
+    "title": "JSON till YAML-omvandlare",
+    "description": "YAML/JSON-konvertering är ett lättanvänt onlineverktyg som omvandlar filer från JSON-format till YAML-format. Det möjliggör smidig konvertering mellan JSON och YAML, vilket gör det lämpligt för användare som behöver hantera, överföra eller validera data."
+  },
+  "dateTimeConverter": {
+    "title": "Datum-tid-omvandlare",
+    "description": "Detta verktyg möjliggör enkel konvertering mellan olika datum- och tidsformat."
+  },
+  "queryParamsToJSON": {
+    "title": "Omvandlare från URL-parametrar till JSON",
+    "description": "Konvertera enkelt URL-frågeparametrar till JSON-format, vilket gör det lättare för användare att se och använda."
+  },
+  "envToNetlifyToml": {
+    "title": ".env till netlify.toml-omvandlare",
+    "description": "Detta verktyg möjliggör snabb och enkel konvertering av .env-konfigurationsfiler till TOML-konfigurationsfiler. TOML är utformat för att vara ett minimalt konfigurationsfilformat som är lätt att läsa och entydigt kartlägger till hashtabeller. TOML kan enkelt parsas till datastrukturer i olika språk."
+  },
+  "imageToBase64Converter": {
+    "title": "Bild till Base64-omvandlare",
+    "description": "Verktyget för att koda bilder till Base64 gör det enkelt att konvertera olika bildformat till Base64. Dra bara bilden till det angivna området för att slutföra operationen! Base64-kodningen av en bild kodar bilddata till en sträng, vilket gör att du kan använda strängen istället för bildens URL."
+  },
+  "integerBaseConverter": {
+    "title": "Heltalsbasomvandlare",
+    "description": "Basomvandlingsverktyget låter användare konvertera heltal mellan vilken bas som helst, med inbyggt stöd för vanliga baser som 2, 8, 10, 16 och 64."
+  },
+  "colorConverter": {
+    "title": "Färgomvandlare",
+    "description": "Färgomvandlingsverktyget låter användare snabbt konvertera sina färgvärden till andra format och ger standardnamnet på färgen. Stödda format inkluderar hex, rgb, hsl, hwb, lch och cmyk."
+  },
+  "caseConverter": {
+    "title": "Omvandlare för textformat",
+    "description": "Verktyget för att konvertera textformat låter dig snabbt konvertera text till önskat format. Det är mycket bekvämt för att konvertera namngivningskonventioner, titelformat, etc. Det inkluderar versaler, gemener, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase och snake_case."
+  },
+  "textToUnicode": {
+    "title": "Text till Unicode-omvandlare",
+    "description": "Verktyget för att konvertera text till Unicode gör det enkelt att slå upp Unicode-koden för ett tecken eller hitta tecknet som motsvarar en Unicode-kod. Det kan batchkonvertera text till Unicode-koder eller batchkonvertera Unicode-koder till text."
+  },
+  "XMLToJSON": {
+    "title": "XML till JSON-omvandlare",
+    "description": "Detta verktyg möjliggör snabb konvertering av XML till JSON. Extensible Markup Language (XML) gör det möjligt att definiera och lagra data på ett delbart sätt. XML stöder informationsutbyte mellan datasystem (som webbplatser, databaser och tredjepartsapplikationer). Fördefinierade regler förenklar processen att överföra data i XML-format över vilket nätverk som helst, och mottagaren kan använda dessa regler för att läsa data korrekt och effektivt."
+  },
+  "JSONToXML": {
+    "title": "JSON till XML-omvandlare",
+    "description": "Detta verktyg möjliggör snabb konvertering av JSON till XML. Extensible Markup Language (XML) gör det möjligt att definiera och lagra data på ett delbart sätt. XML stöder informationsutbyte mellan datasystem (som webbplatser, databaser och tredjepartsapplikationer). Fördefinierade regler förenklar processen att överföra data i XML-format över vilket nätverk som helst, och mottagaren kan använda dessa regler för att läsa data korrekt och effektivt."
+  },
+  "markdownToHTML": {
+    "title": "Markdown till HTML-omvandlare",
+    "description": "Detta verktyg låter dig snabbt konvertera ditt Markdown-innehåll till HTML-format och erbjuder även möjligheten att ladda ner det som en PDF-fil."
+  },
+  "escapeHTMLEntities": {
+    "title": "Escape HTML-entiteter",
+    "description": "Escape HTML-entiteter som <, >, &, \" och ' för att låta dem säkert infogas i andra kodformat, vilket förhindrar fel."
+  },
+  "YAMLToTOML": {
+    "title": "YAML till TOML-omvandlare",
+    "description": "YAML till TOML-verktyget online gör det enkelt att konvertera YAML-formatkod till TOML-format."
+  },
+  "TOMLToYAML": {
+    "title": "TOML till YAML-omvandlare",
+    "description": "TOML till YAML-verktyget online gör det enkelt att konvertera TOML-formatkod till YAML-format."
+  },
+  "JSONToTOML": {
+    "title": "JSON till TOML-omvandlare",
+    "description": "Detta verktyg gör det enkelt för användare att konvertera JSON-data till TOML-konfiguration, vilket är användbart för användare som behöver konvertera mellan olika konfigurationsfilformat."
+  },
+  "TOMLToJSON": {
+    "title": "TOML till JSON-omvandlare",
+    "description": "Detta verktyg gör det enkelt för användare att konvertera TOML-konfigurationer till JSON-format, vilket gör det bekvämt för användare som behöver se TOML-konfigurationer."
+  },
+  "JSONFormatter": {
+    "title": "JSON-formaterare",
+    "description": "JSON-visaren kan försköna dina JSON-data och erbjuder användbara funktioner som sökning, kollapsa, expandera, sökväg, ersättning och markering."
+  },
+  "URLEncodeDecoder": {
+    "title": "URL-kodare/avkodare",
+    "description": "För att tillåta viss specialtext att användas i URL:er kan du använda detta verktyg för att koda din URL. Du kan också använda detta verktyg för att avkoda URL:er du tar emot."
+  },
+  "URLParser": {
+    "title": "URL-parser",
+    "description": "Detta verktyg är utformat för att låta användare tydligt och enkelt se de olika komponenterna i en URL, som protokoll, domän, port, frågeparametrar, etc."
+  },
+  "MIMETypes": {
+    "title": "MIME-typer",
+    "description": "Detta verktyg låter användare snabbt konvertera mellan filtyper och MIME-typer. Det erbjuder också en snabb uppslagstabell."
+  },
+  "basicAuthGenerator": {
+    "title": "Grundläggande autentiseringsgenerator",
+    "description": "Generera snabbt grundläggande autentiseringsuppgifter genom att ange ett användarnamn och lösenord, vilket gör det bekvämt att skicka förfrågningar i verktyg som PostMan."
+  },
+  "XMLFormatter": {
+    "title": "XML-formaterare",
+    "description": "Formatera och markera XML snabbt, vilket gör det användbart för att visa XML-data."
+  },
+  "JWTParser": {
+    "title": "JWT-parser",
+    "description": "Parsa snabbt JWT för att få Header, Payload och Signature, som kan användas för att extrahera och verifiera JWT-data, vilket gör det användbart för felsökning."
+  },
+  "tokenGenerator": {
+    "title": "Token-generator",
+    "description": "Generera slumpmässigt tokens baserat på användarens val av teckentyper och längd. Det kan inkludera versaler, gemener, siffror och specialsymboler."
+  },
+  "passwordGenerator": {
+    "title": "Lösenordsgenerator",
+    "description": "Generera slumpmässiga starka lösenord enligt dina behov. Alla operationer utförs lokalt i webbläsaren, vilket garanterar säkerhet och integritet. Du kan anpassa längden och inkludera versaler, gemener, siffror och specialsymboler."
+  },
+  "hashText": {
+    "title": "Hasha text",
+    "description": "Kryptera text med MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 eller RIPEMD160."
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Bcrypt är en adaptiv funktion för hashning av lösenord. Den är baserad på Blowfish-krypteringsalgoritmen och är specifikt utformad för säker lagring av lösenord."
+  },
+  "encryptDecryptText": {
+    "title": "Kryptera/dekryptera text",
+    "description": "Kryptera och dekryptera text med AES, TripleDES, Rabbit eller RC4."
+  },
+  "hmacGenerator": {
+    "title": "HMAC-generator",
+    "description": "HMAC (Hash-baserad meddelandeautentiseringskod) är en meddelandeautentiseringskod baserad på en hashfunktion och en hemlig nyckel, som används för att verifiera meddelandens integritet och äkthet. HMAC kan användas med olika hashfunktioner som MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 och RIPEMD160."
+  },
+  "crontabGenerator": {
+    "title": "Crontab-generator",
+    "description": "Ange ett cron-uttryck och översätt det till ett språk som är lätt att förstå, med en snabb referenstabell för cron-uttryck."
+  },
+  "SQLFormatter": {
+    "title": "SQL-formaterare",
+    "description": "Formatera oorganiserad SQL för enklare läsning och förståelse. Det kan också försköna SQL innan kodinlämning, vilket gör det lättare att underhålla."
+  },
+  "javascriptMinify": {
+    "title": "Minifiera JavaScript",
+    "description": "Minifiering av JavaScript-kod avser processen att ta bort alla onödiga tecken från källkoden utan att ändra dess funktionalitet. Dessa onödiga tecken inkluderar ofta mellanslag, radbrytningar, kommentarer och blockavgränsare som används för att förbättra kodläsbarheten men inte krävs för exekvering."
+  },
+  "YAMLFormatter": {
+    "title": "YAML-formaterare",
+    "description": "YAML-formateringsverktyget kan försköna och markera YAML-konfigurationer, vilket förbättrar läsbarheten och gör underhållet enklare."
+  },
+  "MACAddressLookup": {
+    "title": "MAC-adressuppslagning",
+    "description": "Detta verktyg låter dig snabbt och enkelt slå upp leverantören och tillverkaren av en enhet baserat på dess MAC-adress."
+  },
+  "textDiff": {
+    "title": "Textjämförelse",
+    "description": "Ange text i två redigerare, och jämförelsealgoritmen kommer att markera skillnaderna, vilket gör det mycket bekvämt för användare som behöver jämföra text."
+  },
+  "xssDefence": {
+    "title": "XSS-försvar",
+    "description": "Detta verktyg identifierar delar av din kod som kan vara sårbara för XSS-attacker och markerar dem. Det är mycket användbart och bekvämt för att lära sig om XSS och försvara sig mot XSS-attacker."
+  }
+}

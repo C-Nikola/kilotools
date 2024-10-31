@@ -1,0 +1,190 @@
+{
+  "rsa": {
+    "title": "RSA anahtar çifti oluşturucu",
+    "description": "Bu araç, kullanıcıların güvenli RSA genel ve özel anahtarlarını hızlı bir şekilde oluşturmasına yardımcı olmak için tasarlanmış çevrimiçi bir RSA anahtar oluşturucusudur. RSA (Rivest-Shamir-Adleman), genellikle veri şifreleme ve dijital imzalar için kullanılan yaygın bir açık anahtar şifreleme algoritmasıdır."
+  },
+  "MD5": {
+    "title": "MD5 şifreleme",
+    "description": "Metin içeriği üzerinde hash hesaplamaları yapmak için MD5 (Message-Digest Algoritması 5) kullanın."
+  },
+  "SHA": {
+    "title": "SHA şifreleme",
+    "description": "Metin içeriği üzerinde hash hesaplamaları yapmak için SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 kullanın."
+  },
+  "RIPEMD": {
+    "title": "RIPEMD",
+    "description": "MD4 yapısına dayalı bir hash fonksiyonu olup, 160 bitlik (20 bayt) bir hash değeri üretir."
+  },
+  "AESEncrypt": {
+    "title": "AES şifreleme",
+    "description": "Metni şifrelemek ve şifresini çözmek için AES (Gelişmiş Şifreleme Standardı) algoritmasını kullanın. AES, yerine koyma ve permütasyon ağlarına dayanan simetrik bir şifreleme algoritmasıdır."
+  },
+  "AESDecrypt": {
+    "title": "AES şifre çözme",
+    "description": "Metni şifrelemek ve şifresini çözmek için AES (Gelişmiş Şifreleme Standardı) algoritmasını kullanın. AES, yerine koyma ve permütasyon ağlarına dayanan simetrik bir şifreleme algoritmasıdır."
+  },
+  "base64EncodeDecode": {
+    "title": "Base64 Kodlama/Kod Çözme",
+    "description": "Base64 kodlama/kod çözme aracı, ikili verileri bir metin dizisine kodlamak veya Base64 ile kodlanmış metni tekrar ikili verilere dönüştürmek için kullanılır. Genellikle veri iletimi ve depolama için kullanılır."
+  },
+  "CSVToJSON": {
+    "title": "CSV'den JSON'a dönüştürücü",
+    "description": "CSV, genellikle tablo verilerini depolamak için kullanılan düz metin bir dosya formatıdır. Virgülle ayrılmış değerlerden oluşur, her değer çift tırnak içine alınır ve her satır bir kaydı temsil eder."
+  },
+  "JSONToCSV": {
+    "title": "JSON'dan CSV'ye dönüştürücü",
+    "description": "CSV, genellikle tablo verilerini depolamak için kullanılan düz metin bir dosya formatıdır. Virgülle ayrılmış değerlerden oluşur, her değer çift tırnak içine alınır ve her satır bir kaydı temsil eder."
+  },
+  "YAMLToJSON": {
+    "title": "YAML'den JSON'a dönüştürücü",
+    "description": "YAML/JSON dönüştürme, YAML formatındaki dosyaları JSON formatına dönüştüren kullanımı kolay bir çevrimiçi araçtır. JSON ve YAML arasında sorunsuz dönüşüm sağlar, bu da veri işleme, aktarım veya doğrulama ihtiyacı olan kullanıcılar için uygundur."
+  },
+  "JSONToYAML": {
+    "title": "JSON'dan YAML'ye dönüştürücü",
+    "description": "YAML/JSON dönüştürme, JSON formatındaki dosyaları YAML formatına dönüştüren kullanımı kolay bir çevrimiçi araçtır. JSON ve YAML arasında sorunsuz dönüşüm sağlar, bu da veri işleme, aktarım veya doğrulama ihtiyacı olan kullanıcılar için uygundur."
+  },
+  "dateTimeConverter": {
+    "title": "Tarih-zaman dönüştürücü",
+    "description": "Bu araç, çeşitli tarih ve saat formatları arasında kolayca dönüşüm yapmanızı sağlar."
+  },
+  "queryParamsToJSON": {
+    "title": "Sorgu Parametrelerini JSON'a dönüştürücü",
+    "description": "URL sorgu parametrelerini JSON formatına kolayca dönüştürün, bu da kullanıcıların görüntülemesi ve kullanması için daha kolay hale getirir."
+  },
+  "envToNetlifyToml": {
+    "title": ".env'den netlify.toml'ye dönüştürücü",
+    "description": "Bu araç, .env yapılandırma dosyalarını TOML yapılandırma dosyalarına hızlı ve kolay bir şekilde dönüştürmenizi sağlar. TOML, okunması kolay ve karma tablolarına açıkça eşlenen minimal bir yapılandırma dosyası formatı olarak tasarlanmıştır. TOML, çeşitli dillerde veri yapılarına kolayca ayrıştırılabilir."
+  },
+  "imageToBase64Converter": {
+    "title": "Görüntüyü Base64'e Dönüştürücü",
+    "description": "Görüntüyü BASE64 kodlama aracı, çeşitli görüntü formatlarını kolayca Base64'e dönüştürmenizi sağlar. İşlemi tamamlamak için görüntüyü belirtilen alana sürüklemeniz yeterlidir! Bir görüntünün Base64 kodlaması, görüntü verilerini bir diziye kodlar, böylece görüntü URL'si yerine diziyi kullanabilirsiniz."
+  },
+  "integerBaseConverter": {
+    "title": "Tam sayı taban dönüştürücü",
+    "description": "Taban dönüştürme aracı, kullanıcıların tam sayıları herhangi bir taban arasında dönüştürmesine olanak tanır ve 2, 8, 10, 16 ve 64 gibi yaygın olarak kullanılan tabanlar için yerleşik destek sunar."
+  },
+  "colorConverter": {
+    "title": "Renk dönüştürücü",
+    "description": "Renk dönüştürme aracı, kullanıcıların renk değerlerini hızla diğer formatlara dönüştürmesine olanak tanır ve rengin standart adını sağlar. Desteklenen formatlar arasında hex, rgb, hsl, hwb, lch ve cmyk bulunur."
+  },
+  "caseConverter": {
+    "title": "Büyük-küçük harf dönüştürücü",
+    "description": "Büyük-küçük harf dönüştürme aracı, metni hızlı bir şekilde istenen formata dönüştürmenizi sağlar. Adlandırma kurallarını, başlık formatlarını vb. dönüştürmek için çok uygundur. Büyük harf, küçük harf, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase ve snake_case içerir."
+  },
+  "textToUnicode": {
+    "title": "Metni Unicode'a dönüştürücü",
+    "description": "Metni Unicode'a dönüştürme aracı, bir karakterin Unicode kodunu kolayca bulmanızı veya bir Unicode koduna karşılık gelen karakteri bulmanızı sağlar. Metni toplu olarak Unicode kodlarına veya Unicode kodlarını toplu olarak metne dönüştürebilir."
+  },
+  "XMLToJSON": {
+    "title": "XML'den JSON'a dönüştürücü",
+    "description": "Bu araç, XML'i JSON'a hızla dönüştürmenizi sağlar. Genişletilebilir Biçimlendirme Dili (XML), verileri paylaşılabilir bir şekilde tanımlamanıza ve saklamanıza olanak tanır. XML, bilgisayar sistemleri (web siteleri, veritabanları ve üçüncü taraf uygulamaları gibi) arasında bilgi alışverişini destekler. Önceden tanımlanmış kurallar, XML formatındaki verilerin herhangi bir ağ üzerinden iletilmesi sürecini basitleştirir ve alıcı, bu kuralları kullanarak verileri doğru ve verimli bir şekilde okuyabilir."
+  },
+  "JSONToXML": {
+    "title": "JSON'dan XML'e dönüştürücü",
+    "description": "Bu araç, JSON'u XML'e hızla dönüştürmenizi sağlar. Genişletilebilir Biçimlendirme Dili (XML), verileri paylaşılabilir bir şekilde tanımlamanıza ve saklamanıza olanak tanır. XML, bilgisayar sistemleri (web siteleri, veritabanları ve üçüncü taraf uygulamaları gibi) arasında bilgi alışverişini destekler. Önceden tanımlanmış kurallar, XML formatındaki verilerin herhangi bir ağ üzerinden iletilmesi sürecini basitleştirir ve alıcı, bu kuralları kullanarak verileri doğru ve verimli bir şekilde okuyabilir."
+  },
+  "markdownToHTML": {
+    "title": "Markdown'dan HTML'e dönüştürücü",
+    "description": "Bu araç, Markdown içeriğinizi hızla HTML formatına dönüştürmenizi sağlar ve ayrıca PDF dosyası olarak indirmenize de olanak tanır."
+  },
+  "escapeHTMLEntities": {
+    "title": "HTML varlıklarını kaçırma",
+    "description": "HTML varlıklarını (<, >, &, \" ve ') kaçırarak, bunların diğer kod formatlarına güvenli bir şekilde eklenmesini sağlayın ve hataları önleyin."
+  },
+  "YAMLToTOML": {
+    "title": "YAML'den TOML'ye dönüştürücü",
+    "description": "YAML'den TOML'ye çevrimiçi araç, YAML formatındaki kodu TOML formatına kolayca dönüştürmenizi sağlar."
+  },
+  "TOMLToYAML": {
+    "title": "TOML'den YAML'ye dönüştürücü",
+    "description": "TOML'den YAML'ye çevrimiçi araç, TOML formatındaki kodu YAML formatına kolayca dönüştürmenizi sağlar."
+  },
+  "JSONToTOML": {
+    "title": "JSON'dan TOML'ye dönüştürücü",
+    "description": "Bu araç, kullanıcıların JSON verilerini kolayca TOML yapılandırmasına dönüştürmesini sağlar, bu da farklı yapılandırma dosyası formatları arasında dönüşüm yapması gereken kullanıcılar için kullanışlıdır."
+  },
+  "TOMLToJSON": {
+    "title": "TOML'den JSON'a dönüştürücü",
+    "description": "Bu araç, kullanıcıların TOML yapılandırmalarını kolayca JSON formatına dönüştürmesini sağlar, bu da TOML yapılandırmalarını görüntülemesi gereken kullanıcılar için uygundur."
+  },
+  "JSONFormatter": {
+    "title": "JSON Biçimlendirici",
+    "description": "JSON görüntüleyici, JSON verilerinizi güzelleştirebilir ve arama, daraltma, genişletme, yol, değiştirme ve vurgulama gibi kullanışlı özellikler sunar."
+  },
+  "URLEncodeDecoder": {
+    "title": "URL Kodlayıcı/Çözücü",
+    "description": "Belirli özel metinlerin URL'lerde kullanılmasına izin vermek için bu aracı kullanarak URL'nizi kodlayabilirsiniz. Ayrıca aldığınız URL'leri çözmek için bu aracı kullanabilirsiniz."
+  },
+  "URLParser": {
+    "title": "URL Ayrıştırıcı",
+    "description": "Bu araç, kullanıcıların bir URL'nin protokol, alan adı, bağlantı noktası, sorgu parametreleri gibi çeşitli bileşenlerini net ve kolay bir şekilde görüntülemesine olanak tanır."
+  },
+  "MIMETypes": {
+    "title": "MIME türleri",
+    "description": "Bu araç, kullanıcıların dosya türleri ve MIME türleri arasında hızlı bir şekilde dönüşüm yapmasına olanak tanır. Ayrıca hızlı bir başvuru tablosu sağlar."
+  },
+  "basicAuthGenerator": {
+    "title": "Temel kimlik doğrulama oluşturucu",
+    "description": "Kullanıcı adı ve şifre girerek temel kimlik doğrulama kimlik bilgilerini hızlı bir şekilde oluşturun, bu da PostMan gibi araçlarda istek göndermeyi kolaylaştırır."
+  },
+  "XMLFormatter": {
+    "title": "XML Biçimlendirici",
+    "description": "XML'i hızla biçimlendirin ve vurgulayın, bu da XML verilerini görüntülemek için kullanışlıdır."
+  },
+  "JWTParser": {
+    "title": "JWT Ayrıştırıcı",
+    "description": "JWT'yi hızla ayrıştırarak Başlık, Yük ve İmza'yı elde edin, bu da JWT verilerini çıkarmak ve doğrulamak için kullanılabilir, hata ayıklama için kullanışlıdır."
+  },
+  "tokenGenerator": {
+    "title": "Token Oluşturucu",
+    "description": "Kullanıcının karakter türleri ve uzunluk tercihine göre rastgele tokenlar oluşturun. Büyük harf, küçük harf, sayılar ve özel semboller içerebilir."
+  },
+  "passwordGenerator": {
+    "title": "Şifre oluşturucu",
+    "description": "İhtiyaçlarınıza göre rastgele güçlü şifreler oluşturun. Tüm işlemler tarayıcıda yerel olarak gerçekleştirilir, bu da güvenlik ve gizliliği sağlar. Uzunluğu özelleştirebilir ve büyük harf, küçük harf, sayılar ve özel semboller ekleyebilirsiniz."
+  },
+  "hashText": {
+    "title": "Metni hash'le",
+    "description": "MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 veya RIPEMD160 kullanarak metni şifreleyin."
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Bcrypt, uyarlanabilir bir şifre hashleme fonksiyonudur. Blowfish şifreleme algoritmasına dayanmaktadır ve güvenli şifre depolama için özel olarak tasarlanmıştır."
+  },
+  "encryptDecryptText": {
+    "title": "Metni Şifrele / Şifre Çöz",
+    "description": "AES, TripleDES, Rabbit veya RC4 kullanarak metni şifreleyin ve şifresini çözün."
+  },
+  "hmacGenerator": {
+    "title": "Hmac oluşturucu",
+    "description": "HMAC (Hash tabanlı Mesaj Doğrulama Kodu), bir hash fonksiyonu ve gizli anahtara dayalı bir mesaj doğrulama kodudur, mesajların bütünlüğünü ve kimliğini doğrulamak için kullanılır. HMAC, MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 ve RIPEMD160 gibi çeşitli hash fonksiyonları ile kullanılabilir."
+  },
+  "crontabGenerator": {
+    "title": "Crontab oluşturucu",
+    "description": "Bir cron ifadesi girin ve bunu insan tarafından okunabilir bir dile çevirin, cron ifadeleri için hızlı bir referans tablosu ile birlikte."
+  },
+  "SQLFormatter": {
+    "title": "SQL biçimlendirici",
+    "description": "Düzensiz SQL'i daha kolay okunabilir ve anlaşılır hale getirin. Ayrıca kod gönderiminden önce SQL'i güzelleştirerek, bakımını daha kolay hale getirir."
+  },
+  "javascriptMinify": {
+    "title": "Javascript küçültme",
+    "description": "JavaScript kod küçültme, kaynak koddan tüm gereksiz karakterlerin işlevselliği değiştirmeden kaldırılması işlemine atıfta bulunur. Bu gereksiz karakterler genellikle boşluklar, satır sonları, yorumlar ve blok sınırlayıcıları içerir, bunlar kod okunabilirliğini artırmak için kullanılır ancak yürütme için gerekli değildir."
+  },
+  "YAMLFormatter": {
+    "title": "YAML biçimlendirici",
+    "description": "YAML biçimlendirme aracı, YAML yapılandırmalarını güzelleştirip vurgulayarak okunabilirliği artırır ve bakımı kolaylaştırır."
+  },
+  "MACAddressLookup": {
+    "title": "MAC adresi sorgulama",
+    "description": "Bu araç, bir cihazın MAC adresine dayanarak satıcı ve üreticisini hızlı ve kolay bir şekilde bulmanızı sağlar."
+  },
+  "textDiff": {
+    "title": "Metin farkı",
+    "description": "İki düzenleyiciye metin girin ve karşılaştırma algoritması farklılıkları vurgular, bu da metin karşılaştırması yapması gereken kullanıcılar için çok uygundur."
+  },
+  "xssDefence": {
+    "title": "Xss savunması",
+    "description": "Bu araç, kodunuzun XSS saldırılarına karşı savunmasız olabilecek kısımlarını belirler ve vurgular. XSS hakkında bilgi edinmek ve XSS saldırılarına karşı savunma yapmak için çok kullanışlı ve uygundur."
+  }
+}
