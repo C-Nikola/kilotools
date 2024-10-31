@@ -122,7 +122,7 @@ const toolsByCategory: Array<ToolCategory> = [
     name: "Crypto/Encode",
     components: [
       {
-        title: "RSA.title",
+        title: "rsa.title",
         key: "rsa-key-pair-generator",
         description: "rsa.description",
         link: "/crypto/rsa-key-pair-generator",
@@ -475,7 +475,7 @@ const toolsByCategory: Array<ToolCategory> = [
     components: [
       {
         title: "xssDefence.title",
-        description: "xssDefence",
+        description: "xssDefence.description",
         key: "xss-defence",
         link: "/security/xss-defence",
         icon: IconShieldCheckered,

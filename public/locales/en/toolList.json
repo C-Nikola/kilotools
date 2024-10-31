@@ -1,6 +1,190 @@
 {
   "rsa": {
     "title": "RSA key pair generator",
-    "description": "Generate a new random RSA private and public pem certificate key pair."
+    "description": "This tool is an online RSA key generator designed to help users quickly generate secure RSA public and private keys. RSA (Rivest-Shamir-Adleman) is a widely used public-key cryptographic algorithm, mainly used for data encryption and digital signatures."
+  },
+  "MD5": {
+    "title": "MD5 encrypt",
+    "description": "Use MD5 (Message-Digest Algorithm 5) to perform hash calculations on text content."
+  },
+  "SHA": {
+    "title": "SHA encrypt",
+    "description": "Use SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 to perform hash calculations on text content."
+  },
+  "RIPEMD": {
+    "title": "RIPEMD",
+    "description": "A hash function based on the MD4 structure, outputting a 160-bit (20-byte) hash value."
+  },
+  "AESEncrypt": {
+    "title": "AES encrypt",
+    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks."
+  },
+  "AESDecrypt": {
+    "title": "AES decrypt",
+    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks."
+  },
+  "base64EncodeDecode": {
+    "title": "Base64 Encode/Decode",
+    "description": "The Base64 encode/decode tool is used to encode binary data into a text string or decode Base64-encoded text back into binary data, commonly used for data transmission and storage."
+  },
+  "CSVToJSON": {
+    "title": "CSV to JSON converter",
+    "description": "CSV is a plain text file format commonly used to store tabular data. It consists of values separated by commas, with each value enclosed in double quotes, and each line representing a record."
+  },
+  "JSONToCSV": {
+    "title": "JSON to CSV converter",
+    "description": "CSV is a plain text file format commonly used to store tabular data. It consists of values separated by commas, with each value enclosed in double quotes, and each line representing a record."
+  },
+  "YAMLToJSON": {
+    "title": "YAML to JSON converter",
+    "description": "YAML/JSON conversion is an easy-to-use online tool that converts files from YAML format to JSON format. It allows seamless conversion between JSON and YAML, making it suitable for users who need to handle, transfer, or validate data."
+  },
+  "JSONToYAML": {
+    "title": "JSON to YAML converter",
+    "description": "YAML/JSON conversion is an easy-to-use online tool that converts files from JSON format to YAML format. It allows seamless conversion between JSON and YAML, making it suitable for users who need to handle, transfer, or validate data."
+  },
+  "dateTimeConverter": {
+    "title": "Date-time Converter",
+    "description": "This tool allows easy conversion between various date and time formats."
+  },
+  "queryParamsToJSON": {
+    "title": "Query Params to JSON converter",
+    "description": "Conveniently convert URL query parameters into JSON format, making it easier for users to view and use."
+  },
+  "envToNetlifyToml": {
+    "title": ".env to netlify.toml converter",
+    "description": "This tool allows for quick and easy conversion of .env configuration files into TOML configuration files. TOML is designed to be a minimal configuration file format that is easy to read and unambiguously maps to hash tables. TOML can be easily parsed into data structures in various languages."
+  },
+  "imageToBase64Converter": {
+    "title": "Image to Base64 Converter",
+    "description": "The image to BASE64 encoding tool allows you to easily convert various image formats into Base64. Simply drag the image into the designated area to complete the operation! The Base64 encoding of an image encodes the image data into a string, allowing you to use the string instead of the image URL."
+  },
+  "integerBaseConverter": {
+    "title": "Integer base converter",
+    "description": "The base conversion tool allows users to convert integers between any base, with built-in support for commonly used bases such as 2, 8, 10, 16, and 64."
+  },
+  "colorConverter": {
+    "title": "Color converter",
+    "description": "The color conversion tool allows users to quickly convert their color values into other formats and provides the standard name of the color. Supported formats include hex, rgb, hsl, hwb, lch, and cmyk."
+  },
+  "caseConverter": {
+    "title": "Case converter",
+    "description": "The case conversion tool allows you to quickly convert text into the desired format. It is very convenient for converting naming conventions, title formats, etc. It includes uppercase, lowercase, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase, and snake_case."
+  },
+  "textToUnicode": {
+    "title": "Text to unicode converter",
+    "description": "The text to Unicode converter tool allows you to easily look up the Unicode code for a character or find the character corresponding to a Unicode code. It can batch convert text to Unicode codes or batch convert Unicode codes to text."
+  },
+  "XMLToJSON": {
+    "title": "XML to JSON converter",
+    "description": "This tool allows for quick conversion of XML to JSON. Extensible Markup Language (XML) allows you to define and store data in a shareable way. XML supports the exchange of information between computer systems (such as websites, databases, and third-party applications). Predefined rules simplify the process of transmitting data in XML format over any network, and the recipient can use these rules to read the data accurately and efficiently."
+  },
+  "JSONToXML": {
+    "title": "JSON to XML converter",
+    "description": "This tool allows for quick conversion of JSON to XML. Extensible Markup Language (XML) allows you to define and store data in a shareable way. XML supports the exchange of information between computer systems (such as websites, databases, and third-party applications). Predefined rules simplify the process of transmitting data in XML format over any network, and the recipient can use these rules to read the data accurately and efficiently."
+  },
+  "markdownToHTML": {
+    "title": "Markdown to HTML converter",
+    "description": "This tool allows you to quickly convert your Markdown content into HTML format, and also provides the option to download it as a PDF file."
+  },
+  "escapeHTMLEntities": {
+    "title": "Escape HTML entities",
+    "description": "Escape HTML entities such as <, >, &, \" and ' to allow them to be safely inserted into other formats of code, preventing errors."
+  },
+  "YAMLToTOML": {
+    "title": "YAML to TOML converter",
+    "description": "The YAML to TOML online tool allows you to easily convert YAML format code into TOML format."
+  },
+  "TOMLToYAML": {
+    "title": "TOML to YAML converter",
+    "description": "The TOML to YAML online tool allows you to easily convert TOML format code into YAML format."
+  },
+  "JSONToTOML": {
+    "title": "JSON to TOML converter",
+    "description": "This tool allows users to easily convert JSON data into TOML configuration, which is useful for users needing to convert between different configuration file formats."
+  },
+  "TOMLToJSON": {
+    "title": "TOML to JSON converter",
+    "description": "This tool allows users to easily convert TOML configurations into JSON format, making it convenient for users who need to view TOML configurations."
+  },
+  "JSONFormatter": {
+    "title": "JSON Formatter",
+    "description": "The JSON viewer can beautify your JSON data and provides useful features such as search, collapse, expand, path, replace, and highlight."
+  },
+  "URLEncodeDecoder": {
+    "title": "URL Encoder/decoder",
+    "description": "To allow certain special text to be used in URLs, you can use this tool to encode your URL. You can also use this tool to decode URLs you receive."
+  },
+  "URLParser": {
+    "title": "URL parser",
+    "description": "This tool is designed to allow users to clearly and easily view the various components of a URL, such as protocol, domain, port, query parameters, etc."
+  },
+  "MIMETypes": {
+    "title": "MIME types",
+    "description": "This tool allows users to quickly convert between file types and MIME types. It also provides a quick lookup table."
+  },
+  "basicAuthGenerator": {
+    "title": "Basic auth generator",
+    "description": "Quickly generate basic authentication credentials by entering a username and password, making it convenient for sending requests in tools like PostMan."
+  },
+  "XMLFormatter": {
+    "title": "XML formatter",
+    "description": "Quickly format and highlight XML, making it useful for viewing XML data."
+  },
+  "JWTParser": {
+    "title": "JWT parser",
+    "description": "Quickly parse JWT to obtain the Header, Payload, and Signature, which can be used to extract and verify JWT data, making it useful for debugging."
+  },
+  "tokenGenerator": {
+    "title": "Token Generator",
+    "description": "Randomly generate tokens based on the user's choice of character types and length. It can include uppercase, lowercase, numbers, and special symbols."
+  },
+  "passwordGenerator": {
+    "title": "Password generator",
+    "description": "Generate random strong passwords according to your needs. All operations are performed locally in the browser, ensuring security and privacy. You can customize the length and include uppercase, lowercase, numbers, and special symbols."
+  },
+  "hashText": {
+    "title": "Hash text",
+    "description": "Encrypt text using MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3, or RIPEMD160."
+  },
+  "bcrypt": {
+    "title": "Bcrypt",
+    "description": "Bcrypt is an adaptive password hashing function. It is based on the Blowfish encryption algorithm and is specifically designed for secure password storage."
+  },
+  "encryptDecryptText": {
+    "title": "Encrypt / decrypt text",
+    "description": "Encrypt and decrypt text using AES, TripleDES, Rabbit, or RC4."
+  },
+  "hmacGenerator": {
+    "title": "Hmac generator",
+    "description": "HMAC (Hash-based Message Authentication Code) is a message authentication code based on a hash function and a secret key, used to verify the integrity and authenticity of messages. HMAC can be used with various hash functions such as MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512, and RIPEMD160."
+  },
+  "crontabGenerator": {
+    "title": "Crontab generator",
+    "description": "Enter a cron expression and translate it into human-readable language, with a quick reference table for cron expressions."
+  },
+  "SQLFormatter": {
+    "title": "SQL formatter",
+    "description": "Format disorganized SQL for easier reading and understanding. It can also beautify SQL before code submission, making it easier to maintain."
+  },
+  "javascriptMinify": {
+    "title": "Javascript minify",
+    "description": "JavaScript code minification refers to the process of removing all unnecessary characters from the source code without changing its functionality. These unnecessary characters often include whitespace, line breaks, comments, and block delimiters, which are used to enhance code readability but are not required for execution."
+  },
+  "YAMLFormatter": {
+    "title": "YAML formatter",
+    "description": "The YAML formatting tool can beautify and highlight YAML configurations, improving readability and making maintenance easier."
+  },
+  "MACAddressLookup": {
+    "title": "MAC address lookup",
+    "description": "This tool allows you to quickly and easily look up the vendor and manufacturer of a device based on its MAC address."
+  },
+  "textDiff": {
+    "title": "Text diff",
+    "description": "Enter text in two editors, and the comparison algorithm will highlight the differences, making it very convenient for users who need to compare text."
+  },
+  "xssDefence": {
+    "title": "Xss defence",
+    "description": "This tool identifies parts of your code that may be vulnerable to XSS attacks and highlights them. It is very useful and convenient for learning about XSS and defending against XSS attacks."
   }
 }

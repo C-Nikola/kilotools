@@ -8,7 +8,7 @@
     "description": "使用MD5 (Message-Digest Algorithm 5)对文本内容进行哈希/散列计算。"
   },
   "SHA": {
-    "title": "SHA encrypt",
+    "title": "SHA 加密",
     "description": "使用 SHA1、SHA3、SHA224、SHA256、SHA384、SHA512 对文本内容进行哈希 / 散列计算。"
   },
   "RIPEMD": {
