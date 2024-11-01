@@ -6,8 +6,9 @@ import styles from "@/styles/components/CMDK.module.scss";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { tools } from "@/utils/toolsList";
 import { useRouter } from "next/navigation";
+import { TFunction } from "i18next";
 
-const CMDK = () => {
+const CMDK = ({ t }: { t: TFunction }) => {
   const [open, setOpen] = useState(false);
   const router = useRouter();
 
@@ -72,7 +73,7 @@ const CMDK = () => {
                         setOpen(false);
                       }}
                     >
-                      <span>{tool.title}</span>
+                      <span>{t(tool.title)}</span>
                     </CommandItem>
                   ))}
                 </Command.Group>

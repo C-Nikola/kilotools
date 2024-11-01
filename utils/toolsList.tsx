@@ -499,23 +499,5 @@ toolsByCategory.map((category) => {
   tools = tools.concat(toolList);
 });
 
-// 使用方式https://github.com/ant-design/ant-design/issues/48369
-const menuItems: SubMenuType<MenuItemType>[] = toolsByCategory.map(
-  (category) => {
-    const children: MenuItemType[] = category.components.map((tool) => {
-      const Icon = tool.icon;
-      return getItem(
-        tool.title,
-        category.name,
-        tool.key,
-        tool.link,
-        <Icon size={24} />
-      );
-    });
-
-    return getSubMenu(category.name, category.name, children);
-  }
-);
-
-export { toolsByCategory, tools, menuItems, getItem };
+export { toolsByCategory, tools, getItem, getSubMenu };
 export type { Tool, ToolCategory, ToolCard };

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Menu } from "antd";
-import { getItem, menuItems, toolsByCategory } from "@/utils/toolsList";
+import { getItem, getSubMenu, toolsByCategory } from "@/utils/toolsList";
 import useLocalStorageListener from "@/hooks/useLocalStorageListener";
 import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { ItemType, MenuItemType, SubMenuType } from "antd/es/menu/interface";
@@ -8,19 +8,37 @@ import _ from "lodash";
 import Link from "next/link";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import styles from "@/styles/components/SideMenu.module.scss";
+import { TFunction } from "i18next";
 
-const SideMenu: React.FC = () => {
+const SideMenu = ({ t }: { t: TFunction }) => {
   const { value: localFavoriteTools } = useLocalStorageListener<string[]>(
     LOCAL_STORAGE_KEY.FAVORITE_TOOL_NAME,
     "array"
   );
 
-  const [favoriteTools, setFavoriteTools] =
-    useState<SubMenuType<MenuItemType>[]>(menuItems);
+  const [tools, setTools] = useState<SubMenuType<MenuItemType>[]>([]);
 
   useEffect(() => {
+    // https://github.com/ant-design/ant-design/issues/48369
+    const items: SubMenuType<MenuItemType>[] = toolsByCategory.map(
+      (category) => {
+        const children: MenuItemType[] = category.components.map((tool) => {
+          const Icon = tool.icon;
+          return getItem(
+            t(tool.title),
+            t(category.name),
+            tool.key,
+            tool.link,
+            <Icon size={24} />
+          );
+        });
+
+        return getSubMenu(t(category.name), t(category.name), children);
+      }
+    );
+
     if (!localFavoriteTools || localFavoriteTools.length === 0) {
-      setFavoriteTools(menuItems);
+      setTools(items);
       return;
     }
 
@@ -32,7 +50,7 @@ const SideMenu: React.FC = () => {
           tools = [
             ...tools,
             getItem(
-              tool.title,
+              t(tool.title),
               `${tool.key}`,
               "favorite",
               tool.link,
@@ -47,8 +65,8 @@ const SideMenu: React.FC = () => {
       key: "favorite",
       children: tools,
     };
-    setFavoriteTools([favoriteSubMenu, ...menuItems]);
-  }, [localFavoriteTools]);
+    setTools([favoriteSubMenu, ...items]);
+  }, [localFavoriteTools, t]);
 
   return (
     <div className="h-full">
@@ -71,7 +89,7 @@ const SideMenu: React.FC = () => {
         <Menu
           style={{ width: "100%", height: "100%", paddingTop: 160, border: 0 }}
           mode="inline"
-          items={favoriteTools}
+          items={tools}
         />
       </OverlayScrollbarsComponent>
     </div>

@@ -47,8 +47,8 @@ function Home() {
               <Card className="h-full border-2">
                 <Space direction="vertical">
                   {card.icon}
-                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
-                  <p className={styles.cardDesc}>{card.description}</p>
+                  <h3 className="text-lg font-bold mb-2">{t(card.title)}</h3>
+                  <p className={styles.cardDesc}>{t(card.description)}</p>
                 </Space>
               </Card>
             </Link>
