@@ -2,6 +2,10 @@
   "name": "kilotools",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "20.16.0",
+    "pnpm": "9.9.0"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -21,7 +25,7 @@
     "antd": "^5.21.2",
     "bcryptjs": "^2.4.3",
     "change-case": "^5.4.4",
-    "cmdk": "1.0.0",
+    "cmdk": "^1.0.0",
     "colord": "^2.9.3",
     "confbox": "^0.1.8",
     "cronstrue": "^2.50.0",
