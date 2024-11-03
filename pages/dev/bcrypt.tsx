@@ -56,20 +56,20 @@ export default function Bcrypt() {
 
   return (
     <>
-      <ToolPageHeader title="Bcrypt" toolName="bcrypt" />
+      <ToolPageHeader title={t("bcrypt.title")} toolName="bcrypt" />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">
             <Space direction="vertical" className="w-full">
               <Title level={2}>Hash</Title>
-              <Row>
-                <Col flex="0 1 80px">Your string:</Col>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("bcrypt.hash_from")}:</Col>
                 <Col flex="1">
                   <Input value={input} onChange={handleInput} />
                 </Col>
               </Row>
               <Row>
-                <Col flex="0 1 80px">Salt count:</Col>
+                <Col flex="0 1 80px">{t("bcrypt.salt_count")}:</Col>
                 <Col flex={1}>
                   <InputNumber
                     value={saltCount}
@@ -91,21 +91,21 @@ export default function Bcrypt() {
         <Col flex="0 1 600px">
           <Card className="w-full">
             <Space direction="vertical" className="w-full">
-              <Title level={2}>Compare string with hash</Title>
-              <Row>
-                <Col flex="0 1 80px">Your string:</Col>
+              <Title level={2}>{t("bcrypt.compare_title")}</Title>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("bcrypt.compare_from")}:</Col>
                 <Col flex={1}>
                   <Input value={compareString} onChange={handleCompareString} />
                 </Col>
               </Row>
               <Row>
-                <Col flex="0 1 80px">Your Hash:</Col>
+                <Col flex="0 1 80px">{t("bcrypt.compare_to")}:</Col>
                 <Col flex={1}>
                   <Input value={compareHash} onChange={handleCompareHash} />
                 </Col>
               </Row>
               <Row>
-                <Col flex="0 1 80px">Match?</Col>
+                <Col flex="0 1 80px">{t("bcrypt.match")}?</Col>
                 <Col
                   style={{
                     color: isMatch ? token.colorSuccess : token.colorError,

@@ -60,7 +60,7 @@ export default function CSVToJson() {
 
   return (
     <>
-      <ToolPageHeader title="CSV to JSON" toolName="csv-to-json" />
+      <ToolPageHeader title={t("CSVToJSON.title")} toolName="csv-to-json" />
       <TransformTextAreaToCode
         inputLabel="CSV"
         outputLable="json"
@@ -73,7 +73,7 @@ export default function CSVToJson() {
       >
         <div className="text-right">
           <Checkbox id="lowercase" onChange={toggleLowercase} className="mr-1">
-            lowercase keys
+            {t("CSVToJSON.lowercase")}
           </Checkbox>
         </div>
       </TransformTextAreaToCode>

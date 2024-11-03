@@ -1,35 +1,62 @@
 {
   "rsa": {
     "title": "RSA key pair generator",
-    "description": "This tool is an online RSA key generator designed to help users quickly generate secure RSA public and private keys. RSA (Rivest-Shamir-Adleman) is a widely used public-key cryptographic algorithm, mainly used for data encryption and digital signatures."
+    "description": "This tool is an online RSA key generator designed to help users quickly generate secure RSA public and private keys. RSA (Rivest-Shamir-Adleman) is a widely used public-key cryptographic algorithm, mainly used for data encryption and digital signatures.",
+    "generate": "Generate key-pair",
+    "bits": "Bits",
+    "public_key": "Pulic key",
+    "private_key": "Private key"
   },
   "MD5": {
     "title": "MD5 encrypt",
-    "description": "Use MD5 (Message-Digest Algorithm 5) to perform hash calculations on text content."
+    "description": "Use MD5 (Message-Digest Algorithm 5) to perform hash calculations on text content.",
+    "from": "Your string",
+    "to": "Result"
   },
   "SHA": {
     "title": "SHA encrypt",
-    "description": "Use SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 to perform hash calculations on text content."
+    "description": "Use SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 to perform hash calculations on text content.",
+    "algorithm": "Algorithm",
+    "hash_length": "Hash length",
+    "from": "Your string",
+    "to": "Result"
   },
   "RIPEMD": {
     "title": "RIPEMD",
-    "description": "A hash function based on the MD4 structure, outputting a 160-bit (20-byte) hash value."
+    "description": "A hash function based on the MD4 structure, outputting a 160-bit (20-byte) hash value.",
+    "from": "Your string",
+    "to": "Result"
   },
   "AESEncrypt": {
     "title": "AES encrypt",
-    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks."
+    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks.",
+    "tag_length": "Tag length",
+    "additional_data": "Additional data",
+    "from": "Your string",
+    "to": "Encrypted string"
   },
   "AESDecrypt": {
     "title": "AES decrypt",
-    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks."
+    "description": "Use the AES (Advanced Encryption Standard) algorithm to encrypt and decrypt text. AES is a symmetric encryption algorithm based on substitution-permutation networks.",
+    "tag_length": "Tag length",
+    "additional_data": "Additional data",
+    "from": "Encrypted string",
+    "to": "Decrypted string"
   },
   "base64EncodeDecode": {
     "title": "Base64 Encode/Decode",
-    "description": "The Base64 encode/decode tool is used to encode binary data into a text string or decode Base64-encoded text back into binary data, commonly used for data transmission and storage."
+    "description": "The Base64 encode/decode tool is used to encode binary data into a text string or decode Base64-encoded text back into binary data, commonly used for data transmission and storage.",
+    "encode_title": "To base64",
+    "decode_title": "From base64",
+    "encode_from": "Your string",
+    "encode_to": "Encoded string",
+    "decode_from": "Your base64 string",
+    "decode_to": "Decoded string"
   },
   "CSVToJSON": {
     "title": "CSV to JSON converter",
-    "description": "CSV is a plain text file format commonly used to store tabular data. It consists of values separated by commas, with each value enclosed in double quotes, and each line representing a record."
+    "description": "CSV is a plain text file format commonly used to store tabular data. It consists of values separated by commas, with each value enclosed in double quotes, and each line representing a record.",
+    "lowercase": "lowercase keys"
   },
   "JSONToCSV": {
     "title": "JSON to CSV converter",
@@ -57,11 +84,17 @@
   },
   "imageToBase64Converter": {
     "title": "Image to Base64 Converter",
-    "description": "The image to BASE64 encoding tool allows you to easily convert various image formats into Base64. Simply drag the image into the designated area to complete the operation! The Base64 encoding of an image encodes the image data into a string, allowing you to use the string instead of the image URL."
+    "description": "The image to BASE64 encoding tool allows you to easily convert various image formats into Base64. Simply drag the image into the designated area to complete the operation! The Base64 encoding of an image encodes the image data into a string, allowing you to use the string instead of the image URL.",
+    "image": "Image",
+    "output": "Base64 Output",
+    "img_tag": "Use in <img> tag",
+    "css": "Use in CSS"
   },
   "integerBaseConverter": {
     "title": "Integer base converter",
-    "description": "The base conversion tool allows users to convert integers between any base, with built-in support for commonly used bases such as 2, 8, 10, 16, and 64."
+    "description": "The base conversion tool allows users to convert integers between any base, with built-in support for commonly used bases such as 2, 8, 10, 16, and 64.",
+    "input": "Input number",
+    "input_base": "Input base"
   },
   "colorConverter": {
     "title": "Color converter",
@@ -69,11 +102,32 @@
   },
   "caseConverter": {
     "title": "Case converter",
-    "description": "The case conversion tool allows you to quickly convert text into the desired format. It is very convenient for converting naming conventions, title formats, etc. It includes uppercase, lowercase, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase, and snake_case."
+    "description": "The case conversion tool allows you to quickly convert text into the desired format. It is very convenient for converting naming conventions, title formats, etc. It includes uppercase, lowercase, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase, and snake_case.",
+    "Lowercase": "Lowercase",
+    "Uppercase": "Uppercase",
+    "Camelcase": "Camelcase",
+    "Capitalcase": "Capitalcase",
+    "Constantcase": "Constantcase",
+    "Dotcase": "Dotcase",
+    "Pascalcase": "Pascalcase",
+    "PascalSnakeCase": "PascalSnakeCase",
+    "Nocase": "Nocase",
+    "KebabCase": "KebabCase",
+    "Pathcase": "Pathcase",
+    "Sentencecase": "Sentencecase",
+    "Snakecase": "Snakecase",
+    "Mockingcase": "Mockingcase",
+    "TrainCase": "TrainCase"
   },
   "textToUnicode": {
     "title": "Text to unicode converter",
-    "description": "The text to Unicode converter tool allows you to easily look up the Unicode code for a character or find the character corresponding to a Unicode code. It can batch convert text to Unicode codes or batch convert Unicode codes to text."
+    "description": "The text to Unicode converter tool allows you to easily look up the Unicode code for a character or find the character corresponding to a Unicode code. It can batch convert text to Unicode codes or batch convert Unicode codes to text.",
+    "encode_title": "Text to Unicode",
+    "decode_title": "Unicode to Text",
+    "encode_from": "Enter text to convert to unicode",
+    "encode_to": "Unicode from your text",
+    "decode_from": "Enter unicode to convert to text",
+    "decode_to": "Text from your Unicode"
   },
   "XMLToJSON": {
     "title": "XML to JSON converter",
@@ -89,7 +143,13 @@
   },
   "escapeHTMLEntities": {
     "title": "Escape HTML entities",
-    "description": "Escape HTML entities such as <, >, &, \" and ' to allow them to be safely inserted into other formats of code, preventing errors."
+    "description": "Escape HTML entities such as <, >, &, \" and ' to allow them to be safely inserted into other formats of code, preventing errors.",
+    "escape_title": "Escape HTML entities",
+    "unescape_title": "Unescape HTML entities",
+    "escape_from": "Your string",
+    "escape_to": "Your string escaped",
+    "unescape_from": "Your escaped string",
+    "unescape_to": "Your string unescaped"
   },
   "YAMLToTOML": {
     "title": "YAML to TOML converter",
@@ -113,15 +173,22 @@
   },
   "URLEncodeDecoder": {
     "title": "URL Encoder/decoder",
-    "description": "To allow certain special text to be used in URLs, you can use this tool to encode your URL. You can also use this tool to decode URLs you receive."
+    "description": "To allow certain special text to be used in URLs, you can use this tool to encode your URL. You can also use this tool to decode URLs you receive.",
+    "encode_title": "URL encoder",
+    "decode_title": "URL decoder"
   },
   "URLParser": {
     "title": "URL parser",
-    "description": "This tool is designed to allow users to clearly and easily view the various components of a URL, such as protocol, domain, port, query parameters, etc."
+    "description": "This tool is designed to allow users to clearly and easily view the various components of a URL, such as protocol, domain, port, query parameters, etc.",
+    "your_url": "Your url to parse"
   },
   "MIMETypes": {
     "title": "MIME types",
-    "description": "This tool allows users to quickly convert between file types and MIME types. It also provides a quick lookup table."
+    "description": "This tool allows users to quickly convert between file types and MIME types. It also provides a quick lookup table.",
+    "mime_to_extension": "Mime type to extension",
+    "mime_to_extension_desc": "Know which file extensions are associated to a mime-type",
+    "extension_to_mime": "File extension to mime type",
+    "extension_to_mime_desc": "Know which mime type is associated to a file extension"
   },
   "basicAuthGenerator": {
     "title": "Basic auth generator",
@@ -129,19 +196,39 @@
   },
   "XMLFormatter": {
     "title": "XML formatter",
-    "description": "Quickly format and highlight XML, making it useful for viewing XML data."
+    "description": "Quickly format and highlight XML, making it useful for viewing XML data.",
+    "indent": "Indent size",
+    "collapse": "Collapse content"
   },
   "JWTParser": {
     "title": "JWT parser",
-    "description": "Quickly parse JWT to obtain the Header, Payload, and Signature, which can be used to extract and verify JWT data, making it useful for debugging."
+    "description": "Quickly parse JWT to obtain the Header, Payload, and Signature, which can be used to extract and verify JWT data, making it useful for debugging.",
+    "uppercase": "Uppercase ",
+    "lowercase": "Lowercase ",
+    "number": "Numbers ",
+    "symbols": "Symbols ",
+    "length": "Length",
+    "generate": "Generate"
   },
   "tokenGenerator": {
     "title": "Token Generator",
-    "description": "Randomly generate tokens based on the user's choice of character types and length. It can include uppercase, lowercase, numbers, and special symbols."
+    "description": "Randomly generate tokens based on the user's choice of character types and length. It can include uppercase, lowercase, numbers, and special symbols.",
+    "uppercase": "Uppercase",
+    "lowercase": "Lowercase",
+    "number": "Numbers",
+    "symbols": "Symbols",
+    "length": "Length",
+    "generate": "Generate"
   },
   "passwordGenerator": {
     "title": "Password generator",
-    "description": "Generate random strong passwords according to your needs. All operations are performed locally in the browser, ensuring security and privacy. You can customize the length and include uppercase, lowercase, numbers, and special symbols."
+    "description": "Generate random strong passwords according to your needs. All operations are performed locally in the browser, ensuring security and privacy. You can customize the length and include uppercase, lowercase, numbers, and special symbols.",
+    "uppercase": "Uppercase",
+    "lowercase": "Lowercase",
+    "number": "Numbers",
+    "symbols": "Symbols",
+    "length": "Length",
+    "generate": "Generate"
   },
   "hashText": {
     "title": "Hash text",
@@ -149,15 +236,32 @@
   },
   "bcrypt": {
     "title": "Bcrypt",
-    "description": "Bcrypt is an adaptive password hashing function. It is based on the Blowfish encryption algorithm and is specifically designed for secure password storage."
+    "description": "Bcrypt is an adaptive password hashing function. It is based on the Blowfish encryption algorithm and is specifically designed for secure password storage.",
+    "hash_from": "Your string",
+    "salt_count": "Salt count",
+    "compare_title": "Compare string with hash",
+    "compare_from": "Your string",
+    "compare_to": "Your Hash",
+    "match": "Match"
   },
   "encryptDecryptText": {
     "title": "Encrypt / decrypt text",
-    "description": "Encrypt and decrypt text using AES, TripleDES, Rabbit, or RC4."
+    "description": "Encrypt and decrypt text using AES, TripleDES, Rabbit, or RC4.",
+    "encrypt_title": "Encrypt",
+    "decrypt_title": "Decrypt",
+    "text": "Text",
+    "secret_key": "Secret key",
+    "algorithm": "Algorithm",
+    "result": "Result"
   },
   "hmacGenerator": {
     "title": "Hmac generator",
-    "description": "HMAC (Hash-based Message Authentication Code) is a message authentication code based on a hash function and a secret key, used to verify the integrity and authenticity of messages. HMAC can be used with various hash functions such as MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512, and RIPEMD160."
+    "description": "HMAC (Hash-based Message Authentication Code) is a message authentication code based on a hash function and a secret key, used to verify the integrity and authenticity of messages. HMAC can be used with various hash functions such as MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512, and RIPEMD160.",
+    "text": "Plain text",
+    "secret_key": "Secret key",
+    "algorithm": "Hashing function",
+    "output_encode": "Output encoding",
+    "output": "HMAC of your text"
   },
   "crontabGenerator": {
     "title": "Crontab generator",
@@ -165,19 +269,30 @@
   },
   "SQLFormatter": {
     "title": "SQL formatter",
-    "description": "Format disorganized SQL for easier reading and understanding. It can also beautify SQL before code submission, making it easier to maintain."
+    "description": "Format disorganized SQL for easier reading and understanding. It can also beautify SQL before code submission, making it easier to maintain.",
+    "from": "SQL query",
+    "to": "Prettify version of your query",
+    "dialect": "Dialect",
+    "keyword_case": "Keyword case",
+    "indent_style": "Indent style"
   },
   "javascriptMinify": {
     "title": "Javascript minify",
-    "description": "JavaScript code minification refers to the process of removing all unnecessary characters from the source code without changing its functionality. These unnecessary characters often include whitespace, line breaks, comments, and block delimiters, which are used to enhance code readability but are not required for execution."
+    "description": "JavaScript code minification refers to the process of removing all unnecessary characters from the source code without changing its functionality. These unnecessary characters often include whitespace, line breaks, comments, and block delimiters, which are used to enhance code readability but are not required for execution.",
+    "from": "Your code",
+    "to": "Minified code"
   },
   "YAMLFormatter": {
     "title": "YAML formatter",
-    "description": "The YAML formatting tool can beautify and highlight YAML configurations, improving readability and making maintenance easier."
+    "description": "The YAML formatting tool can beautify and highlight YAML configurations, improving readability and making maintenance easier.",
+    "sort_key": "Sort keys",
+    "indent_size": "Indent size"
   },
   "MACAddressLookup": {
     "title": "MAC address lookup",
-    "description": "This tool allows you to quickly and easily look up the vendor and manufacturer of a device based on its MAC address."
+    "description": "This tool allows you to quickly and easily look up the vendor and manufacturer of a device based on its MAC address.",
+    "mac_address": "Mac address",
+    "vendor_info": "Vendor info"
   },
   "textDiff": {
     "title": "Text diff",
@@ -185,6 +300,7 @@
   },
   "xssDefence": {
     "title": "Xss defence",
-    "description": "This tool identifies parts of your code that may be vulnerable to XSS attacks and highlights them. It is very useful and convenient for learning about XSS and defending against XSS attacks."
+    "description": "This tool identifies parts of your code that may be vulnerable to XSS attacks and highlights them. It is very useful and convenient for learning about XSS and defending against XSS attacks.",
+    "remove": "Remove"
   }
 }

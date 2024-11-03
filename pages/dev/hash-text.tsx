@@ -56,7 +56,7 @@ export default function HashText() {
 
   return (
     <>
-      <ToolPageHeader title="Hash text" toolName="hash-text" />
+      <ToolPageHeader title={t("hashText.title")} toolName="hash-text" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">

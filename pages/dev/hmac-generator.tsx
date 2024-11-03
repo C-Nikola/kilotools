@@ -86,11 +86,14 @@ export default function HmacGenerator() {
 
   return (
     <>
-      <ToolPageHeader title="Hmac Generator" toolName="hmac-generator" />
+      <ToolPageHeader
+        title={t("hmacGenerator.title")}
+        toolName="hmac-generator"
+      />
       <OneColumn>
         <Space className="w-full" direction="vertical" size="large">
           <Space className="w-full" direction="vertical">
-            Plain text
+            {t("hmacGenerator.text")}
             <TextAreaUI
               value={input}
               onChange={handleInput}
@@ -101,7 +104,7 @@ export default function HmacGenerator() {
             />
           </Space>
           <Space className="w-full" direction="vertical">
-            Secret key
+            {t("hmacGenerator.secret_key")}
             <Input
               onChange={handleSecreKey}
               value={secretKey}
@@ -111,7 +114,7 @@ export default function HmacGenerator() {
           <Row gutter={16}>
             <Col span={10}>
               <Space direction="vertical" className="w-full">
-                Hashing function
+                {t("hmacGenerator.algorithm")}
                 <Select
                   value={hashFunction}
                   onChange={handleHashFunction}
@@ -125,7 +128,7 @@ export default function HmacGenerator() {
             </Col>
             <Col span={14}>
               <Space direction="vertical" className="w-full">
-                Output encoding
+                {t("hmacGenerator.output_encode")}
                 <Select
                   value={encoding}
                   onChange={handleEncoding}
@@ -153,7 +156,7 @@ export default function HmacGenerator() {
             </Col>
           </Row>
           <Space className="w-full" direction="vertical">
-            HMAC of your text
+            {t("hmacGenerator.output")}
             <TextAreaCopyable
               value={output.result}
               autoSize={{ minRows: 5 }}

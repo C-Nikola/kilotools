@@ -30,7 +30,7 @@ export default function XmlToJson() {
 
   return (
     <>
-      <ToolPageHeader title="XML to JSON" toolName="xml-to-json" />
+      <ToolPageHeader title={t("XMLToJSON.title")} toolName="xml-to-json" />
       <TransformTextAreaToCode
         inputLabel="XML"
         outputLable="json"

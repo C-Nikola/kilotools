@@ -38,11 +38,11 @@ export default function MD5Page() {
 
   return (
     <>
-      <ToolPageHeader title="MD5" toolName="md5" />
+      <ToolPageHeader title={t("MD5.title")} toolName="md5" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
-            <Text strong>Your string</Text>
+            <Text strong>{t("MD5.from")}</Text>
             <TextAreaUI
               isErr={output.isError}
               errMsg={output.result}
@@ -52,7 +52,7 @@ export default function MD5Page() {
             />
           </Space>
           <Space direction="vertical" className="w-full">
-            <Text strong>Result</Text>
+            <Text strong>{t("MD5.to")}</Text>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

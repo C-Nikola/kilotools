@@ -60,6 +60,15 @@ export default function CaseConverter() {
     setInput(e.currentTarget.value);
   };
 
+  const typeOptions = useMemo(() => {
+    return Object.keys(typeList).map((key) => {
+      return {
+        label: t(`caseConverter.${key}`),
+        value: key,
+      };
+    });
+  }, [t]);
+
   return (
     <>
       <ToolPageHeader title="Case Converter" toolName="case-converter" />
@@ -114,59 +123,59 @@ export async function getStaticProps({ locale }: Locale) {
 
 const typeList = {
   Lowercase: {
-    label: "Lowercase:",
+    label: "Lowercase",
     format: (input: string) => input.toLocaleLowerCase(),
   },
   Uppercase: {
-    label: "Uppercase:",
+    label: "Uppercase",
     format: (input: string) => input.toLocaleUpperCase(),
   },
   Camelcase: {
-    label: "Camelcase:",
+    label: "Camelcase",
     format: camelCase,
   },
   Capitalcase: {
-    label: "Capitalcase:",
+    label: "Capitalcase",
     format: capitalCase,
   },
   Constantcase: {
-    label: "Constantcase:",
+    label: "Constantcase",
     format: constantCase,
   },
+  Pascalcase: {
+    label: "Pascalcase",
+    format: pascalCase,
+  },
   Dotcase: {
-    label: "Dotcase:",
+    label: "Dotcase",
     format: dotCase,
   },
   PascalSnakeCase: {
-    label: "PascalSnakeCase:",
+    label: "PascalSnakeCase",
     format: pascalSnakeCase,
   },
   Nocase: {
-    label: "Nocase:",
+    label: "Nocase",
     format: noCase,
   },
   KebabCase: {
-    label: "KebabCase:",
+    label: "KebabCase",
     format: kebabCase,
   },
-  Pascalcase: {
-    label: "Pascalcase:",
-    format: pascalCase,
-  },
   Pathcase: {
-    label: "Pathcase:",
+    label: "Pathcase",
     format: pathCase,
   },
   Sentencecase: {
-    label: "Sentencecase:",
+    label: "Sentencecase",
     format: sentenceCase,
   },
   Snakecase: {
-    label: "Snakecase:",
+    label: "Snakecase",
     format: snakeCase,
   },
   Mockingcase: {
-    label: "Mockingcase:",
+    label: "Mockingcase",
     format: (input: string) =>
       input
         .split("")
@@ -180,10 +189,3 @@ const typeList = {
     format: trainCase,
   },
 };
-
-const typeOptions = Object.keys(typeList).map((key) => {
-  return {
-    label: key,
-    value: key,
-  };
-});

@@ -23,10 +23,10 @@ export default function XssDefence() {
 
   return (
     <>
-      <ToolPageHeader title="Xss defence" toolName="xss-defence" />
+      <ToolPageHeader title={t("xssDefence.title")} toolName="xss-defence" />
       <Full scrollable>
         <Flex className="m-2">
-          <Button onClick={handleRemove}>Remove</Button>
+          <Button onClick={handleRemove}>{t("xssDefence.remove")}</Button>
         </Flex>
         <div
           style={{

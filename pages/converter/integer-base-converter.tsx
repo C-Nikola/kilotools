@@ -56,14 +56,14 @@ export default function IntegerBaseConverter() {
   return (
     <>
       <ToolPageHeader
-        title="Integer base converter"
+        title={t("integerBaseConverter.title")}
         toolName="integer-base-converter"
       />
       <OneColumn>
         <Space direction="vertical" className="w-full">
           <Row gutter={gutter}>
             <Col className="text-right" flex={inputFlex}>
-              Input number
+              {t("integerBaseConverter.input")}
             </Col>
             <Col flex={1}>
               <Input onChange={handleInput} value={input} />
@@ -71,7 +71,7 @@ export default function IntegerBaseConverter() {
           </Row>
           <Row gutter={gutter}>
             <Col className="text-right" flex={inputFlex}>
-              Input base
+              {t("integerBaseConverter.input_base")}
             </Col>
             <Col flex={1}>
               <InputNumber

@@ -22,7 +22,10 @@ export default function JsonFormatter() {
 
   return (
     <>
-      <ToolPageHeader title="JSON Formatter" toolName="json-formatter" />
+      <ToolPageHeader
+        title={t("JSONFormatter.title")}
+        toolName="json-formatter"
+      />
       <Full scrollable>
         <Splitter>
           <Panel>

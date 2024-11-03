@@ -49,7 +49,7 @@ export default function JSONToTOML() {
   }, []);
   return (
     <>
-      <ToolPageHeader title="JSON to TOML" toolName="json-to-toml" />
+      <ToolPageHeader title={t("JSONToTOML.title")} toolName="json-to-toml" />
       <TransformCustom
         inputLabel="JSON"
         outputLable="TOML"

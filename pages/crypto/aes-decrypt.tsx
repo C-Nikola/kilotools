@@ -88,11 +88,11 @@ export default function AESDecrypt() {
 
   return (
     <>
-      <ToolPageHeader title="AES decrypt" toolName="aes-decrypt" />
+      <ToolPageHeader title={t("AESDecrypt.title")} toolName="aes-decrypt" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">
-          <Row gutter={8}>
-            <Col flex="0 1 80px">Mode:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">Mode:</Col>
             <Col flex={1}>
               <Select
                 className="w-full"
@@ -102,8 +102,8 @@ export default function AESDecrypt() {
               />
             </Col>
           </Row>
-          <Row gutter={8}>
-            <Col flex="0 1 80px">Key:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">Key:</Col>
             <Col flex={1}>
               <Input
                 placeholder="Enter your key here..."
@@ -113,8 +113,8 @@ export default function AESDecrypt() {
               />
             </Col>
           </Row>
-          <Row gutter={8}>
-            <Col flex="0 1 80px">IV:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">IV:</Col>
             <Col flex={1}>
               <Input
                 placeholder="Enter your IV here..."
@@ -126,8 +126,8 @@ export default function AESDecrypt() {
           </Row>
           {mode === "AES-GCM" && (
             <>
-              <Row gutter={8}>
-                <Col flex="0 1 80px">Tag length:</Col>
+              <Row gutter={8} align="middle">
+                <Col flex="0 1 110px">{t("AESDecrypt.tag_length")}:</Col>
                 <Col flex={1}>
                   <Select
                     value={tagLength}
@@ -137,8 +137,8 @@ export default function AESDecrypt() {
                   />
                 </Col>
               </Row>
-              <Row gutter={8}>
-                <Col flex="0 1 80px">AdditionalData:</Col>
+              <Row gutter={8} align="middle">
+                <Col flex="0 1 110px">{t("AESDecrypt.additional_data")}:</Col>
                 <Col flex={1}>
                   <Input
                     placeholder="Enter additional data key here..."
@@ -148,8 +148,8 @@ export default function AESDecrypt() {
                   />
                 </Col>
               </Row>
-              <Row gutter={8}>
-                <Col flex="0 1 80px">Tag:</Col>
+              <Row gutter={8} align="middle">
+                <Col flex="0 1 110px">Tag:</Col>
                 <Col flex={1}>
                   <Input
                     placeholder="Enter tag here..."
@@ -162,7 +162,7 @@ export default function AESDecrypt() {
             </>
           )}
           <Space direction="vertical" className="w-full">
-            Encrypted string:
+            <span>{t("AESDecrypt.from")}:</span>
             <TextAreaUI
               placeholder="Enter your string here..."
               allowClear
@@ -175,7 +175,7 @@ export default function AESDecrypt() {
           </Space>
           <Divider />
           <Space direction="vertical" className="w-full">
-            Decrypted string:
+            <span>{t("AESDecrypt.to")}:</span>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

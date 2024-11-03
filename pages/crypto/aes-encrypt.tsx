@@ -6,7 +6,6 @@ import { ChangeEvent, useMemo, useState } from "react";
 import forge from "node-forge";
 import TextAreaUI from "@/components/ui/TextAreaUI";
 import { getErrorMsg } from "@/utils/error";
-
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 
@@ -87,11 +86,11 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
 
   return (
     <>
-      <ToolPageHeader title="AES encrypt" toolName="aes-encrypt" />
+      <ToolPageHeader title={t("AESEncrypt.title")} toolName="aes-encrypt" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">
-          <Row gutter={8}>
-            <Col flex="0 1 80px">Mode:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">Mode:</Col>
             <Col flex={1}>
               <Select
                 className="w-full"
@@ -101,8 +100,8 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
               />
             </Col>
           </Row>
-          <Row gutter={8}>
-            <Col flex="0 1 80px">Key:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">Key:</Col>
             <Col flex={1}>
               <Input
                 placeholder="Enter your key here..."
@@ -112,8 +111,8 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
               />
             </Col>
           </Row>
-          <Row gutter={8}>
-            <Col flex="0 1 80px">IV:</Col>
+          <Row gutter={8} align="middle">
+            <Col flex="0 1 110px">IV:</Col>
             <Col flex={1}>
               <Input
                 placeholder="Enter your IV here..."
@@ -125,8 +124,8 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
           </Row>
           {mode === "AES-GCM" && (
             <>
-              <Row gutter={8}>
-                <Col flex="0 1 80px">Tag length:</Col>
+              <Row gutter={8} align="middle">
+                <Col flex="0 1 110px">{t("AESEncrypt.tag_length")}:</Col>
                 <Col flex={1}>
                   <Select
                     value={tagLength}
@@ -136,8 +135,8 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
                   />
                 </Col>
               </Row>
-              <Row gutter={8}>
-                <Col flex="0 1 80px">AdditionalData:</Col>
+              <Row gutter={8} align="middle">
+                <Col flex="0 1 110px">{t("AESEncrypt.additional_data")}:</Col>
                 <Col flex={1}>
                   <Input
                     placeholder="Enter additional data key here..."
@@ -150,7 +149,7 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
             </>
           )}
           <Space direction="vertical" className="w-full">
-            Your string:
+            <span>{t("AESEncrypt.from")}:</span>
             <TextAreaUI
               placeholder="Enter your string here..."
               allowClear
@@ -163,7 +162,7 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
           </Space>
           <Divider />
           <Space direction="vertical" className="w-full">
-            Encrypted string:
+            <span>{t("AESEncrypt.to")}:</span>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

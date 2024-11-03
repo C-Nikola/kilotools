@@ -39,7 +39,7 @@ export default function JwtParser() {
 
   return (
     <>
-      <ToolPageHeader title="JWT Parser" toolName="jwt-parser" />
+      <ToolPageHeader title={t("JWTParser.title")} toolName="jwt-parser" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">

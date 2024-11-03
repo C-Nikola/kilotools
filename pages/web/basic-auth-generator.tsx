@@ -29,7 +29,7 @@ export default function BasicAuthGenerator() {
   return (
     <>
       <ToolPageHeader
-        title="Basic auth generator"
+        title={t("basicAuthGenerator.title")}
         toolName="basic-auth-genrator"
       />
       <OneColumn>

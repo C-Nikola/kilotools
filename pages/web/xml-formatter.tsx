@@ -54,7 +54,10 @@ export default function XMLFormatter() {
 
   return (
     <>
-      <ToolPageHeader title="XML Formatter" toolName="xml-formatter" />
+      <ToolPageHeader
+        title={t("XMLFormatter.title")}
+        toolName="xml-formatter"
+      />
       <TransformTextAreaToCode
         inputLabel="Your XML"
         outputLable="Formatted XML"
@@ -68,7 +71,7 @@ export default function XMLFormatter() {
         <Row gutter={8} className="px-4">
           <Col span={12}>
             <Space>
-              Collapse content:
+              <span>{t("XMLFormatter.collapse")}:</span>
               <Switch
                 value={collapseContent}
                 onChange={handleChangeCollapseContent}
@@ -77,7 +80,7 @@ export default function XMLFormatter() {
           </Col>
           <Col span={12}>
             <Space>
-              Indent size:
+              <span>{t("XMLFormatter.indent")}:</span>
               <InputNumber
                 value={indentation}
                 onChange={handleChangeIndentation}

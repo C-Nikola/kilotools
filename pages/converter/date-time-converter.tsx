@@ -180,7 +180,7 @@ export default function DateTimeConverter() {
   return (
     <>
       <ToolPageHeader
-        title="Date-time converter"
+        title={t("dateTimeConverter.title")}
         toolName="date-time-converter"
       />
       <Row className="w-full" justify="center">

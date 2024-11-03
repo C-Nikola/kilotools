@@ -31,14 +31,12 @@ export default function MimeType() {
 
   return (
     <>
-      <ToolPageHeader title="MIME types" toolName="mime-types" />
+      <ToolPageHeader title={t("MIMETypes.title")} toolName="mime-types" />
       <TowColumns
         children1={
           <Space direction="vertical" className="w-full">
-            <Title level={2}>Mime type to extension</Title>
-            <Text>
-              Know which file extensions are associated to a mime-type
-            </Text>
+            <Title level={2}>{t("MIMETypes.mime_to_extension")}</Title>
+            <Text>{t("MIMETypes.mime_to_extension_desc")}</Text>
             <Select
               value={mimeTypeInput}
               options={mimeToExtensionsOptions}
@@ -50,13 +48,13 @@ export default function MimeType() {
             {extensionOutput.length > 0 && (
               <Space size="small" direction="vertical">
                 <Text>
-                  Extensions of files with the:
+                  Extensions of files with the
                   <Tag color="processing" bordered={false}>
                     {mimeTypeInput}
                   </Tag>
+                  mime-type:
                 </Text>
                 <Text>
-                  mime-type:
                   {extensionOutput.map((extension) => {
                     return (
                       <Tag color="success" bordered={false} key={extension}>
@@ -71,8 +69,8 @@ export default function MimeType() {
         }
         children2={
           <Space direction="vertical" className="w-full">
-            <Title level={2}> File extension to mime type</Title>
-            <Text>Know which mime type is associated to a file extension</Text>
+            <Title level={2}>{t("MIMETypes.extension_to_mime")}</Title>
+            <Text>{t("MIMETypes.extension_to_mime_desc")}</Text>
             <Select
               value={extensionInput}
               options={extensionToMimeTypeOptions}
@@ -84,13 +82,13 @@ export default function MimeType() {
             {mimeTypeOutput && (
               <Space size="small" direction="vertical">
                 <Text>
-                  Mime type associated to the extension:
+                  Mime type associated to the
                   <Tag color="processing" bordered={false}>
                     {extensionInput}
                   </Tag>
+                  file extension:
                 </Text>
                 <Text>
-                  file extension:
                   <Tag color="success" bordered={false}>
                     {mimeTypeOutput}
                   </Tag>

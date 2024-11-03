@@ -97,7 +97,10 @@ export default function ColorConverter() {
 
   return (
     <>
-      <ToolPageHeader title="Color converter" toolName="color-converter" />
+      <ToolPageHeader
+        title={t("colorConverter.title")}
+        toolName="color-converter"
+      />
       <OneColumn>
         <Space className="w-full" direction="vertical">
           {Object.entries(formats).map(([key, value]) => {

@@ -46,7 +46,7 @@ export default function JsonToCsv() {
 
   return (
     <>
-      <ToolPageHeader title="JSON to CSV" toolName="json-to-csv" />
+      <ToolPageHeader title={t("JSONToCSV.title")} toolName="json-to-csv" />
       <TransformCustom
         inputLabel="JSON"
         outputLable="CSV"

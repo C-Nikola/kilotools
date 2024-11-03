@@ -46,7 +46,7 @@ export default function JsonToYaml() {
   }, []);
   return (
     <>
-      <ToolPageHeader title="JSON to yaml" toolName="json-to-yaml" />
+      <ToolPageHeader title={t("JSONToYAML.title")} toolName="json-to-yaml" />
       <TransformCustom
         inputLabel="JSON"
         outputLable="YAML"

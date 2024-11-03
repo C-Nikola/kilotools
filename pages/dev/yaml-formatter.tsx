@@ -53,7 +53,10 @@ export default function YAMLFormatter() {
 
   return (
     <>
-      <ToolPageHeader title="YAML formatter" toolName="yaml-formatter" />
+      <ToolPageHeader
+        title={t("YAMLFormatter.title")}
+        toolName="yaml-formatter"
+      />
       <TransformTextAreaToCode
         inputLabel="Your YAML"
         outputLable="Formatted YAML"
@@ -67,13 +70,13 @@ export default function YAMLFormatter() {
         <Row gutter={8} className="px-4">
           <Col span={12}>
             <Space>
-              Sort keys :
+              {t("YAMLFormatter.sort_key")}
               <Switch value={sortKeys} onChange={handleChangeSortKeys} />
             </Space>
           </Col>
           <Col span={12}>
             <Space>
-              Indent size :
+              {t("YAMLFormatter.indent_size")}
               <InputNumber
                 value={indentSize}
                 onChange={handleChangeIndentSize}

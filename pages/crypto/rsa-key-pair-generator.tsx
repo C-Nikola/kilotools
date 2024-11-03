@@ -86,15 +86,17 @@ export default function RsaKeyPairGenerator() {
     <>
       {contextHolder}
       <ToolPageHeader
-        title="RSA key pair generator"
+        title={t("rsa.title")}
         toolName="rsa-key-pair-generator"
       />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full mt-6">
           <Row justify="center" gutter={16}>
             <Col flex="0 1 200px">
-              <Row>
-                <Col flex="0 1 30px">Bits:</Col>
+              <Row align="middle" gutter={8}>
+                <Col flex="0 1 100px" className="text-right">
+                  {t("rsa.bits")}:
+                </Col>
                 <Col flex="1">
                   <InputNumber
                     className="w-full"
@@ -112,7 +114,7 @@ export default function RsaKeyPairGenerator() {
                 onClick={handleRefresh}
                 className="w-full"
               >
-                Generate key-pair
+                {t("rsa.generate")}
               </Button>
             </Col>
           </Row>
@@ -120,7 +122,7 @@ export default function RsaKeyPairGenerator() {
           <Row justify="center" gutter={[16, 16]}>
             <Col flex="0 1 600px">
               <Space direction="vertical" className="w-full">
-                Pulic key
+                {t("rsa.public_key")}
                 <TextAreaCopyable
                   readOnly
                   autoSize={{ minRows: 5 }}
@@ -130,7 +132,7 @@ export default function RsaKeyPairGenerator() {
             </Col>
             <Col flex="0 1 600px">
               <Space direction="vertical" className="w-full">
-                Private key
+                {t("rsa.private_key")}
                 <TextAreaCopyable
                   readOnly
                   autoSize={{ minRows: 5 }}

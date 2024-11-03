@@ -31,7 +31,7 @@ export default function EnvToNetlifyToml() {
   return (
     <>
       <ToolPageHeader
-        title=".env to netlify.toml"
+        title={t("envToNetlifyToml.title")}
         toolName="env-to-netlify-toml"
       />
       <TransformTextAreaToCode

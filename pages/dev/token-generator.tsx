@@ -62,7 +62,7 @@ export default function TokenGenerator() {
                         });
                       }}
                     />
-                    Uppercase (ABC...)
+                    {t("tokenGenerator.uppercase")} (ABC...)
                   </Space>
                   <Space>
                     <Switch
@@ -78,10 +78,10 @@ export default function TokenGenerator() {
                         });
                       }}
                     />
-                    Numbers (123...)
+                    {t("tokenGenerator.number")} (123...)
                   </Space>
                   <Space>
-                    Length:
+                    {t("tokenGenerator.length")}:
                     <InputNumber
                       min={1}
                       max={512}
@@ -115,7 +115,7 @@ export default function TokenGenerator() {
                         });
                       }}
                     />
-                    Lowercase (abc...)
+                    {t("tokenGenerator.lowercase")} (abc...)
                   </Space>
                   <Space>
                     <Switch
@@ -131,10 +131,10 @@ export default function TokenGenerator() {
                         });
                       }}
                     />
-                    Symbols (!-;...)
+                    {t("tokenGenerator.symbols")} (!-;...)
                   </Space>
                   <Button onClick={() => generateToken(params)}>
-                    Generate
+                    {t("tokenGenerator.generate")}
                   </Button>
                 </Space>
               </Flex>

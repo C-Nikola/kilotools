@@ -79,12 +79,12 @@ export default function SHA1Page() {
 
   return (
     <>
-      <ToolPageHeader title="SHA1" toolName="sha1" />
+      <ToolPageHeader title={t("SHA.title")} toolName="sha1" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
-            <Row gutter={8}>
-              <Col flex="0 1 100px">Algorithm:</Col>
+            <Row gutter={8} align="middle">
+              <Col flex="0 1 100px">{t("SHA.algorithm")}:</Col>
               <Col flex={1}>
                 <Select
                   className="w-full"
@@ -95,8 +95,8 @@ export default function SHA1Page() {
               </Col>
             </Row>
             {algorithm === SHA_ALGORITHM.SHA3 && (
-              <Row gutter={8}>
-                <Col flex="0 1 100px">Hash length:</Col>
+              <Row align="middle" gutter={8}>
+                <Col flex="0 1 100px">{t("SHA.hash_length")}:</Col>
                 <Col flex={1}>
                   <Select
                     className="w-full"
@@ -109,7 +109,7 @@ export default function SHA1Page() {
             )}
           </Space>
           <Space direction="vertical" className="w-full">
-            <Text strong>Your string</Text>
+            <Text strong>{t("SHA.from")}</Text>
             <TextAreaUI
               isErr={output.isError}
               errMsg={output.result}
@@ -119,7 +119,7 @@ export default function SHA1Page() {
             />
           </Space>
           <Space direction="vertical" className="w-full">
-            <Text strong>Result</Text>
+            <Text strong>{t("SHA.to")}</Text>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

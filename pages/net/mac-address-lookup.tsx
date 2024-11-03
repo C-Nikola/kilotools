@@ -36,13 +36,13 @@ export default function MACAddressLookup() {
   return (
     <>
       <ToolPageHeader
-        title="MAC address lookup"
+        title={t("MACAddressLookup.title")}
         toolName="mac-address-lookup"
       />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
-            Mac address:
+            {t("MACAddressLookup.mac_address")}
             <InputUI
               allowClear
               value={macAddress}
@@ -53,7 +53,7 @@ export default function MACAddressLookup() {
             />
           </Space>
           <Space direction="vertical" className="w-full">
-            Vendor info:
+            {t("MACAddressLookup.vendor_info")}
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

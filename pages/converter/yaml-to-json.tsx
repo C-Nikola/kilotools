@@ -38,7 +38,7 @@ export default function YAMLtoJSON() {
 
   return (
     <>
-      <ToolPageHeader title="YAML to JSON" toolName="yaml-to-json" />
+      <ToolPageHeader title={t("YAMLToJSON.title")} toolName="yaml-to-json" />
       <TransformTextAreaToCode
         inputLabel="YAML"
         outputLable="json"

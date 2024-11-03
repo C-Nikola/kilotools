@@ -55,13 +55,15 @@ export default function ImageToBase64() {
   return (
     <>
       <ToolPageHeader
-        title="Image to base64 converter"
+        title={t("imageToBase64Converter.title")}
         toolName="csv-to-json"
       />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">
-            <h2 className="text-xl font-bold mb-4">String to base64</h2>
+            <h2 className="text-xl font-bold mb-4">
+              {t("imageToBase64Converter.image")}
+            </h2>
             <Space direction="vertical" className="w-full">
               <Dragger
                 onRemove={handleRemove}
@@ -75,7 +77,9 @@ export default function ImageToBase64() {
               </Dragger>
               <Divider />
               <div>
-                <h3 className="text-lg font-bold mb-2">Base64 Output</h3>
+                <h3 className="text-lg font-bold mb-2">
+                  {t("imageToBase64Converter.output")}
+                </h3>
                 <TextAreaCopyable
                   value={base64}
                   shortedValue={base64 ? truncate(base64, 120) : ""}
@@ -86,7 +90,7 @@ export default function ImageToBase64() {
               <Divider />
               <div>
                 <h3 className="text-lg font-bold mb-2">
-                  Use in {"<img>"} tag:
+                  {t("imageToBase64Converter.img_tag")}
                 </h3>
                 <TextAreaCopyable
                   shortedValue={
@@ -106,7 +110,9 @@ export default function ImageToBase64() {
               </div>
               <Divider />
               <div>
-                <h3 className="text-lg font-bold mb-2">Use in CSS</h3>
+                <h3 className="text-lg font-bold mb-2">
+                  {t("imageToBase64Converter.css")}
+                </h3>
                 <TextAreaCopyable
                   shortedValue={
                     base64

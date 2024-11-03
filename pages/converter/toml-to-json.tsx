@@ -43,7 +43,7 @@ export default function TOMLToJSON() {
 
   return (
     <>
-      <ToolPageHeader title="TOML to JSON" toolName="toml-to-json" />
+      <ToolPageHeader title={t("TOMLToJSON.title")} toolName="toml-to-json" />
       <TransformTextAreaToCode
         inputLabel="TOML"
         outputLable="JSON"

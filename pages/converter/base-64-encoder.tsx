@@ -71,14 +71,14 @@ export default function Base64Encoder() {
   return (
     <>
       <NextSeo
-        title="Base64 Encode Decode"
+        title={t("base64EncodeDecode.title")}
         description="A short description goes here."
       />
       <ToolPageHeader title="Base64 Encode/Decode" toolName="base64-encode" />
       <TowColumns
         children1={
           <Space direction="vertical" className="w-full">
-            <Title level={2}>To base64</Title>
+            <Title level={2}>{t("base64EncodeDecode.encode_title")}</Title>
             <Space>
               Url safe
               <Switch
@@ -86,7 +86,7 @@ export default function Base64Encoder() {
                 onChange={handleEncodeUrlSafeChange}
               />
             </Space>
-            <Text strong>Your string:</Text>
+            <Text strong>{t("base64EncodeDecode.encode_from")}</Text>
             <TextAreaUI
               onChange={handleEncodeInput}
               autoSize={{ minRows: 5 }}
@@ -95,7 +95,7 @@ export default function Base64Encoder() {
               isErr={encodeOutput.isErr}
               errMsg={encodeOutput.result}
             />
-            <Text strong>Encoded string:</Text>
+            <Text strong>{t("base64EncodeDecode.encode_to")}</Text>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}
@@ -106,7 +106,7 @@ export default function Base64Encoder() {
         }
         children2={
           <Space direction="vertical" className="w-full">
-            <Title level={2}>From base64</Title>
+            <Title level={2}>{t("base64EncodeDecode.decode_title")}</Title>
             <Space>
               Url safe
               <Switch
@@ -114,7 +114,7 @@ export default function Base64Encoder() {
                 onChange={handleDecodeUrlSafeChange}
               />
             </Space>
-            <Text strong>Your base64 string:</Text>
+            <Text strong>{t("base64EncodeDecode.decode_from")}</Text>
             <TextAreaUI
               onChange={handledecodeInput}
               autoSize={{ minRows: 5 }}
@@ -123,7 +123,7 @@ export default function Base64Encoder() {
               isErr={decodeOutput.isErr}
               errMsg={decodeOutput.result}
             />
-            <Text strong>Encoded string:</Text>
+            <Text strong>{t("base64EncodeDecode.decode_to")}</Text>
             <TextAreaCopyable
               readOnly
               autoSize={{ minRows: 5 }}

@@ -42,7 +42,7 @@ export default function PasswordGenerator() {
   return (
     <>
       <ToolPageHeader
-        title="Password generator"
+        title={t("passwordGenerator.title")}
         toolName="password-generator"
       />
       <Row className="w-full" justify="center">
@@ -65,7 +65,7 @@ export default function PasswordGenerator() {
                         });
                       }}
                     />
-                    Uppercase (ABC...)
+                    {t("passwordGenerator.uppercase")} (ABC...)
                   </Space>
                   <Space>
                     <Switch
@@ -81,10 +81,10 @@ export default function PasswordGenerator() {
                         });
                       }}
                     />
-                    Numbers (123...)
+                    {t("passwordGenerator.number")} (123...)
                   </Space>
                   <Space>
-                    Length:
+                    {t("passwordGenerator.length")}:
                     <InputNumber
                       min={1}
                       max={512}
@@ -118,7 +118,7 @@ export default function PasswordGenerator() {
                         });
                       }}
                     />
-                    Lowercase (abc...)
+                    {t("passwordGenerator.lowercase")} (abc...)
                   </Space>
                   <Space>
                     <Switch
@@ -134,10 +134,10 @@ export default function PasswordGenerator() {
                         });
                       }}
                     />
-                    Symbols (!-;...)
+                    {t("passwordGenerator.symbols")} (!-;...)
                   </Space>
                   <Button onClick={() => generateToken(params)}>
-                    Generate
+                    {t("passwordGenerator.generate")}
                   </Button>
                 </Space>
               </Flex>

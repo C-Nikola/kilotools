@@ -53,7 +53,10 @@ export default function CrontabGenerator() {
 
   return (
     <>
-      <ToolPageHeader title="Crontab generator" toolName="crontab-generator" />
+      <ToolPageHeader
+        title={t("crontabGenerator.title")}
+        toolName="crontab-generator"
+      />
       <Space direction="vertical" size="large" className="w-full">
         <OneColumn>
           <Space direction="vertical" className="w-full">

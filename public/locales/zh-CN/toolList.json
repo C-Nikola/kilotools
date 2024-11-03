@@ -1,35 +1,62 @@
 {
   "rsa": {
     "title": "RSA 公私钥生成",
-    "description": "本工具是一款在线 RSA 密钥生成器，旨在帮助用户快速生成安全的 RSA 公钥和私钥。RSA（Rivest-Shamir-Adleman）是一种广泛使用的公钥加密算法，主要用于数据加密和数字签名。"
+    "description": "本工具是一款在线 RSA 密钥生成器，旨在帮助用户快速生成安全的 RSA 公钥和私钥。RSA（Rivest-Shamir-Adleman）是一种广泛使用的公钥加密算法，主要用于数据加密和数字签名。",
+    "generate": "生成",
+    "bits": "长度",
+    "public_key": "公钥",
+    "private_key": "密钥"
   },
   "MD5": {
     "title": "MD5 加密",
-    "description": "使用MD5 (Message-Digest Algorithm 5)对文本内容进行哈希/散列计算。"
+    "description": "使用MD5 (Message-Digest Algorithm 5)对文本内容进行哈希/散列计算。",
+    "from": "你的字符串",
+    "to": "结果"
   },
   "SHA": {
     "title": "SHA 加密",
-    "description": "使用 SHA1、SHA3、SHA224、SHA256、SHA384、SHA512 对文本内容进行哈希 / 散列计算。"
+    "description": "使用 SHA1、SHA3、SHA224、SHA256、SHA384、SHA512 对文本内容进行哈希 / 散列计算。",
+    "algorithm": "算法",
+    "hash_length": "Hash 长度",
+    "from": "你的字符串",
+    "to": "结果"
   },
   "RIPEMD": {
     "title": "RIPEMD",
-    "description": "基于MD4结构的散列函数，输出160位（20字节）哈希值"
+    "description": "基于MD4结构的散列函数，输出160位（20字节）哈希值",
+    "from": "你的字符串",
+    "to": "结果"
   },
   "AESEncrypt": {
     "title": "AES 加密",
-    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。"
+    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。",
+    "tag_length": "Tag 长度",
+    "additional_data": "额外数据",
+    "from": "你的字符串",
+    "to": "加密结果"
   },
   "AESDecrypt": {
     "title": "AES 解密",
-    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。"
+    "description": "使用 AES(Advanced Encryption Standard, 高级加密标准)加密算法加密和解密文本。AES 是一种基于代换-置换网络的对称加密算法。",
+    "tag_length": "Tag 长度",
+    "additional_data": "额外数据",
+    "from": "已加密的字符串",
+    "to": "解密结果"
   },
   "base64EncodeDecode": {
     "title": "Base64 编码/解码",
-    "description": "Base64 编码/解码工具用于将二进制数据编码为文本字符串或将 Base64 编码的文本解码回二进制数据，常用于数据传输和存储。"
+    "description": "Base64 编码/解码工具用于将二进制数据编码为文本字符串或将 Base64 编码的文本解码回二进制数据，常用于数据传输和存储。",
+    "encode_title": "转码",
+    "decode_title": "解码",
+    "encode_from": "你的字符串",
+    "encode_to": "转码结果",
+    "decode_from": "你的 Base64 字符串",
+    "decode_to": "解码结果"
   },
   "CSVToJSON": {
     "title": "CSV 转 JSON",
-    "description": "csv是一种纯文本文件格式，通常用于存储表格数据。它由逗号分隔的值组成，每个值用双引号括起来，并且每行表示一个记录。"
+    "description": "csv是一种纯文本文件格式，通常用于存储表格数据。它由逗号分隔的值组成，每个值用双引号括起来，并且每行表示一个记录。",
+    "lowercase": "小写 key"
   },
   "JSONToCSV": {
     "title": "JSON 转 CSV",
@@ -57,11 +84,17 @@
   },
   "imageToBase64Converter": {
     "title": "图片转 Base64",
-    "description": "图片转 BASE64 编码工具可以方便地把各种图片格式转为 Base64，你只需拖动图片到指定区域，即可完成操作！图片的 BASE64 编码就是可以将一幅图片数据编码成一串字符串，使用该字符串代替图片地址，从而不需要使用图片的 URL 地址。"
+    "description": "图片转 BASE64 编码工具可以方便地把各种图片格式转为 Base64，你只需拖动图片到指定区域，即可完成操作！图片的 BASE64 编码就是可以将一幅图片数据编码成一串字符串，使用该字符串代替图片地址，从而不需要使用图片的 URL 地址。",
+    "image": "Image",
+    "output": "Base64 结果",
+    "img_tag": "在 <img> 中使用",
+    "css": "在 CSS 中使用"
   },
   "integerBaseConverter": {
     "title": "进制转换",
-    "description": "进制转换工具支持用户对整数在任意进制之间进行转换，内置了常用的 2、8、10、16、64 等进制。"
+    "description": "进制转换工具支持用户对整数在任意进制之间进行转换，内置了常用的 2、8、10、16、64 等进制。",
+    "input": "输入数字",
+    "input_base": "输入进制"
   },
   "colorConverter": {
     "title": "颜色格式转换",
@@ -69,11 +102,32 @@
   },
   "caseConverter": {
     "title": "大小写转换",
-    "description": "大小写转换工具快速地把字符串转换成目标格式，对转换命名格式、标题格式等非常方便。包括了大小写、驼峰、首字母大写、常量、连字符、Pascal 命名、路径格式、下划线格式等"
+    "description": "大小写转换工具快速地把字符串转换成目标格式，对转换命名格式、标题格式等非常方便。包括了大小写、驼峰、首字母大写、常量、连字符、Pascal 命名、路径格式、下划线格式等",
+    "Lowercase": "小写",
+    "Uppercase": "大写",
+    "Camelcase": "驼峰",
+    "Capitalcase": "首字母大写",
+    "Constantcase": "常量",
+    "Dotcase": "点连接符",
+    "Pascalcase": "Pascal",
+    "PascalSnakeCase": "PascalSnakeCase",
+    "Nocase": "Nocase",
+    "KebabCase": "KebabCase",
+    "Pathcase": "Pathcase",
+    "Sentencecase": "Sentencecase",
+    "Snakecase": "Snakecase",
+    "Mockingcase": "Mockingcase",
+    "TrainCase": "TrainCase"
   },
   "textToUnicode": {
     "title": "文本转 unicode",
-    "description": "文本与 unicode 码转换小工具可以方便查询字符的 unicode 码，或查询 unicode 码对应的字符。可以将文本批量转换为 unicode 码，或 unicode 码批量转换为文本"
+    "description": "文本与 unicode 码转换小工具可以方便查询字符的 unicode 码，或查询 unicode 码对应的字符。可以将文本批量转换为 unicode 码，或 unicode 码批量转换为文本",
+    "encode_title": "文本转 unicode",
+    "decode_title": "unicode 转文本",
+    "encode_from": "文本",
+    "encode_to": "转换结果",
+    "decode_from": "unicode 字符串",
+    "decode_to": "转换结果"
   },
   "XMLToJSON": {
     "title": "XML 转 JSON",
@@ -89,7 +143,13 @@
   },
   "escapeHTMLEntities": {
     "title": "HTML 转义",
-    "description": "将 HTML 中的 <、>、&、\" 和 ' 进行转义，方便将其放到其它格式的代码中，避免报错。"
+    "description": "将 HTML 中的 <、>、&、\" 和 ' 进行转义，方便将其放到其它格式的代码中，避免报错。",
+    "escape_title": "转义",
+    "unescape_title": "反转义",
+    "escape_from": "HTML",
+    "escape_to": "转义结果",
+    "unescape_from": "已转义的字符串",
+    "unescape_to": "反转义结果"
   },
   "YAMLToTOML": {
     "title": "YAML 转 TOML",
@@ -113,15 +173,22 @@
   },
   "URLEncodeDecoder": {
     "title": "URL 编码/解码",
-    "description": "为了让某些特殊文本能在 URL 中使用，你可以使用该工具对你的 URL 进行编码。也可以使用该工具对获取到的 URL 进行解码"
+    "description": "为了让某些特殊文本能在 URL 中使用，你可以使用该工具对你的 URL 进行编码。也可以使用该工具对获取到的 URL 进行解码",
+    "encode_title": "URL 编码",
+    "decode_title": "URL 解码"
   },
   "URLParser": {
     "title": "URL 解析",
-    "description": "该工具旨在让用户清晰方便地查看 URL 各个组成部分的数据。例如：协议、域名、端口、query 参数等。"
+    "description": "该工具旨在让用户清晰方便地查看 URL 各个组成部分的数据。例如：协议、域名、端口、query 参数等。",
+    "your_url": "你的 url"
   },
   "MIMETypes": {
     "title": "MIME 类型查询",
-    "description": "该工具方便用户在文件类型和 MIME 类型之间快速互相转换。并提供了快捷查询表格"
+    "description": "该工具方便用户在文件类型和 MIME 类型之间快速互相转换。并提供了快捷查询表格",
+    "mime_to_extension": "MIME 类型转文件类型",
+    "mime_to_extension_desc": "查询与 MIME 类型对应的文件类型",
+    "extension_to_mime": "文件类型转 MIME 类型",
+    "extension_to_mime_desc": "查询与文件类型对应的 MIME 类型"
   },
   "basicAuthGenerator": {
     "title": "基本身份验证生成器",
@@ -129,7 +196,9 @@
   },
   "XMLFormatter": {
     "title": "XML 格式化",
-    "description": "方便快速地格式化，高亮 XML，对查看 XML 数据非常有用"
+    "description": "方便快速地格式化，高亮 XML，对查看 XML 数据非常有用",
+    "indent": "缩进",
+    "collapse": "收起内容"
   },
   "JWTParser": {
     "title": "JWT 解析",
@@ -137,11 +206,23 @@
   },
   "tokenGenerator": {
     "title": "token 生成",
-    "description": "按用户选择的字符种类和长度随机生成 token，可以包含大小写、数字、特殊符号"
+    "description": "按用户选择的字符种类和长度随机生成 token，可以包含大小写、数字、特殊符号",
+    "uppercase": "大写",
+    "lowercase": "小写",
+    "number": "数字",
+    "symbols": "符号",
+    "length": "长度",
+    "generate": "生成"
   },
   "passwordGenerator": {
     "title": "强密码生成器",
-    "description": "可以按需求生成随机强密码，完全在浏览器本地执行，不会上传数据，安全有效。可以自定义长度，包含大小写、数字、特殊符号"
+    "description": "可以按需求生成随机强密码，完全在浏览器本地执行，不会上传数据，安全有效。可以自定义长度，包含大小写、数字、特殊符号",
+    "uppercase": "大写",
+    "lowercase": "小写",
+    "number": "数字",
+    "symbols": "符号",
+    "length": "长度",
+    "generate": "生成"
   },
   "hashText": {
     "title": "Hash 文本",
@@ -149,15 +230,32 @@
   },
   "bcrypt": {
     "title": "Bcrypt",
-    "description": "Bcrypt 作为一个自适应密码哈希函数。它基于 Blowfish 加密算法，并特别设计用于安全存储密码。"
+    "description": "Bcrypt 作为一个自适应密码哈希函数。它基于 Blowfish 加密算法，并特别设计用于安全存储密码。",
+    "hash_from": "字符串",
+    "salt_count": "Salt count",
+    "compare_title": "比较字符串和 Hash",
+    "compare_from": "字符串",
+    "compare_to": "Hash",
+    "match": "匹配"
   },
   "encryptDecryptText": {
     "title": "文本加解密",
-    "description": "使用 AES、TripleDES、Rabbit 或 RC4 对文本进行加解密"
+    "description": "使用 AES、TripleDES、Rabbit 或 RC4 对文本进行加解密",
+    "encrypt_title": "加密",
+    "decrypt_title": "解密",
+    "text": "文本",
+    "secret_key": "密钥",
+    "algorithm": "算法",
+    "result": "结果"
   },
   "hmacGenerator": {
     "title": "HMAC 生成器",
-    "description": "HMAC（Hash-based Message Authentication Code）是一种基于哈希函数和密钥的消息认证码，用于验证消息的完整性和真实性。HMAC可以与多种哈希函数结合使用，例如MD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512和RIPEMD160。"
+    "description": "HMAC（Hash-based Message Authentication Code）是一种基于哈希函数和密钥的消息认证码，用于验证消息的完整性和真实性。HMAC可以与多种哈希函数结合使用，例如MD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512和RIPEMD160。",
+    "text": "文本",
+    "secret_key": "密钥",
+    "algorithm": "算法",
+    "output_encode": "输出编码",
+    "output": "HMAC"
   },
   "crontabGenerator": {
     "title": "cron 表达式生成器",
@@ -165,19 +263,30 @@
   },
   "SQLFormatter": {
     "title": "SQL 格式化",
-    "description": "将混乱的 SQL 格式化，方便阅读理解，也能在代码提交前对 SQL 进行美化，便于维护"
+    "description": "将混乱的 SQL 格式化，方便阅读理解，也能在代码提交前对 SQL 进行美化，便于维护",
+    "from": "SQL 语句",
+    "to": "美化版本",
+    "dialect": "SQL 类型",
+    "keyword_case": "关键词大小写",
+    "indent_style": "缩进类型"
   },
   "javascriptMinify": {
     "title": "JS 压缩",
-    "description": "JavaScript 代码压缩是指去除源代码里的所有不必要的字符，而不改变其功能的过程。这些不必要的字符通常包括空格字符，换行字符，注释以及块分隔符等用来增加可读性的代码，但并不需要它来执行。"
+    "description": "JavaScript 代码压缩是指去除源代码里的所有不必要的字符，而不改变其功能的过程。这些不必要的字符通常包括空格字符，换行字符，注释以及块分隔符等用来增加可读性的代码，但并不需要它来执行。",
+    "from": "你的代码",
+    "to": "压缩代码"
   },
   "YAMLFormatter": {
     "title": "YAML 格式化",
-    "description": "YAML 格式化工具可以对 YAML 配置进行美化、高亮，提升可读性，方便维护"
+    "description": "YAML 格式化工具可以对 YAML 配置进行美化、高亮，提升可读性，方便维护",
+    "sort_key": "根据 key 排序",
+    "indent_size": "缩进"
   },
   "MACAddressLookup": {
     "title": "MAC 地址查找",
-    "description": "该工具让你方便快速地通过 MAC 地址查找到设备的供应商和制造商"
+    "description": "该工具让你方便快速地通过 MAC 地址查找到设备的供应商和制造商",
+    "mac_address": "MAC 地址",
+    "vendor_info": "供应商信息"
   },
   "textDiff": {
     "title": "文本差异比较",
@@ -185,6 +294,7 @@
   },
   "xssDefence": {
     "title": "XSS 防御",
-    "description": "该工具会找出你的代码中可能会受到 XSS 攻击的部分，并高亮。对学习 XSS 知识和防御 XSS 工具非常有用且方便"
+    "description": "该工具会找出你的代码中可能会受到 XSS 攻击的部分，并高亮。对学习 XSS 知识和防御 XSS 工具非常有用且方便",
+    "remove": "移除"
   }
 }

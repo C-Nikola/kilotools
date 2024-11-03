@@ -64,7 +64,7 @@ export default function JSONToXML() {
   }, []);
   return (
     <>
-      <ToolPageHeader title="JSON to XML" toolName="json-to-xml" />
+      <ToolPageHeader title={t("JSONToXML.title")} toolName="json-to-xml" />
       <TransformCustom
         inputLabel="JSON"
         outputLable="XML"

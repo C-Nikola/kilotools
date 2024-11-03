@@ -63,15 +63,15 @@ export default function EscapeHTMLEntities() {
   return (
     <>
       <ToolPageHeader
-        title="Escape HTML entities"
+        title={t("escapeHTMLEntities.title")}
         toolName="escape-html-entities"
       />
       <TowColumns
         children1={
           <Space className="w-full" direction="vertical" size="large">
-            <Title level={2}>Escape html entities</Title>
+            <Title level={2}>{t("escapeHTMLEntities.escape_title")}</Title>
             <Space className="w-full" direction="vertical">
-              <Text strong>Your string :</Text>
+              <Text strong>{t("escapeHTMLEntities.escape_from")}</Text>
               <TextAreaUI
                 autoSize={{ minRows: 5 }}
                 value={escapeInput}
@@ -82,7 +82,7 @@ export default function EscapeHTMLEntities() {
               />
             </Space>
             <Space className="w-full" direction="vertical">
-              <Text strong>Your string escaped :</Text>
+              <Text strong> {t("escapeHTMLEntities.escape_to")}</Text>
               <TextAreaCopyable
                 autoSize={{ minRows: 5 }}
                 readOnly
@@ -94,9 +94,9 @@ export default function EscapeHTMLEntities() {
         }
         children2={
           <Space className="w-full" direction="vertical" size="large">
-            <Title level={2}>Unescape html entities</Title>
+            <Title level={2}>{t("escapeHTMLEntities.unescape_title")}</Title>
             <Space className="w-full" direction="vertical">
-              <Text strong>Your escaped string :</Text>
+              <Text strong>{t("escapeHTMLEntities.unescape_from")}</Text>
               <TextAreaUI
                 placeholder="Paste your html entities here..."
                 autoSize={{ minRows: 5 }}
@@ -107,7 +107,7 @@ export default function EscapeHTMLEntities() {
               />
             </Space>
             <Space className="w-full" direction="vertical">
-              <Text strong>Your string unescaped :</Text>
+              <Text strong>{t("escapeHTMLEntities.unescape_to")}</Text>
               <TextAreaCopyable
                 autoSize={{ minRows: 5 }}
                 readOnly

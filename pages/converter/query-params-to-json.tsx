@@ -38,7 +38,7 @@ export default function QueryParamsToJSON() {
   return (
     <>
       <ToolPageHeader
-        title="Query Params to JSON"
+        title={t("queryParamsToJSON.title")}
         toolName="query-params-to-json"
       />
       <TransformTextAreaToCode

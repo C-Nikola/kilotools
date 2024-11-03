@@ -17,7 +17,7 @@ export default function TextDiff() {
   const { t } = useTranslation("toolList");
   return (
     <>
-      <ToolPageHeader title="Text diff" toolName="text-diff" />
+      <ToolPageHeader title={t("textDiff.title")} toolName="text-diff" />
       <Full scrollable>
         <DiffEditorUI original={defaultOriginal} modified={defaultModified} />
       </Full>

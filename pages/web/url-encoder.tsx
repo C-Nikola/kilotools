@@ -40,11 +40,14 @@ export default function UrlEncoder() {
 
   return (
     <>
-      <ToolPageHeader title="URL encoder/decoder" toolName="url-encoder" />
+      <ToolPageHeader
+        title={t("URLEncodeDecoder.title")}
+        toolName="url-encoder"
+      />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">
-            <h2>URL encoder</h2>
+            <h2>{t("URLEncodeDecoder.encode_title")}</h2>
             <Space direction="vertical" className="w-full">
               <TextArea
                 onChange={handleEncode}
@@ -62,7 +65,7 @@ export default function UrlEncoder() {
         </Col>
         <Col flex="0 1 600px">
           <Card className="w-full">
-            <h2>URL decoder</h2>
+            <h2>{t("URLEncodeDecoder.decode_title")}</h2>
             <Space direction="vertical" className="w-full">
               <TextArea
                 onChange={handleDecode}

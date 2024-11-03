@@ -35,10 +35,13 @@ export default function JavascriptMinify() {
 
   return (
     <>
-      <ToolPageHeader title="Javascript minify" toolName="javascript-minify" />
+      <ToolPageHeader
+        title={t("javascriptMinify.title")}
+        toolName="javascript-minify"
+      />
       <TransformCustom
-        inputLabel={"Your code"}
-        outputLable={"Minified code"}
+        inputLabel={t("javascriptMinify.from")}
+        outputLable={t("javascriptMinify.to")}
         from={
           <OverlayScrollbarsComponent
             element="div"

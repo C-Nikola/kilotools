@@ -38,7 +38,7 @@ export default function YAMLToTOML() {
 
   return (
     <>
-      <ToolPageHeader title="YAML to TOML" toolName="yaml-to-toml" />
+      <ToolPageHeader title={t("YAMLToTOML.title")} toolName="yaml-to-toml" />
       <TransformCustom
         inputLabel="YAML"
         outputLable="TOML"

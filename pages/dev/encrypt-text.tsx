@@ -72,14 +72,17 @@ export default function EncryptText() {
 
   return (
     <>
-      <ToolPageHeader title="Encrypt / decrypt text" toolName="encrypt-text" />
+      <ToolPageHeader
+        title={t("encryptDecryptText.title")}
+        toolName="encrypt-text"
+      />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">
             <Space direction="vertical" className="w-full">
-              <Title level={2}>Encrypt</Title>
+              <Title level={2}>{t("encryptDecryptText.encrypt_title")}</Title>
               <Space size="small" className="w-full" direction="vertical">
-                Text:
+                {t("encryptDecryptText.text")}
                 <TextArea
                   placeholder="Your string to encrypt..."
                   value={encryptInput}
@@ -87,8 +90,8 @@ export default function EncryptText() {
                   autoSize={{ minRows: 5 }}
                 />
               </Space>
-              <Row>
-                <Col flex="0 1 80px">Secret key:</Col>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("encryptDecryptText.secret_key")}:</Col>
                 <Col flex={1}>
                   <Input
                     placeholder="Your secret key here"
@@ -97,8 +100,8 @@ export default function EncryptText() {
                   />
                 </Col>
               </Row>
-              <Row>
-                <Col flex="0 1 80px">Algorithm:</Col>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("encryptDecryptText.algorithm")}:</Col>
                 <Col flex={1}>
                   <Select
                     value={encryptAlgo}
@@ -113,7 +116,7 @@ export default function EncryptText() {
               </Row>
               <Divider />
               <Space className="w-full" direction="vertical">
-                Encrypted text:
+                {t("encryptDecryptText.result")}
                 <TextAreaCopyable
                   placeholder="Your string encrypted"
                   value={encryptOutput}
@@ -127,9 +130,9 @@ export default function EncryptText() {
         <Col flex="0 1 600px">
           <Card className="w-full">
             <Space size="small" direction="vertical" className="w-full">
-              <Title level={2}>Decrypt</Title>
+              <Title level={2}>{t("encryptDecryptText.decrypt_title")}</Title>
               <Space size="small" className="w-full" direction="vertical">
-                Text:
+                {t("encryptDecryptText.text")}
                 <TextArea
                   placeholder="Your string to decrypt..."
                   onChange={handleDecryptInput}
@@ -137,8 +140,8 @@ export default function EncryptText() {
                   autoSize={{ minRows: 5 }}
                 />
               </Space>
-              <Row>
-                <Col flex="0 1 80px">Secret key:</Col>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("encryptDecryptText.secret_key")}:</Col>
                 <Col flex={1}>
                   <Input
                     placeholder="Your secret key here"
@@ -147,8 +150,8 @@ export default function EncryptText() {
                   />
                 </Col>
               </Row>
-              <Row>
-                <Col flex="0 1 80px">Algorithm:</Col>
+              <Row align="middle">
+                <Col flex="0 1 80px">{t("encryptDecryptText.algorithm")}:</Col>
                 <Col flex={1}>
                   <Select
                     onChange={handleDecryptAlgo}
@@ -163,7 +166,7 @@ export default function EncryptText() {
               </Row>
               <Divider />
               <Space className="w-full" direction="vertical">
-                Decrypted text:
+                {t("encryptDecryptText.result")}
                 <TextAreaCopyable
                   placeholder="Your string decrypted..."
                   value={decryptOutput}

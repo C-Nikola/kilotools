@@ -36,13 +36,16 @@ export default function TexToUnicode() {
 
   return (
     <>
-      <ToolPageHeader title="Text to unicode" toolName="text-to-unicode" />
+      <ToolPageHeader
+        title={t("textToUnicode.title")}
+        toolName="text-to-unicode"
+      />
       <TowColumns
         children1={
           <Space direction="vertical" size="large" className="w-full">
-            <Title level={2}>Text to Unicode</Title>
+            <Title level={2}>{t("textToUnicode.encode_title")}</Title>
             <Space direction="vertical" className="w-full">
-              <Text>Enter text to convert to unicode</Text>
+              <Text>{t("textToUnicode.encode_from")}</Text>
               <TextArea
                 value={textInput}
                 onChange={handleTextInputChange}
@@ -51,7 +54,7 @@ export default function TexToUnicode() {
               />
             </Space>
             <Space direction="vertical" className="w-full">
-              <Text>Unicode from your text</Text>
+              <Text>{t("textToUnicode.encode_to")}</Text>
               <TextAreaCopyable
                 placeholder="The unicode..."
                 readOnly
@@ -63,9 +66,9 @@ export default function TexToUnicode() {
         }
         children2={
           <Space direction="vertical" size="large" className="w-full">
-            <Title level={2}>Unicode to Text</Title>
+            <Title level={2}>{t("textToUnicode.decode_title")}</Title>
             <Space direction="vertical" className="w-full">
-              <Text> Enter unicode to convert to text</Text>
+              <Text>{t("textToUnicode.decode_from")}</Text>
               <TextArea
                 value={unicodeInput}
                 onChange={handleUnicodeInputChange}
@@ -74,7 +77,7 @@ export default function TexToUnicode() {
               />
             </Space>
             <Space direction="vertical" className="w-full">
-              <Text>Text from your Unicode</Text>
+              <Text>{t("textToUnicode.decode_to")}</Text>
               <TextAreaCopyable
                 placeholder="The text..."
                 readOnly

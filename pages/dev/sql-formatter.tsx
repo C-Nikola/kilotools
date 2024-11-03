@@ -66,11 +66,14 @@ export default function SQLFormatter() {
 
   return (
     <>
-      <ToolPageHeader title="SQL formatter" toolName="sql-formatter" />
+      <ToolPageHeader
+        title={t("SQLFormatter.title")}
+        toolName="sql-formatter"
+      />
       <TransformTextAreaToCode
         input={rawSQL}
-        inputLabel="SQL query"
-        outputLable="Prettify version of your query"
+        inputLabel={t("SQLFormatter.from")}
+        outputLable={t("SQLFormatter.to")}
         outputLanguage="sql"
         output={output.result}
         inputPlaceholder="Paste your SQL query here..."
@@ -80,7 +83,7 @@ export default function SQLFormatter() {
         <Row gutter={8} className="px-4">
           <Col span={8}>
             <Space direction="vertical" className="w-full">
-              Dialect
+              {t("SQLFormatter.dialect")}
               <Select
                 className="w-full"
                 value={config.language}
@@ -105,7 +108,7 @@ export default function SQLFormatter() {
           </Col>
           <Col span={8}>
             <Space direction="vertical" className="w-full">
-              Keyword case
+              {t("SQLFormatter.keyword_case")}
               <Select
                 className="w-full"
                 onChange={handleChangeKeywordCase}
@@ -120,7 +123,7 @@ export default function SQLFormatter() {
           </Col>
           <Col span={8}>
             <Space direction="vertical" className="w-full">
-              Indent style
+              {t("SQLFormatter.indent_style")}
               <Select
                 className="w-full"
                 onChange={handleChangeIndentStyle}

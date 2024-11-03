@@ -53,11 +53,11 @@ export default function UrlParser() {
 
   return (
     <>
-      <ToolPageHeader title="URL parser" toolName="url-parser" />
+      <ToolPageHeader title={t("URLParser.title")} toolName="url-parser" />
       <OneColumn>
         <Space direction="vertical" className="w-full">
           <Space direction="vertical" className="w-full">
-            Your url to parse:
+            {t("URLParser.your_url")}
             <TextAreaUI
               autoSize={{ minRows: 3 }}
               onChange={handleInputChange}

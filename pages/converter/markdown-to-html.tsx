@@ -45,7 +45,10 @@ export default function MarkdownToHtml() {
 
   return (
     <>
-      <ToolPageHeader toolName="markdown-to-html" title="Markdown to HTML" />
+      <ToolPageHeader
+        toolName="markdown-to-html"
+        title={t("markdownToHTML.title")}
+      />
       <Full scrollable>
         <Splitter>
           <Panel>
