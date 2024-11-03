@@ -11,15 +11,8 @@ import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { useDispatch } from "react-redux";
 import { initialFavoriteTools } from "@/store/favoriteTools/favoriteToolsReducer";
 import LanguageSelector from "./LanguageSelector";
-import { TFunction } from "i18next";
 
-export default function Layout({
-  t,
-  children,
-}: {
-  t: TFunction;
-  children?: ReactNode;
-}) {
+export default function Layout({ children }: { children?: ReactNode }) {
   const [showMenu, setShowMenu] = useState(true);
   const [showDrawerMenu, setShowDrawerMenu] = useState(false);
   const handleShowMenu = () => {
@@ -45,7 +38,7 @@ export default function Layout({
         sm={{ flex: showMenu ? "240px" : "0px" }}
         className={styles.sideMenuCol}
       >
-        <SideMenu t={t} />
+        <SideMenu />
       </Col>
 
       <Col className={styles.indexMain} flex={1}>
@@ -54,7 +47,7 @@ export default function Layout({
             <Button onClick={handleShowMenu} icon={<MenuOutlined />} />
           </Col>
           <Col flex={1}>
-            <CMDK t={t} />
+            <CMDK />
           </Col>
           <Button
             icon={<GithubOutlined />}
@@ -89,7 +82,7 @@ export default function Layout({
         }}
         width={240}
       >
-        <SideMenu t={t} />
+        <SideMenu />
       </Drawer>
     </Row>
   );

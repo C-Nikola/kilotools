@@ -9,6 +9,7 @@ import Link from "next/link";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import styles from "@/styles/components/SideMenu.module.scss";
 import { TFunction } from "i18next";
+import { withTranslation } from "next-i18next";
 
 const SideMenu = ({ t }: { t: TFunction }) => {
   const { value: localFavoriteTools } = useLocalStorageListener<string[]>(
@@ -96,4 +97,4 @@ const SideMenu = ({ t }: { t: TFunction }) => {
   );
 };
 
-export default SideMenu;
+export default withTranslation("toolList")(SideMenu);

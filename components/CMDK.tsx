@@ -7,6 +7,7 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { tools } from "@/utils/toolsList";
 import { useRouter } from "next/navigation";
 import { TFunction } from "i18next";
+import { withTranslation } from "next-i18next";
 
 const CMDK = ({ t }: { t: TFunction }) => {
   const [open, setOpen] = useState(false);
@@ -114,4 +115,4 @@ const CommandInput = ({ ...props }) => {
 
 CommandInput.displayName = Command.Input.displayName;
 
-export default CMDK;
+export default withTranslation("toolList")(CMDK);
