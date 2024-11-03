@@ -1,5 +1,5 @@
 import { SearchOutlined } from "@ant-design/icons";
-import { Input, Modal, Space, Tag } from "antd";
+import { Empty, Input, Modal, Space, Tag } from "antd";
 import { Command } from "cmdk";
 import { forwardRef, useEffect, useState, useRef, LegacyRef } from "react";
 import styles from "@/styles/components/CMDK.module.scss";
@@ -61,7 +61,9 @@ const CMDK = ({ t }: { t: TFunction }) => {
           >
             <div className={styles.commandContent}>
               <Command.List>
-                <Command.Empty>No results found.</Command.Empty>
+                <Command.Empty>
+                  <Empty className="pt-4" description={false} />
+                </Command.Empty>
                 <Command.Group
                   heading="Tools"
                   className={styles.commandGroupHeading}
