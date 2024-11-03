@@ -1,47 +1,74 @@
 {
   "rsa": {
     "title": "RSA-sleutelpaar generator",
-    "description": "Deze tool is een online RSA-sleutelpaar generator die is ontworpen om gebruikers te helpen snel veilige RSA publieke en private sleutels te genereren. RSA (Rivest-Shamir-Adleman) is een veelgebruikte cryptografische algoritme met openbare sleutel, voornamelijk gebruikt voor gegevensversleuteling en digitale handtekeningen."
+    "description": "Deze tool is een online RSA-sleutelgenerator die is ontworpen om gebruikers te helpen snel veilige RSA-publieke en privé-sleutels te genereren. RSA (Rivest-Shamir-Adleman) is een veelgebruikte cryptografische algoritme met publieke sleutel, voornamelijk gebruikt voor gegevensversleuteling en digitale handtekeningen.",
+    "generate": "Sleutelpaar genereren",
+    "bits": "Bits",
+    "public_key": "Publieke sleutel",
+    "private_key": "Privé sleutel"
   },
   "MD5": {
     "title": "MD5 versleuteling",
-    "description": "Gebruik MD5 (Message-Digest Algorithm 5) om hash-berekeningen uit te voeren op tekstinhoud."
+    "description": "Gebruik MD5 (Message-Digest Algorithm 5) om hash-berekeningen uit te voeren op tekstinhoud.",
+    "from": "Uw string",
+    "to": "Resultaat"
   },
   "SHA": {
     "title": "SHA versleuteling",
-    "description": "Gebruik SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 om hash-berekeningen uit te voeren op tekstinhoud."
+    "description": "Gebruik SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 om hash-berekeningen uit te voeren op tekstinhoud.",
+    "algorithm": "Algoritme",
+    "hash_length": "Hash lengte",
+    "from": "Uw string",
+    "to": "Resultaat"
   },
   "RIPEMD": {
     "title": "RIPEMD",
-    "description": "Een hashfunctie gebaseerd op de MD4-structuur, die een hashwaarde van 160 bits (20 bytes) genereert."
+    "description": "Een hashfunctie gebaseerd op de MD4-structuur, die een 160-bits (20-byte) hashwaarde oplevert.",
+    "from": "Uw string",
+    "to": "Resultaat"
   },
   "AESEncrypt": {
     "title": "AES versleuteling",
-    "description": "Gebruik het AES (Advanced Encryption Standard) algoritme om tekst te versleutelen en te ontsleutelen. AES is een symmetrisch versleutelingsalgoritme gebaseerd op substitutie-permutatienetwerken."
+    "description": "Gebruik het AES (Advanced Encryption Standard) algoritme om tekst te versleutelen en te ontsleutelen. AES is een symmetrisch versleutelingsalgoritme gebaseerd op substitutie-permutatienetwerken.",
+    "tag_length": "Tag lengte",
+    "additional_data": "Aanvullende gegevens",
+    "from": "Uw string",
+    "to": "Versleutelde string"
   },
   "AESDecrypt": {
     "title": "AES ontsleuteling",
-    "description": "Gebruik het AES (Advanced Encryption Standard) algoritme om tekst te versleutelen en te ontsleutelen. AES is een symmetrisch versleutelingsalgoritme gebaseerd op substitutie-permutatienetwerken."
+    "description": "Gebruik het AES (Advanced Encryption Standard) algoritme om tekst te versleutelen en te ontsleutelen. AES is een symmetrisch versleutelingsalgoritme gebaseerd op substitutie-permutatienetwerken.",
+    "tag_length": "Tag lengte",
+    "additional_data": "Aanvullende gegevens",
+    "from": "Versleutelde string",
+    "to": "Ontsleutelde string"
   },
   "base64EncodeDecode": {
     "title": "Base64 coderen/decoderen",
-    "description": "De Base64 codeer/decoderingstool wordt gebruikt om binaire gegevens naar een tekststring te coderen of Base64-gecodeerde tekst terug naar binaire gegevens te decoderen, vaak gebruikt voor gegevensoverdracht en -opslag."
+    "description": "De Base64 encodeer/decoderingstool wordt gebruikt om binaire gegevens te coderen naar een tekststring of Base64-gecodeerde tekst terug te decoderen naar binaire gegevens, vaak gebruikt voor gegevensoverdracht en -opslag.",
+    "encode_title": "Naar base64",
+    "decode_title": "Van base64",
+    "encode_from": "Uw string",
+    "encode_to": "Gecodeerde string",
+    "decode_from": "Uw base64 string",
+    "decode_to": "Gedecodeerde string"
   },
   "CSVToJSON": {
     "title": "CSV naar JSON converter",
-    "description": "CSV is een eenvoudig tekstbestandsformaat dat vaak wordt gebruikt om tabelgegevens op te slaan. Het bestaat uit waarden gescheiden door komma's, waarbij elke waarde tussen dubbele aanhalingstekens staat en elke regel een record vertegenwoordigt."
+    "description": "CSV is een platte tekstbestandindeling die vaak wordt gebruikt om tabelgegevens op te slaan. Het bestaat uit waarden die door komma's gescheiden zijn, waarbij elke waarde tussen dubbele aanhalingstekens staat, en elke regel een record vertegenwoordigt.",
+    "lowercase": "Kleine letters voor sleutels"
   },
   "JSONToCSV": {
     "title": "JSON naar CSV converter",
-    "description": "CSV is een eenvoudig tekstbestandsformaat dat vaak wordt gebruikt om tabelgegevens op te slaan. Het bestaat uit waarden gescheiden door komma's, waarbij elke waarde tussen dubbele aanhalingstekens staat en elke regel een record vertegenwoordigt."
+    "description": "CSV is een platte tekstbestandindeling die vaak wordt gebruikt om tabelgegevens op te slaan. Het bestaat uit waarden die door komma's gescheiden zijn, waarbij elke waarde tussen dubbele aanhalingstekens staat, en elke regel een record vertegenwoordigt."
   },
   "YAMLToJSON": {
     "title": "YAML naar JSON converter",
-    "description": "YAML/JSON conversie is een gebruiksvriendelijke online tool die bestanden van YAML-formaat naar JSON-formaat converteert. Het biedt naadloze conversie tussen JSON en YAML, wat het geschikt maakt voor gebruikers die gegevens moeten beheren, overdragen of valideren."
+    "description": "De YAML/JSON-conversietool is een gebruiksvriendelijke online tool waarmee bestanden van het YAML-formaat naar het JSON-formaat kunnen worden geconverteerd. Het biedt naadloze conversie tussen JSON en YAML, wat het geschikt maakt voor gebruikers die gegevens moeten verwerken, overdragen of valideren."
   },
   "JSONToYAML": {
     "title": "JSON naar YAML converter",
-    "description": "YAML/JSON conversie is een gebruiksvriendelijke online tool die bestanden van JSON-formaat naar YAML-formaat converteert. Het biedt naadloze conversie tussen JSON en YAML, wat het geschikt maakt voor gebruikers die gegevens moeten beheren, overdragen of valideren."
+    "description": "De YAML/JSON-conversietool is een gebruiksvriendelijke online tool waarmee bestanden van het JSON-formaat naar het YAML-formaat kunnen worden geconverteerd. Het biedt naadloze conversie tussen JSON en YAML, wat het geschikt maakt voor gebruikers die gegevens moeten verwerken, overdragen of valideren."
   },
   "dateTimeConverter": {
     "title": "Datum-tijd converter",
@@ -49,142 +76,231 @@
   },
   "queryParamsToJSON": {
     "title": "Query Parameters naar JSON converter",
-    "description": "Converteer eenvoudig URL-queryparameters naar JSON-indeling, waardoor het voor gebruikers gemakkelijker wordt om ze te bekijken en te gebruiken."
+    "description": "Converteer URL-queryparameters gemakkelijk naar JSON-indeling, waardoor het eenvoudiger wordt voor gebruikers om ze te bekijken en te gebruiken."
   },
   "envToNetlifyToml": {
     "title": ".env naar netlify.toml converter",
-    "description": "Deze tool maakt snelle en eenvoudige conversie van .env-configuratiebestanden naar TOML-configuratiebestanden mogelijk. TOML is ontworpen als een minimaal configuratiebestandsformaat dat gemakkelijk leesbaar is en ondubbelzinnig wordt omgezet naar hashtabellen. TOML kan eenvoudig worden geparseerd naar datastructuren in verschillende programmeertalen."
+    "description": "Deze tool maakt snelle en eenvoudige conversie van .env-configuratiebestanden naar TOML-configuratiebestanden mogelijk. TOML is ontworpen om een minimale configuratiebestandsindeling te zijn die gemakkelijk leesbaar is en ondubbelzinnig naar hashtabellen kan worden omgezet. TOML kan eenvoudig worden geparseerd in datastructuren in verschillende talen."
   },
   "imageToBase64Converter": {
     "title": "Afbeelding naar Base64 converter",
-    "description": "De afbeelding naar BASE64-coderingstool stelt je in staat om eenvoudig verschillende afbeeldingsformaten naar Base64 te converteren. Sleep de afbeelding eenvoudig naar het aangegeven gebied om de bewerking te voltooien! De Base64-codering van een afbeelding codeert de afbeeldingsgegevens naar een string, zodat je de string kunt gebruiken in plaats van de afbeeldings-URL."
+    "description": "De afbeelding naar BASE64-encoder maakt het eenvoudig om verschillende afbeeldingsformaten naar Base64 te converteren. Sleep de afbeelding eenvoudig naar het aangewezen gebied om de bewerking te voltooien! De Base64-codering van een afbeelding codeert de afbeeldingsgegevens naar een string, zodat u de string in plaats van de afbeeldings-URL kunt gebruiken.",
+    "image": "Afbeelding",
+    "output": "Base64 Uitvoer",
+    "img_tag": "Gebruik in <img> tag",
+    "css": "Gebruik in CSS"
   },
   "integerBaseConverter": {
-    "title": "Geheel getal basisconverter",
-    "description": "De basisconversietool stelt gebruikers in staat om gehele getallen tussen verschillende bases te converteren, met ingebouwde ondersteuning voor veelgebruikte bases zoals 2, 8, 10, 16 en 64."
+    "title": "Geheel getal basis converter",
+    "description": "De basisconversietool stelt gebruikers in staat om gehele getallen tussen verschillende bases te converteren, met ingebouwde ondersteuning voor vaak gebruikte bases zoals 2, 8, 10, 16 en 64.",
+    "input": "Invoernummer",
+    "input_base": "Invoerbasis"
   },
   "colorConverter": {
-    "title": "Kleurconverter",
-    "description": "De kleurconversietool stelt gebruikers in staat om snel hun kleurwaarden naar andere formaten te converteren en geeft de standaardnaam van de kleur. Ondersteunde formaten zijn onder andere hex, rgb, hsl, hwb, lch en cmyk."
+    "title": "Kleur converter",
+    "description": "De kleurconversietool stelt gebruikers in staat om snel hun kleurwaarden naar andere formaten te converteren en biedt de standaardnaam van de kleur. Ondersteunde formaten zijn onder andere hex, rgb, hsl, hwb, lch en cmyk."
   },
   "caseConverter": {
-    "title": "Lettertype converter",
-    "description": "De lettertypeconversietool stelt je in staat om tekst snel om te zetten in het gewenste formaat. Het is zeer handig voor het converteren van naamgevingsconventies, titelindelingen, enz. Het bevat hoofdletters, kleine letters, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase en snake_case."
+    "title": "Hoofdletter converter",
+    "description": "De hoofdletterconversietool stelt u in staat om tekst snel om te zetten in het gewenste formaat. Het is erg handig voor het converteren van naamgevingsconventies, titelindelingen, enz. Het omvat hoofdletters, kleine letters, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase en snake_case.",
+    "Lowercase": "Kleine letters",
+    "Uppercase": "Hoofdletters",
+    "Camelcase": "Camelcase",
+    "Capitalcase": "Capitalcase",
+    "Constantcase": "Constantcase",
+    "Dotcase": "Dotcase",
+    "Pascalcase": "Pascalcase",
+    "PascalSnakeCase": "PascalSnakeCase",
+    "Nocase": "Nocase",
+    "KebabCase": "KebabCase",
+    "Pathcase": "Pathcase",
+    "Sentencecase": "Sentencecase",
+    "Snakecase": "Snakecase",
+    "Mockingcase": "Mockingcase",
+    "TrainCase": "TrainCase"
   },
   "textToUnicode": {
     "title": "Tekst naar Unicode converter",
-    "description": "De tekst naar Unicode convertertool stelt je in staat om gemakkelijk de Unicode-code van een teken op te zoeken of het teken te vinden dat overeenkomt met een Unicode-code. Het kan tekst in batch converteren naar Unicode-codes of Unicode-codes in batch converteren naar tekst."
+    "description": "De tekst naar Unicode-convertertool stelt u in staat om eenvoudig de Unicode-code voor een teken op te zoeken of het teken te vinden dat overeenkomt met een Unicode-code. Het kan tekst in batch omzetten naar Unicode-codes of Unicode-codes in batch omzetten naar tekst.",
+    "encode_title": "Tekst naar Unicode",
+    "decode_title": "Unicode naar Tekst",
+    "encode_from": "Voer tekst in om naar unicode te converteren",
+    "encode_to": "Unicode van uw tekst",
+    "decode_from": "Voer unicode in om naar tekst te converteren",
+    "decode_to": "Tekst van uw Unicode"
   },
   "XMLToJSON": {
     "title": "XML naar JSON converter",
-    "description": "Deze tool maakt snelle conversie van XML naar JSON mogelijk. Extensible Markup Language (XML) stelt je in staat om gegevens op een deelbare manier te definiëren en op te slaan. XML ondersteunt de uitwisseling van informatie tussen computersystemen (zoals websites, databases en toepassingen van derden). Vooraf gedefinieerde regels vereenvoudigen het proces van het verzenden van gegevens in XML-formaat via een netwerk, en de ontvanger kan deze regels gebruiken om de gegevens nauwkeurig en efficiënt te lezen."
+    "description": "Deze tool maakt snelle conversie van XML naar JSON mogelijk. Extensible Markup Language (XML) stelt u in staat om gegevens op een deelbare manier te definiëren en op te slaan. XML ondersteunt de uitwisseling van informatie tussen computersystemen (zoals websites, databases en externe applicaties). Vooraf gedefinieerde regels vereenvoudigen het proces van het verzenden van gegevens in XML-indeling via elk netwerk, en de ontvanger kan deze regels gebruiken om de gegevens nauwkeurig en efficiënt te lezen."
   },
   "JSONToXML": {
     "title": "JSON naar XML converter",
-    "description": "Deze tool maakt snelle conversie van JSON naar XML mogelijk. Extensible Markup Language (XML) stelt je in staat om gegevens op een deelbare manier te definiëren en op te slaan. XML ondersteunt de uitwisseling van informatie tussen computersystemen (zoals websites, databases en toepassingen van derden). Vooraf gedefinieerde regels vereenvoudigen het proces van het verzenden van gegevens in XML-formaat via een netwerk, en de ontvanger kan deze regels gebruiken om de gegevens nauwkeurig en efficiënt te lezen."
+    "description": "Deze tool maakt snelle conversie van JSON naar XML mogelijk. Extensible Markup Language (XML) stelt u in staat om gegevens op een deelbare manier te definiëren en op te slaan. XML ondersteunt de uitwisseling van informatie tussen computersystemen (zoals websites, databases en externe applicaties). Vooraf gedefinieerde regels vereenvoudigen het proces van het verzenden van gegevens in XML-indeling via elk netwerk, en de ontvanger kan deze regels gebruiken om de gegevens nauwkeurig en efficiënt te lezen."
   },
   "markdownToHTML": {
     "title": "Markdown naar HTML converter",
-    "description": "Deze tool stelt je in staat om je Markdown-inhoud snel om te zetten naar HTML-indeling, en biedt ook de optie om het als een PDF-bestand te downloaden."
+    "description": "Deze tool stelt u in staat om uw Markdown-inhoud snel om te zetten naar HTML-indeling en biedt ook de optie om het als een PDF-bestand te downloaden."
   },
   "escapeHTMLEntities": {
-    "title": "HTML-entiteiten ontsnappen",
-    "description": "Ontsnap HTML-entiteiten zoals <, >, &, \" en ' zodat ze veilig in andere codeformaten kunnen worden ingevoegd, waardoor fouten worden voorkomen."
+    "title": "HTML-entiteiten escapen",
+    "description": "Escape HTML-entiteiten zoals <, >, &, \" en ' zodat ze veilig in andere codeformaten kunnen worden ingevoegd, waardoor fouten worden voorkomen.",
+    "escape_title": "HTML-entiteiten escapen",
+    "unescape_title": "HTML-entiteiten unescapen",
+    "escape_from": "Uw string",
+    "escape_to": "Uw geëscapede string",
+    "unescape_from": "Uw geëscapede string",
+    "unescape_to": "Uw ongeëscapede string"
   },
   "YAMLToTOML": {
     "title": "YAML naar TOML converter",
-    "description": "De YAML naar TOML online tool stelt je in staat om eenvoudig YAML-formaat code om te zetten naar TOML-formaat."
+    "description": "De YAML naar TOML online tool stelt u in staat om eenvoudig YAML-formaatcode om te zetten naar TOML-formaat."
   },
   "TOMLToYAML": {
     "title": "TOML naar YAML converter",
-    "description": "De TOML naar YAML online tool stelt je in staat om eenvoudig TOML-formaat code om te zetten naar YAML-formaat."
+    "description": "De TOML naar YAML online tool stelt u in staat om eenvoudig TOML-formaatcode om te zetten naar YAML-formaat."
   },
   "JSONToTOML": {
     "title": "JSON naar TOML converter",
-    "description": "Deze tool stelt gebruikers in staat om eenvoudig JSON-gegevens om te zetten naar TOML-configuratie, wat handig is voor gebruikers die tussen verschillende configuratiebestandsformaten moeten converteren."
+    "description": "Deze tool stelt gebruikers in staat om eenvoudig JSON-gegevens om te zetten naar TOML-configuratie, wat handig is voor gebruikers die moeten converteren tussen verschillende configuratiebestandsindelingen."
   },
   "TOMLToJSON": {
     "title": "TOML naar JSON converter",
-    "description": "Deze tool stelt gebruikers in staat om eenvoudig TOML-configuraties om te zetten naar JSON-indeling, waardoor het handig is voor gebruikers die TOML-configuraties moeten bekijken."
+    "description": "Deze tool stelt gebruikers in staat om eenvoudig TOML-configuraties om te zetten naar JSON-indeling, wat handig is voor gebruikers die TOML-configuraties moeten bekijken."
   },
   "JSONFormatter": {
     "title": "JSON Formatter",
-    "description": "De JSON-viewer kan je JSON-gegevens verfraaien en biedt handige functies zoals zoeken, inklappen, uitvouwen, pad, vervangen en markeren."
+    "description": "De JSON-viewer kan uw JSON-gegevens verfraaien en biedt handige functies zoals zoeken, samenvouwen, uitvouwen, pad, vervangen en markeren."
   },
   "URLEncodeDecoder": {
     "title": "URL Encoder/decoder",
-    "description": "Om bepaalde speciale tekst in URL's te kunnen gebruiken, kun je deze tool gebruiken om je URL te coderen. Je kunt deze tool ook gebruiken om ontvangen URL's te decoderen."
+    "description": "Om bepaalde speciale tekst in URL's te kunnen gebruiken, kunt u deze tool gebruiken om uw URL te coderen. U kunt deze tool ook gebruiken om ontvangen URL's te decoderen.",
+    "encode_title": "URL encoder",
+    "decode_title": "URL decoder"
   },
   "URLParser": {
     "title": "URL parser",
-    "description": "Deze tool is ontworpen om gebruikers in staat te stellen om duidelijk en eenvoudig de verschillende componenten van een URL te bekijken, zoals protocol, domein, poort, queryparameters, enz."
+    "description": "Deze tool is ontworpen om gebruikers in staat te stellen om de verschillende componenten van een URL duidelijk en eenvoudig te bekijken, zoals protocol, domein, poort, queryparameters, enz.",
+    "your_url": "Uw URL om te parseren"
   },
   "MIMETypes": {
     "title": "MIME-typen",
-    "description": "Deze tool stelt gebruikers in staat om snel tussen bestandstypen en MIME-typen te converteren. Het biedt ook een snelle opzoektafel."
+    "description": "Deze tool stelt gebruikers in staat om snel te converteren tussen bestandstypen en MIME-typen. Het biedt ook een snelle opzoektabel.",
+    "mime_to_extension": "Mime-type naar extensie",
+    "mime_to_extension_desc": "Weet welke bestandsextensies zijn gekoppeld aan een mime-type",
+    "extension_to_mime": "Bestandsextensie naar mime-type",
+    "extension_to_mime_desc": "Weet welk mime-type is gekoppeld aan een bestandsextensie"
   },
   "basicAuthGenerator": {
-    "title": "Basis authenticatie generator",
-    "description": "Genereer snel basis authenticatiegegevens door een gebruikersnaam en wachtwoord in te voeren, wat handig is voor het verzenden van verzoeken in tools zoals PostMan."
+    "title": "Basisauthenticatie generator",
+    "description": "Genereer snel basisauthenticatiegegevens door een gebruikersnaam en wachtwoord in te voeren, wat handig is voor het verzenden van verzoeken in tools zoals PostMan."
   },
   "XMLFormatter": {
     "title": "XML formatter",
-    "description": "Formatteer en markeer snel XML, wat handig is voor het bekijken van XML-gegevens."
+    "description": "Formatteer en markeer XML snel, wat handig is voor het bekijken van XML-gegevens.",
+    "indent": "Inspringgrootte",
+    "collapse": "Inhoud samenvouwen"
   },
   "JWTParser": {
     "title": "JWT parser",
-    "description": "Parseer snel JWT om de Header, Payload en Handtekening te verkrijgen, die kunnen worden gebruikt om JWT-gegevens te extraheren en te verifiëren, wat het handig maakt voor foutopsporing."
+    "description": "Parseer JWT snel om de Header, Payload en Signature te verkrijgen, die kunnen worden gebruikt om JWT-gegevens te extraheren en te verifiëren, wat handig is voor het debuggen.",
+    "uppercase": "Hoofdletters",
+    "lowercase": "Kleine letters",
+    "number": "Nummers",
+    "symbols": "Symbolen",
+    "length": "Lengte",
+    "generate": "Genereren"
   },
   "tokenGenerator": {
-    "title": "Token Generator",
-    "description": "Genereer willekeurig tokens op basis van de keuze van het type tekens en de lengte door de gebruiker. Het kan hoofdletters, kleine letters, cijfers en speciale symbolen bevatten."
+    "title": "Token generator",
+    "description": "Genereer willekeurig tokens op basis van de keuze van de gebruiker voor tekenreekstypen en lengte. Het kan hoofdletters, kleine letters, nummers en speciale symbolen bevatten.",
+    "uppercase": "Hoofdletters",
+    "lowercase": "Kleine letters",
+    "number": "Nummers",
+    "symbols": "Symbolen",
+    "length": "Lengte",
+    "generate": "Genereren"
   },
   "passwordGenerator": {
     "title": "Wachtwoord generator",
-    "description": "Genereer willekeurige sterke wachtwoorden volgens je behoeften. Alle bewerkingen worden lokaal in de browser uitgevoerd, wat veiligheid en privacy garandeert. Je kunt de lengte aanpassen en hoofdletters, kleine letters, cijfers en speciale symbolen opnemen."
+    "description": "Genereer willekeurig sterke wachtwoorden volgens uw behoeften. Alle bewerkingen worden lokaal in de browser uitgevoerd, wat veiligheid en privacy garandeert. U kunt de lengte aanpassen en hoofdletters, kleine letters, nummers en speciale symbolen opnemen.",
+    "uppercase": "Hoofdletters",
+    "lowercase": "Kleine letters",
+    "number": "Nummers",
+    "symbols": "Symbolen",
+    "length": "Lengte",
+    "generate": "Genereren"
   },
   "hashText": {
-    "title": "Hash tekst",
+    "title": "Tekst hashen",
     "description": "Versleutel tekst met behulp van MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 of RIPEMD160."
   },
   "bcrypt": {
     "title": "Bcrypt",
-    "description": "Bcrypt is een adaptieve wachtwoord-hashfunctie. Het is gebaseerd op het Blowfish-versleutelingsalgoritme en is specifiek ontworpen voor veilige wachtwoordopslag."
+    "description": "Bcrypt is een adaptieve wachtwoord-hashfunctie. Het is gebaseerd op het Blowfish-versleutelingsalgoritme en is specifiek ontworpen voor veilige wachtwoordopslag.",
+    "hash_from": "Uw string",
+    "salt_count": "Aantal zout",
+    "compare_title": "Vergelijk string met hash",
+    "compare_from": "Uw string",
+    "compare_to": "Uw Hash",
+    "match": "Overeenkomst"
   },
   "encryptDecryptText": {
-    "title": "Versleutel / ontsleutel tekst",
-    "description": "Versleutel en ontsleutel tekst met behulp van AES, TripleDES, Rabbit of RC4."
+    "title": "Tekst versleutelen/ontsleutelen",
+    "description": "Versleutel en ontsleutel tekst met behulp van AES, TripleDES, Rabbit of RC4.",
+    "encrypt_title": "Versleutelen",
+    "decrypt_title": "Ontsleutelen",
+    "text": "Tekst",
+    "secret_key": "Geheime sleutel",
+    "algorithm": "Algoritme",
+    "result": "Resultaat"
   },
   "hmacGenerator": {
     "title": "Hmac generator",
-    "description": "HMAC (Hash-based Message Authentication Code) is een berichtverificatiecode gebaseerd op een hashfunctie en een geheime sleutel, gebruikt om de integriteit en authenticiteit van berichten te verifiëren. HMAC kan worden gebruikt met verschillende hashfuncties zoals MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 en RIPEMD160."
+    "description": "HMAC (Hash-based Message Authentication Code) is een berichtauthenticatiecode gebaseerd op een hashfunctie en een geheime sleutel, gebruikt om de integriteit en authenticiteit van berichten te verifiëren. HMAC kan worden gebruikt met verschillende hashfuncties zoals MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 en RIPEMD160.",
+    "text": "Platte tekst",
+    "secret_key": "Geheime sleutel",
+    "algorithm": "Hashfunctie",
+    "output_encode": "Uitvoer codering",
+    "output": "HMAC van uw tekst"
   },
   "crontabGenerator": {
     "title": "Crontab generator",
-    "description": "Voer een cron-expressie in en vertaal deze naar een leesbare taal, met een snelle referentietabel voor cron-expressies."
+    "description": "Voer een cron-expressie in en vertaal deze naar een voor mensen leesbare taal, met een snelle referentietabel voor cron-expressies."
   },
   "SQLFormatter": {
     "title": "SQL formatter",
-    "description": "Formatteer ongeorganiseerde SQL voor eenvoudigere leesbaarheid en begrip. Het kan ook SQL verfraaien voordat code wordt ingediend, waardoor het gemakkelijker te onderhouden is."
+    "description": "Formatteer ongeorganiseerde SQL voor eenvoudigere leesbaarheid en begrip. Het kan ook SQL verfraaien vóór het indienen van code, waardoor het gemakkelijker te onderhouden is.",
+    "from": "SQL-query",
+    "to": "Verfraaide versie van uw query",
+    "dialect": "Dialect",
+    "keyword_case": "Hoofdlettergebruik voor sleutelwoorden",
+    "indent_style": "Inspringstijl"
   },
   "javascriptMinify": {
-    "title": "Javascript minify",
-    "description": "JavaScript-code minificatie verwijst naar het proces van het verwijderen van alle onnodige tekens uit de broncode zonder de functionaliteit ervan te wijzigen. Deze onnodige tekens omvatten vaak spaties, regeleinden, opmerkingen en blokafscheiders, die worden gebruikt om de leesbaarheid van de code te verbeteren maar niet nodig zijn voor de uitvoering."
+    "title": "Javascript verkleinen",
+    "description": "JavaScript-codeverkleining verwijst naar het proces van het verwijderen van alle onnodige tekens uit de broncode zonder de functionaliteit te veranderen. Deze onnodige tekens omvatten vaak witruimte, regeleinden, opmerkingen en blokbegrenzers, die worden gebruikt om de leesbaarheid van de code te verbeteren maar niet nodig zijn voor de uitvoering.",
+    "from": "Uw code",
+    "to": "Verkleinde code"
   },
   "YAMLFormatter": {
     "title": "YAML formatter",
-    "description": "De YAML-formatteertool kan YAML-configuraties verfraaien en markeren, waardoor de leesbaarheid wordt verbeterd en het onderhoud eenvoudiger wordt."
+    "description": "De YAML-formatteringstool kan YAML-configuraties verfraaien en markeren, waardoor de leesbaarheid verbetert en het onderhoud eenvoudiger wordt.",
+    "sort_key": "Sorteer sleutels",
+    "indent_size": "Inspringgrootte"
   },
   "MACAddressLookup": {
     "title": "MAC-adres opzoeken",
-    "description": "Deze tool stelt je in staat om snel en eenvoudig de leverancier en fabrikant van een apparaat op te zoeken op basis van het MAC-adres."
+    "description": "Met deze tool kunt u snel en eenvoudig de leverancier en fabrikant van een apparaat opzoeken op basis van het MAC-adres.",
+    "mac_address": "MAC-adres",
+    "vendor_info": "Leveranciersinformatie"
   },
   "textDiff": {
     "title": "Tekstverschillen",
-    "description": "Voer tekst in twee editors in en het vergelijkingsalgoritme zal de verschillen markeren, wat het zeer handig maakt voor gebruikers die tekst moeten vergelijken."
+    "description": "Voer tekst in twee editors in en het vergelijkingsalgoritme zal de verschillen markeren, wat zeer handig is voor gebruikers die tekst moeten vergelijken."
   },
   "xssDefence": {
-    "title": "XSS verdediging",
-    "description": "Deze tool identificeert delen van je code die mogelijk kwetsbaar zijn voor XSS-aanvallen en markeert ze. Het is zeer nuttig en handig voor het leren over XSS en het verdedigen tegen XSS-aanvallen."
+    "title": "Xss verdediging",
+    "description": "Deze tool identificeert delen van uw code die mogelijk kwetsbaar zijn voor XSS-aanvallen en markeert deze. Het is erg nuttig en handig voor het leren over XSS en het verdedigen tegen XSS-aanvallen.",
+    "remove": "Verwijderen"
   }
 }

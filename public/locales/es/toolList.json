@@ -1,35 +1,62 @@
 {
   "rsa": {
     "title": "Generador de pares de claves RSA",
-    "description": "Esta herramienta es un generador de claves RSA en línea diseñado para ayudar a los usuarios a generar rápidamente claves públicas y privadas RSA seguras. RSA (Rivest-Shamir-Adleman) es un algoritmo criptográfico de clave pública ampliamente utilizado, principalmente para el cifrado de datos y firmas digitales."
+    "description": "Esta herramienta es un generador de claves RSA en línea diseñado para ayudar a los usuarios a generar rápidamente claves públicas y privadas RSA seguras. RSA (Rivest-Shamir-Adleman) es un algoritmo criptográfico de clave pública ampliamente utilizado, principalmente para la encriptación de datos y las firmas digitales.",
+    "generate": "Generar par de claves",
+    "bits": "Bits",
+    "public_key": "Clave pública",
+    "private_key": "Clave privada"
   },
   "MD5": {
     "title": "Cifrado MD5",
-    "description": "Utilice MD5 (Message-Digest Algorithm 5) para realizar cálculos hash sobre el contenido de texto."
+    "description": "Usa MD5 (Algoritmo de Resumen de Mensaje 5) para realizar cálculos hash en contenido de texto.",
+    "from": "Tu cadena",
+    "to": "Resultado"
   },
   "SHA": {
     "title": "Cifrado SHA",
-    "description": "Utilice SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 para realizar cálculos hash sobre el contenido de texto."
+    "description": "Usa SHA1, SHA3, SHA224, SHA256, SHA384, SHA512 para realizar cálculos hash en contenido de texto.",
+    "algorithm": "Algoritmo",
+    "hash_length": "Longitud del hash",
+    "from": "Tu cadena",
+    "to": "Resultado"
   },
   "RIPEMD": {
     "title": "RIPEMD",
-    "description": "Una función hash basada en la estructura MD4, que genera un valor hash de 160 bits (20 bytes)."
+    "description": "Una función hash basada en la estructura MD4, que genera un valor hash de 160 bits (20 bytes).",
+    "from": "Tu cadena",
+    "to": "Resultado"
   },
   "AESEncrypt": {
     "title": "Cifrado AES",
-    "description": "Utilice el algoritmo AES (Advanced Encryption Standard) para cifrar y descifrar texto. AES es un algoritmo de cifrado simétrico basado en redes de sustitución-permutación."
+    "description": "Usa el algoritmo AES (Estándar de Cifrado Avanzado) para cifrar y descifrar texto. AES es un algoritmo de cifrado simétrico basado en redes de sustitución-permutación.",
+    "tag_length": "Longitud de la etiqueta",
+    "additional_data": "Datos adicionales",
+    "from": "Tu cadena",
+    "to": "Cadena cifrada"
   },
   "AESDecrypt": {
     "title": "Descifrado AES",
-    "description": "Utilice el algoritmo AES (Advanced Encryption Standard) para cifrar y descifrar texto. AES es un algoritmo de cifrado simétrico basado en redes de sustitución-permutación."
+    "description": "Usa el algoritmo AES (Estándar de Cifrado Avanzado) para cifrar y descifrar texto. AES es un algoritmo de cifrado simétrico basado en redes de sustitución-permutación.",
+    "tag_length": "Longitud de la etiqueta",
+    "additional_data": "Datos adicionales",
+    "from": "Cadena cifrada",
+    "to": "Cadena descifrada"
   },
   "base64EncodeDecode": {
-    "title": "Codificación/Decodificación Base64",
-    "description": "La herramienta de codificación/decodificación Base64 se utiliza para codificar datos binarios en una cadena de texto o decodificar texto codificado en Base64 de vuelta en datos binarios, comúnmente utilizado para la transmisión y almacenamiento de datos."
+    "title": "Codificar/Decodificar Base64",
+    "description": "La herramienta de codificación/decodificación Base64 se utiliza para codificar datos binarios en una cadena de texto o decodificar texto codificado en Base64 de vuelta a datos binarios, comúnmente utilizado para la transmisión y almacenamiento de datos.",
+    "encode_title": "Codificar a base64",
+    "decode_title": "Decodificar de base64",
+    "encode_from": "Tu cadena",
+    "encode_to": "Cadena codificada",
+    "decode_from": "Tu cadena base64",
+    "decode_to": "Cadena decodificada"
   },
   "CSVToJSON": {
     "title": "Convertidor de CSV a JSON",
-    "description": "CSV es un formato de archivo de texto plano comúnmente utilizado para almacenar datos tabulares. Consiste en valores separados por comas, con cada valor entre comillas dobles, y cada línea representa un registro."
+    "description": "CSV es un formato de archivo de texto plano comúnmente utilizado para almacenar datos tabulares. Consiste en valores separados por comas, con cada valor entre comillas dobles, y cada línea representa un registro.",
+    "lowercase": "Claves en minúsculas"
   },
   "JSONToCSV": {
     "title": "Convertidor de JSON a CSV",
@@ -37,154 +64,243 @@
   },
   "YAMLToJSON": {
     "title": "Convertidor de YAML a JSON",
-    "description": "La conversión YAML/JSON es una herramienta en línea fácil de usar que convierte archivos del formato YAML al formato JSON. Permite una conversión fluida entre JSON y YAML, lo que la hace adecuada para usuarios que necesitan manejar, transferir o validar datos."
+    "description": "La conversión de YAML/JSON es una herramienta en línea fácil de usar que convierte archivos del formato YAML al formato JSON. Permite una conversión fluida entre JSON y YAML, lo que la hace adecuada para los usuarios que necesitan manejar, transferir o validar datos."
   },
   "JSONToYAML": {
     "title": "Convertidor de JSON a YAML",
-    "description": "La conversión YAML/JSON es una herramienta en línea fácil de usar que convierte archivos del formato JSON al formato YAML. Permite una conversión fluida entre JSON y YAML, lo que la hace adecuada para usuarios que necesitan manejar, transferir o validar datos."
+    "description": "La conversión de YAML/JSON es una herramienta en línea fácil de usar que convierte archivos del formato JSON al formato YAML. Permite una conversión fluida entre JSON y YAML, lo que la hace adecuada para los usuarios que necesitan manejar, transferir o validar datos."
   },
   "dateTimeConverter": {
     "title": "Convertidor de fecha y hora",
-    "description": "Esta herramienta permite una fácil conversión entre varios formatos de fecha y hora."
+    "description": "Esta herramienta permite una conversión fácil entre varios formatos de fecha y hora."
   },
   "queryParamsToJSON": {
     "title": "Convertidor de parámetros de consulta a JSON",
-    "description": "Convierte convenientemente los parámetros de consulta de URL en formato JSON, lo que facilita a los usuarios ver y utilizar los datos."
+    "description": "Convierte convenientemente los parámetros de consulta de URL en formato JSON, lo que facilita a los usuarios ver y usar."
   },
   "envToNetlifyToml": {
     "title": "Convertidor de .env a netlify.toml",
-    "description": "Esta herramienta permite la conversión rápida y sencilla de archivos de configuración .env a archivos de configuración TOML. TOML está diseñado para ser un formato de archivo de configuración minimalista que es fácil de leer y que se puede mapear de manera inequívoca a tablas hash. TOML se puede analizar fácilmente en estructuras de datos en varios lenguajes."
+    "description": "Esta herramienta permite una conversión rápida y fácil de archivos de configuración .env a archivos de configuración TOML. TOML está diseñado para ser un formato de archivo de configuración mínimo que es fácil de leer y se asigna de manera inequívoca a tablas hash. TOML se puede analizar fácilmente en estructuras de datos en varios lenguajes."
   },
   "imageToBase64Converter": {
     "title": "Convertidor de imagen a Base64",
-    "description": "La herramienta de codificación de imágenes a BASE64 le permite convertir fácilmente varios formatos de imagen a Base64. ¡Simplemente arrastre la imagen al área designada para completar la operación! La codificación Base64 de una imagen codifica los datos de la imagen en una cadena, lo que le permite usar la cadena en lugar de la URL de la imagen."
+    "description": "La herramienta de codificación de imagen a BASE64 te permite convertir fácilmente varios formatos de imagen en Base64. ¡Simplemente arrastra la imagen al área designada para completar la operación! La codificación Base64 de una imagen codifica los datos de la imagen en una cadena, lo que te permite usar la cadena en lugar de la URL de la imagen.",
+    "image": "Imagen",
+    "output": "Salida Base64",
+    "img_tag": "Usar en etiqueta <img>",
+    "css": "Usar en CSS"
   },
   "integerBaseConverter": {
     "title": "Convertidor de base de enteros",
-    "description": "La herramienta de conversión de base permite a los usuarios convertir enteros entre cualquier base, con soporte integrado para bases comúnmente utilizadas como 2, 8, 10, 16 y 64."
+    "description": "La herramienta de conversión de base permite a los usuarios convertir enteros entre cualquier base, con soporte integrado para bases comúnmente utilizadas como 2, 8, 10, 16 y 64.",
+    "input": "Número de entrada",
+    "input_base": "Base de entrada"
   },
   "colorConverter": {
-    "title": "Convertidor de color",
-    "description": "La herramienta de conversión de color permite a los usuarios convertir rápidamente sus valores de color a otros formatos y proporciona el nombre estándar del color. Los formatos compatibles incluyen hex, rgb, hsl, hwb, lch y cmyk."
+    "title": "Convertidor de colores",
+    "description": "La herramienta de conversión de colores permite a los usuarios convertir rápidamente sus valores de color en otros formatos y proporciona el nombre estándar del color. Los formatos compatibles incluyen hex, rgb, hsl, hwb, lch y cmyk."
   },
   "caseConverter": {
-    "title": "Convertidor de mayúsculas/minúsculas",
-    "description": "La herramienta de conversión de mayúsculas/minúsculas le permite convertir rápidamente texto al formato deseado. Es muy conveniente para convertir convenciones de nombres, formatos de títulos, etc. Incluye mayúsculas, minúsculas, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase y snake_case."
+    "title": "Convertidor de mayúsculas y minúsculas",
+    "description": "La herramienta de conversión de mayúsculas y minúsculas te permite convertir rápidamente texto al formato deseado. Es muy conveniente para convertir convenciones de nombres, formatos de títulos, etc. Incluye minúsculas, mayúsculas, camelCase, titleCase, constantCase, hyphenCase, PascalCase, pathCase y snake_case.",
+    "Lowercase": "Minúsculas",
+    "Uppercase": "Mayúsculas",
+    "Camelcase": "Camelcase",
+    "Capitalcase": "Capitalcase",
+    "Constantcase": "Constantcase",
+    "Dotcase": "Dotcase",
+    "Pascalcase": "Pascalcase",
+    "PascalSnakeCase": "PascalSnakeCase",
+    "Nocase": "Nocase",
+    "KebabCase": "KebabCase",
+    "Pathcase": "Pathcase",
+    "Sentencecase": "Sentencecase",
+    "Snakecase": "Snakecase",
+    "Mockingcase": "Mockingcase",
+    "TrainCase": "TrainCase"
   },
   "textToUnicode": {
     "title": "Convertidor de texto a Unicode",
-    "description": "La herramienta de conversión de texto a Unicode le permite buscar fácilmente el código Unicode de un carácter o encontrar el carácter correspondiente a un código Unicode. Puede convertir en masa texto a códigos Unicode o convertir en masa códigos Unicode a texto."
+    "description": "La herramienta de conversión de texto a Unicode te permite buscar fácilmente el código Unicode de un carácter o encontrar el carácter correspondiente a un código Unicode. Puede convertir texto en códigos Unicode por lotes o convertir códigos Unicode en texto por lotes.",
+    "encode_title": "Texto a Unicode",
+    "decode_title": "Unicode a Texto",
+    "encode_from": "Introduce el texto para convertir a Unicode",
+    "encode_to": "Unicode de tu texto",
+    "decode_from": "Introduce el Unicode para convertir a texto",
+    "decode_to": "Texto de tu Unicode"
   },
   "XMLToJSON": {
     "title": "Convertidor de XML a JSON",
-    "description": "Esta herramienta permite la conversión rápida de XML a JSON. El Lenguaje de Marcado Extensible (XML) le permite definir y almacenar datos de manera compartible. XML admite el intercambio de información entre sistemas informáticos (como sitios web, bases de datos y aplicaciones de terceros). Las reglas predefinidas simplifican el proceso de transmisión de datos en formato XML a través de cualquier red, y el destinatario puede utilizar estas reglas para leer los datos de manera precisa y eficiente."
+    "description": "Esta herramienta permite la conversión rápida de XML a JSON. El Lenguaje de Marcado Extensible (XML) te permite definir y almacenar datos de manera compartible. XML admite el intercambio de información entre sistemas informáticos (como sitios web, bases de datos y aplicaciones de terceros). Las reglas predefinidas simplifican el proceso de transmisión de datos en formato XML a través de cualquier red, y el destinatario puede usar estas reglas para leer los datos de manera precisa y eficiente."
   },
   "JSONToXML": {
     "title": "Convertidor de JSON a XML",
-    "description": "Esta herramienta permite la conversión rápida de JSON a XML. El Lenguaje de Marcado Extensible (XML) le permite definir y almacenar datos de manera compartible. XML admite el intercambio de información entre sistemas informáticos (como sitios web, bases de datos y aplicaciones de terceros). Las reglas predefinidas simplifican el proceso de transmisión de datos en formato XML a través de cualquier red, y el destinatario puede utilizar estas reglas para leer los datos de manera precisa y eficiente."
+    "description": "Esta herramienta permite la conversión rápida de JSON a XML. El Lenguaje de Marcado Extensible (XML) te permite definir y almacenar datos de manera compartible. XML admite el intercambio de información entre sistemas informáticos (como sitios web, bases de datos y aplicaciones de terceros). Las reglas predefinidas simplifican el proceso de transmisión de datos en formato XML a través de cualquier red, y el destinatario puede usar estas reglas para leer los datos de manera precisa y eficiente."
   },
   "markdownToHTML": {
     "title": "Convertidor de Markdown a HTML",
-    "description": "Esta herramienta le permite convertir rápidamente su contenido de Markdown en formato HTML, y también proporciona la opción de descargarlo como un archivo PDF."
+    "description": "Esta herramienta te permite convertir rápidamente tu contenido de Markdown al formato HTML, y también proporciona la opción de descargarlo como un archivo PDF."
   },
   "escapeHTMLEntities": {
     "title": "Escapar entidades HTML",
-    "description": "Escape entidades HTML como <, >, &, \" y ' para permitir que se inserten de manera segura en otros formatos de código, evitando errores."
+    "description": "Escapa entidades HTML como <, >, &, \" y ' para permitir que sean insertadas de manera segura en otros formatos de código, evitando errores.",
+    "escape_title": "Escapar entidades HTML",
+    "unescape_title": "Desescapar entidades HTML",
+    "escape_from": "Tu cadena",
+    "escape_to": "Tu cadena escapada",
+    "unescape_from": "Tu cadena escapada",
+    "unescape_to": "Tu cadena desescapada"
   },
   "YAMLToTOML": {
     "title": "Convertidor de YAML a TOML",
-    "description": "La herramienta en línea de YAML a TOML le permite convertir fácilmente código en formato YAML a formato TOML."
+    "description": "La herramienta en línea de YAML a TOML te permite convertir fácilmente código en formato YAML al formato TOML."
   },
   "TOMLToYAML": {
     "title": "Convertidor de TOML a YAML",
-    "description": "La herramienta en línea de TOML a YAML le permite convertir fácilmente código en formato TOML a formato YAML."
+    "description": "La herramienta en línea de TOML a YAML te permite convertir fácilmente código en formato TOML al formato YAML."
   },
   "JSONToTOML": {
     "title": "Convertidor de JSON a TOML",
-    "description": "Esta herramienta permite a los usuarios convertir fácilmente datos JSON a configuraciones TOML, lo que resulta útil para los usuarios que necesitan convertir entre diferentes formatos de archivos de configuración."
+    "description": "Esta herramienta permite a los usuarios convertir fácilmente datos JSON en configuraciones TOML, lo que es útil para los usuarios que necesitan convertir entre diferentes formatos de archivos de configuración."
   },
   "TOMLToJSON": {
     "title": "Convertidor de TOML a JSON",
-    "description": "Esta herramienta permite a los usuarios convertir fácilmente configuraciones TOML al formato JSON, lo que resulta conveniente para los usuarios que necesitan ver configuraciones TOML."
+    "description": "Esta herramienta permite a los usuarios convertir fácilmente configuraciones TOML al formato JSON, lo que facilita a los usuarios ver configuraciones TOML."
   },
   "JSONFormatter": {
     "title": "Formateador de JSON",
-    "description": "El visor JSON puede embellecer sus datos JSON y proporciona funciones útiles como búsqueda, colapsar, expandir, ruta, reemplazar y resaltar."
+    "description": "El visor de JSON puede embellecer tus datos JSON y proporciona funciones útiles como búsqueda, colapsar, expandir, ruta, reemplazar y resaltar."
   },
   "URLEncodeDecoder": {
-    "title": "Codificador/decodificador de URL",
-    "description": "Para permitir que cierto texto especial se utilice en URL, puede usar esta herramienta para codificar su URL. También puede usar esta herramienta para decodificar URLs que reciba."
+    "title": "Codificador/Decodificador de URL",
+    "description": "Para permitir que se usen ciertos textos especiales en URLs, puedes usar esta herramienta para codificar tu URL. También puedes usar esta herramienta para decodificar URLs que recibas.",
+    "encode_title": "Codificador de URL",
+    "decode_title": "Decodificador de URL"
   },
   "URLParser": {
     "title": "Analizador de URL",
-    "description": "Esta herramienta está diseñada para permitir a los usuarios ver claramente y de manera sencilla los diversos componentes de una URL, como el protocolo, el dominio, el puerto, los parámetros de consulta, etc."
+    "description": "Esta herramienta está diseñada para permitir a los usuarios ver claramente y de manera sencilla los diversos componentes de una URL, como el protocolo, dominio, puerto, parámetros de consulta, etc.",
+    "your_url": "Tu URL para analizar"
   },
   "MIMETypes": {
     "title": "Tipos MIME",
-    "description": "Esta herramienta permite a los usuarios convertir rápidamente entre tipos de archivos y tipos MIME. También proporciona una tabla de consulta rápida."
+    "description": "Esta herramienta permite a los usuarios convertir rápidamente entre tipos de archivos y tipos MIME. También proporciona una tabla de búsqueda rápida.",
+    "mime_to_extension": "Tipo MIME a extensión",
+    "mime_to_extension_desc": "Saber qué extensiones de archivo están asociadas a un tipo MIME",
+    "extension_to_mime": "Extensión de archivo a tipo MIME",
+    "extension_to_mime_desc": "Saber qué tipo MIME está asociado a una extensión de archivo"
   },
   "basicAuthGenerator": {
     "title": "Generador de autenticación básica",
-    "description": "Genere rápidamente credenciales de autenticación básica ingresando un nombre de usuario y una contraseña, lo que facilita el envío de solicitudes en herramientas como PostMan."
+    "description": "Genera rápidamente credenciales de autenticación básica ingresando un nombre de usuario y contraseña, lo que facilita el envío de solicitudes en herramientas como PostMan."
   },
   "XMLFormatter": {
     "title": "Formateador de XML",
-    "description": "Formatee y resalte rápidamente XML, lo que resulta útil para ver datos XML."
+    "description": "Formatea y resalta rápidamente XML, lo que es útil para ver datos XML.",
+    "indent": "Tamaño de sangría",
+    "collapse": "Colapsar contenido"
   },
   "JWTParser": {
     "title": "Analizador de JWT",
-    "description": "Analice rápidamente JWT para obtener el encabezado, la carga útil y la firma, lo que se puede utilizar para extraer y verificar datos JWT, siendo útil para la depuración."
+    "description": "Analiza rápidamente JWT para obtener el encabezado, la carga útil y la firma, lo que se puede usar para extraer y verificar datos JWT, siendo útil para la depuración.",
+    "uppercase": "Mayúsculas",
+    "lowercase": "Minúsculas",
+    "number": "Números",
+    "symbols": "Símbolos",
+    "length": "Longitud",
+    "generate": "Generar"
   },
   "tokenGenerator": {
     "title": "Generador de tokens",
-    "description": "Genere tokens aleatoriamente según la elección del usuario de tipos de caracteres y longitud. Puede incluir letras mayúsculas, minúsculas, números y símbolos especiales."
+    "description": "Genera aleatoriamente tokens basados en la elección del usuario de tipos de caracteres y longitud. Puede incluir mayúsculas, minúsculas, números y símbolos especiales.",
+    "uppercase": "Mayúsculas",
+    "lowercase": "Minúsculas",
+    "number": "Números",
+    "symbols": "Símbolos",
+    "length": "Longitud",
+    "generate": "Generar"
   },
   "passwordGenerator": {
     "title": "Generador de contraseñas",
-    "description": "Genere contraseñas aleatorias y seguras según sus necesidades. Todas las operaciones se realizan localmente en el navegador, garantizando seguridad y privacidad. Puede personalizar la longitud e incluir letras mayúsculas, minúsculas, números y símbolos especiales."
+    "description": "Genera contraseñas fuertes aleatorias según tus necesidades. Todas las operaciones se realizan localmente en el navegador, lo que garantiza la seguridad y privacidad. Puedes personalizar la longitud e incluir mayúsculas, minúsculas, números y símbolos especiales.",
+    "uppercase": "Mayúsculas",
+    "lowercase": "Minúsculas",
+    "number": "Números",
+    "symbols": "Símbolos",
+    "length": "Longitud",
+    "generate": "Generar"
   },
   "hashText": {
     "title": "Texto hash",
-    "description": "Cifre texto utilizando MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 o RIPEMD160."
+    "description": "Cifra texto usando MD5, SHA1, SHA256, SHA224, SHA512, SHA384, SHA3 o RIPEMD160."
   },
   "bcrypt": {
     "title": "Bcrypt",
-    "description": "Bcrypt es una función de hash de contraseña adaptativa. Está basada en el algoritmo de cifrado Blowfish y está diseñada específicamente para el almacenamiento seguro de contraseñas."
+    "description": "Bcrypt es una función de hashing de contraseñas adaptativa. Está basada en el algoritmo de cifrado Blowfish y está diseñada específicamente para el almacenamiento seguro de contraseñas.",
+    "hash_from": "Tu cadena",
+    "salt_count": "Cantidad de salt",
+    "compare_title": "Comparar cadena con hash",
+    "compare_from": "Tu cadena",
+    "compare_to": "Tu hash",
+    "match": "Coincidencia"
   },
   "encryptDecryptText": {
-    "title": "Cifrar / descifrar texto",
-    "description": "Cifre y descifre texto utilizando AES, TripleDES, Rabbit o RC4."
+    "title": "Cifrar/Descifrar texto",
+    "description": "Cifra y descifra texto usando AES, TripleDES, Rabbit o RC4.",
+    "encrypt_title": "Cifrar",
+    "decrypt_title": "Descifrar",
+    "text": "Texto",
+    "secret_key": "Clave secreta",
+    "algorithm": "Algoritmo",
+    "result": "Resultado"
   },
   "hmacGenerator": {
-    "title": "Generador de HMAC",
-    "description": "HMAC (Código de Autenticación de Mensajes Basado en Hash) es un código de autenticación de mensajes basado en una función hash y una clave secreta, utilizado para verificar la integridad y autenticidad de los mensajes. HMAC se puede utilizar con varias funciones hash como MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 y RIPEMD160."
+    "title": "Generador HMAC",
+    "description": "HMAC (Código de Autenticación de Mensajes basado en Hash) es un código de autenticación de mensajes basado en una función hash y una clave secreta, utilizado para verificar la integridad y autenticidad de los mensajes. HMAC puede usarse con varias funciones hash como MD5, SHA-1, SHA-3, SHA-224, SHA-256, SHA-384, SHA-512 y RIPEMD160.",
+    "text": "Texto plano",
+    "secret_key": "Clave secreta",
+    "algorithm": "Función de hash",
+    "output_encode": "Codificación de salida",
+    "output": "HMAC de tu texto"
   },
   "crontabGenerator": {
     "title": "Generador de Crontab",
-    "description": "Ingrese una expresión cron y tradúzcala a un lenguaje comprensible para humanos, con una tabla de referencia rápida para expresiones cron."
+    "description": "Introduce una expresión cron y tradúcela a un lenguaje comprensible para humanos, con una tabla de referencia rápida para expresiones cron."
   },
   "SQLFormatter": {
     "title": "Formateador de SQL",
-    "description": "Formatee SQL desorganizado para facilitar su lectura y comprensión. También puede embellecer SQL antes de la entrega del código, facilitando su mantenimiento."
+    "description": "Formatea SQL desorganizado para facilitar la lectura y comprensión. También puede embellecer SQL antes de la presentación del código, lo que facilita su mantenimiento.",
+    "from": "Consulta SQL",
+    "to": "Versión embellecida de tu consulta",
+    "dialect": "Dialecto",
+    "keyword_case": "Caso de palabras clave",
+    "indent_style": "Estilo de sangría"
   },
   "javascriptMinify": {
-    "title": "Minificador de JavaScript",
-    "description": "La minificación del código JavaScript se refiere al proceso de eliminar todos los caracteres innecesarios del código fuente sin cambiar su funcionalidad. Estos caracteres innecesarios a menudo incluyen espacios en blanco, saltos de línea, comentarios y delimitadores de bloques, que se utilizan para mejorar la legibilidad del código pero no son necesarios para la ejecución."
+    "title": "Minificación de Javascript",
+    "description": "La minificación del código JavaScript se refiere al proceso de eliminar todos los caracteres innecesarios del código fuente sin cambiar su funcionalidad. Estos caracteres innecesarios a menudo incluyen espacios en blanco, saltos de línea, comentarios y delimitadores de bloques, que se utilizan para mejorar la legibilidad del código pero no son necesarios para la ejecución.",
+    "from": "Tu código",
+    "to": "Código minificado"
   },
   "YAMLFormatter": {
     "title": "Formateador de YAML",
-    "description": "La herramienta de formateo YAML puede embellecer y resaltar configuraciones YAML, mejorando la legibilidad y facilitando el mantenimiento."
+    "description": "La herramienta de formateo de YAML puede embellecer y resaltar configuraciones YAML, mejorando la legibilidad y facilitando el mantenimiento.",
+    "sort_key": "Ordenar claves",
+    "indent_size": "Tamaño de sangría"
   },
   "MACAddressLookup": {
     "title": "Búsqueda de dirección MAC",
-    "description": "Esta herramienta le permite buscar rápida y fácilmente el proveedor y fabricante de un dispositivo en función de su dirección MAC."
+    "description": "Esta herramienta te permite buscar rápida y fácilmente el proveedor y el fabricante de un dispositivo en función de su dirección MAC.",
+    "mac_address": "Dirección MAC",
+    "vendor_info": "Información del proveedor"
   },
   "textDiff": {
-    "title": "Diferencia de texto",
-    "description": "Ingrese texto en dos editores, y el algoritmo de comparación resaltará las diferencias, lo que resulta muy conveniente para los usuarios que necesitan comparar texto."
+    "title": "Comparador de texto",
+    "description": "Introduce texto en dos editores, y el algoritmo de comparación resaltará las diferencias, lo que es muy conveniente para los usuarios que necesitan comparar texto."
   },
   "xssDefence": {
     "title": "Defensa contra XSS",
-    "description": "Esta herramienta identifica partes de su código que pueden ser vulnerables a ataques XSS y las resalta. Es muy útil y conveniente para aprender sobre XSS y defenderse de ataques XSS."
+    "description": "Esta herramienta identifica las partes de tu código que pueden ser vulnerables a ataques XSS y las resalta. Es muy útil y conveniente para aprender sobre XSS y defenderse de ataques XSS.",
+    "remove": "Eliminar"
   }
 }

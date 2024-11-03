@@ -1,190 +1,306 @@
 {
   "rsa": {
     "title": "RSA鍵ペアジェネレーター",
-    "description": "このツールは、ユーザーが安全なRSA公開鍵と秘密鍵を迅速に生成できるように設計されたオンラインRSAキー生成ツールです。RSA（Rivest-Shamir-Adleman）は、データ暗号化やデジタル署名に主に使用される、広く使用されている公開鍵暗号アルゴリズムです。"
+    "description": "このツールは、ユーザーが安全なRSA公開鍵と秘密鍵を迅速に生成できるように設計されたオンラインRSA鍵ジェネレーターです。RSA（Rivest-Shamir-Adleman）は、データ暗号化やデジタル署名に主に使用される広く使用されている公開鍵暗号アルゴリズムです。",
+    "generate": "鍵ペアを生成",
+    "bits": "ビット数",
+    "public_key": "公開鍵",
+    "private_key": "秘密鍵"
   },
   "MD5": {
     "title": "MD5暗号化",
-    "description": "MD5（Message-Digest Algorithm 5）を使用して、テキストコンテンツのハッシュ計算を行います。"
+    "description": "MD5（Message-Digest Algorithm 5）を使用して、テキストコンテンツのハッシュ計算を行います。",
+    "from": "入力文字列",
+    "to": "結果"
   },
   "SHA": {
     "title": "SHA暗号化",
-    "description": "SHA1、SHA3、SHA224、SHA256、SHA384、SHA512を使用して、テキストコンテンツのハッシュ計算を行います。"
+    "description": "SHA1、SHA3、SHA224、SHA256、SHA384、SHA512を使用して、テキストコンテンツのハッシュ計算を行います。",
+    "algorithm": "アルゴリズム",
+    "hash_length": "ハッシュ長",
+    "from": "入力文字列",
+    "to": "結果"
   },
   "RIPEMD": {
     "title": "RIPEMD",
-    "description": "MD4構造に基づいたハッシュ関数で、160ビット（20バイト）のハッシュ値を出力します。"
+    "description": "MD4構造に基づいたハッシュ関数で、160ビット（20バイト）のハッシュ値を出力します。",
+    "from": "入力文字列",
+    "to": "結果"
   },
   "AESEncrypt": {
     "title": "AES暗号化",
-    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換と転置のネットワークに基づく対称暗号化アルゴリズムです。"
+    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換-置換ネットワークに基づく対称暗号化アルゴリズムです。",
+    "tag_length": "タグ長",
+    "additional_data": "追加データ",
+    "from": "入力文字列",
+    "to": "暗号化された文字列"
   },
   "AESDecrypt": {
     "title": "AES復号化",
-    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換と転置のネットワークに基づく対称暗号化アルゴリズムです。"
+    "description": "AES（Advanced Encryption Standard）アルゴリズムを使用して、テキストを暗号化および復号化します。AESは、置換-置換ネットワークに基づく対称暗号化アルゴリズムです。",
+    "tag_length": "タグ長",
+    "additional_data": "追加データ",
+    "from": "暗号化された文字列",
+    "to": "復号化された文字列"
   },
   "base64EncodeDecode": {
     "title": "Base64エンコード/デコード",
-    "description": "Base64エンコード/デコードツールは、バイナリデータをテキスト文字列にエンコードしたり、Base64でエンコードされたテキストをバイナリデータにデコードしたりするために使用されます。データの送信や保存に一般的に使用されます。"
+    "description": "Base64エンコード/デコードツールは、バイナリデータをテキスト文字列にエンコードしたり、Base64でエンコードされたテキストをバイナリデータにデコードしたりするために使用されます。これは、データの送信や保存に一般的に使用されます。",
+    "encode_title": "Base64にエンコード",
+    "decode_title": "Base64からデコード",
+    "encode_from": "入力文字列",
+    "encode_to": "エンコードされた文字列",
+    "decode_from": "Base64文字列",
+    "decode_to": "デコードされた文字列"
   },
   "CSVToJSON": {
-    "title": "CSVからJSONへのコンバーター",
-    "description": "CSVは、表形式データを保存するために一般的に使用されるプレーンテキストファイル形式です。カンマで区切られた値で構成され、各値は二重引用符で囲まれており、各行はレコードを表します。"
+    "title": "CSVからJSONへの変換",
+    "description": "CSVは、表形式のデータを保存するために一般的に使用されるプレーンテキストファイル形式です。値はコンマで区切られ、各値は二重引用符で囲まれており、各行が1つのレコードを表します。",
+    "lowercase": "小文字のキー"
   },
   "JSONToCSV": {
-    "title": "JSONからCSVへのコンバーター",
-    "description": "CSVは、表形式データを保存するために一般的に使用されるプレーンテキストファイル形式です。カンマで区切られた値で構成され、各値は二重引用符で囲まれており、各行はレコードを表します。"
+    "title": "JSONからCSVへの変換",
+    "description": "CSVは、表形式のデータを保存するために一般的に使用されるプレーンテキストファイル形式です。値はコンマで区切られ、各値は二重引用符で囲まれており、各行が1つのレコードを表します。"
   },
   "YAMLToJSON": {
-    "title": "YAMLからJSONへのコンバーター",
-    "description": "YAML/JSON変換は、YAML形式のファイルをJSON形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換を提供し、データの処理、転送、または検証が必要なユーザーに適しています。"
+    "title": "YAMLからJSONへの変換",
+    "description": "YAML/JSON変換は、YAML形式のファイルをJSON形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換が可能で、データの処理、転送、または検証が必要なユーザーに適しています。"
   },
   "JSONToYAML": {
-    "title": "JSONからYAMLへのコンバーター",
-    "description": "YAML/JSON変換は、JSON形式のファイルをYAML形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換を提供し、データの処理、転送、または検証が必要なユーザーに適しています。"
+    "title": "JSONからYAMLへの変換",
+    "description": "YAML/JSON変換は、JSON形式のファイルをYAML形式に変換するための使いやすいオンラインツールです。JSONとYAMLの間でシームレスな変換が可能で、データの処理、転送、または検証が必要なユーザーに適しています。"
   },
   "dateTimeConverter": {
-    "title": "日付と時間のコンバーター",
-    "description": "このツールは、さまざまな日付と時間の形式を簡単に変換できます。"
+    "title": "日時変換ツール",
+    "description": "このツールを使用すると、さまざまな日付と時刻の形式間で簡単に変換できます。"
   },
   "queryParamsToJSON": {
-    "title": "クエリパラメータからJSONへのコンバーター",
-    "description": "URLのクエリパラメータを簡単にJSON形式に変換し、ユーザーがそれを表示および使用しやすくします。"
+    "title": "クエリパラメータからJSONへの変換",
+    "description": "URLクエリパラメータをJSON形式に簡単に変換し、ユーザーがより簡単に表示および使用できるようにします。"
   },
   "envToNetlifyToml": {
-    "title": ".envからnetlify.tomlへのコンバーター",
-    "description": "このツールを使用すると、.env構成ファイルをTOML構成ファイルに迅速かつ簡単に変換できます。TOMLは、読みやすく、ハッシュテーブルに明確にマッピングされる最小限の構成ファイル形式として設計されています。TOMLは、さまざまな言語のデータ構造に簡単に解析できます。"
+    "title": ".envからnetlify.tomlへの変換",
+    "description": "このツールを使用すると、.env構成ファイルをTOML構成ファイルに迅速かつ簡単に変換できます。TOMLは、読みやすく、ハッシュテーブルに明確にマッピングされる最小限の構成ファイル形式として設計されています。TOMLは、さまざまな言語でデータ構造に簡単に解析できます。"
   },
   "imageToBase64Converter": {
-    "title": "画像からBase64へのコンバーター",
-    "description": "画像をBASE64にエンコードするツールを使用すると、さまざまな画像形式を簡単にBase64に変換できます。指定されたエリアに画像をドラッグするだけで操作が完了します！画像のBase64エンコードは、画像データを文字列にエンコードし、画像URLの代わりに文字列を使用できるようにします。"
+    "title": "画像をBase64に変換",
+    "description": "画像をBASE64にエンコードするツールを使用すると、さまざまな画像形式を簡単にBase64に変換できます。指定された領域に画像をドラッグするだけで操作が完了します！画像のBase64エンコードは、画像データを文字列にエンコードし、画像URLの代わりに文字列を使用できるようにします。",
+    "image": "画像",
+    "output": "Base64出力",
+    "img_tag": "<img>タグで使用",
+    "css": "CSSで使用"
   },
   "integerBaseConverter": {
-    "title": "整数基数コンバーター",
-    "description": "基数変換ツールを使用すると、ユーザーは任意の基数間で整数を変換できます。2、8、10、16、64などの一般的に使用される基数をサポートしています。"
+    "title": "整数基数変換ツール",
+    "description": "基数変換ツールを使用すると、ユーザーは整数を任意の基数間で変換できます。2、8、10、16、64などの一般的に使用される基数がサポートされています。",
+    "input": "入力数値",
+    "input_base": "入力基数"
   },
   "colorConverter": {
-    "title": "カラーコンバーター",
-    "description": "カラー変換ツールを使用すると、ユーザーは色の値を他の形式に迅速に変換でき、標準の色名も提供されます。サポートされている形式には、hex、rgb、hsl、hwb、lch、cmykがあります。"
+    "title": "色変換ツール",
+    "description": "色変換ツールを使用すると、ユーザーは色の値を他の形式に迅速に変換でき、標準の色名を提供します。サポートされている形式には、hex、rgb、hsl、hwb、lch、cmykなどがあります。"
   },
   "caseConverter": {
-    "title": "ケースコンバーター",
-    "description": "ケース変換ツールを使用すると、テキストを目的の形式に迅速に変換できます。名前付け規則やタイトル形式の変換に非常に便利です。大文字、小文字、camelCase、titleCase、constantCase、hyphenCase、PascalCase、pathCase、snake_caseが含まれます。"
+    "title": "大文字小文字変換ツール",
+    "description": "大文字小文字変換ツールを使用すると、テキストを希望の形式に迅速に変換できます。命名規則やタイトル形式の変換に非常に便利です。大文字、 小文字、キャメルケース、タイトルケース、コンスタントケース、ハイフンケース、パスカルケース、パスケース、スネークケースなどを含みます。",
+    "Lowercase": "小文字",
+    "Uppercase": "大文字",
+    "Camelcase": "キャメルケース",
+    "Capitalcase": "タイトルケース",
+    "Constantcase": "コンスタントケース",
+    "Dotcase": "ドットケース",
+    "Pascalcase": "パスカルケース",
+    "PascalSnakeCase": "パスカルスネークケース",
+    "Nocase": "ノーケース",
+    "KebabCase": "ケバブケース",
+    "Pathcase": "パスケース",
+    "Sentencecase": "センテンスケース",
+    "Snakecase": "スネークケース",
+    "Mockingcase": "モッキングケース",
+    "TrainCase": "トレインケース"
   },
   "textToUnicode": {
-    "title": "テキストからUnicodeへのコンバーター",
-    "description": "テキストからUnicodeへの変換ツールを使用すると、文字のUnicodeコードを簡単に検索したり、Unicodeコードに対応する文字を見つけたりできます。テキストをUnicodeコードに一括変換したり、Unicodeコードをテキストに一括変換したりできます。"
+    "title": "テキストをUnicodeに変換",
+    "description": "テキストをUnicodeに変換するツールを使用すると、文字のUnicodeコードを簡単に調べたり、Unicodeコードに対応する文字を見つけたりできます。テキストをUnicodeコードに一括変換したり、Unicodeコードをテキストに一括変換したりできます。",
+    "encode_title": "テキストをUnicodeに変換",
+    "decode_title": "Unicodeをテキストに変換",
+    "encode_from": "Unicodeに変換するテキストを入力",
+    "encode_to": "入力テキストのUnicode",
+    "decode_from": "テキストに変換するUnicodeを入力",
+    "decode_to": "Unicodeからのテキスト"
   },
   "XMLToJSON": {
-    "title": "XMLからJSONへのコンバーター",
-    "description": "このツールを使用すると、XMLをJSONに迅速に変換できます。拡張可能なマークアップ言語（XML）は、データを共有可能な方法で定義および保存することを可能にします。XMLは、コンピュータシステム間（ウェブサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
+    "title": "XMLからJSONへの変換",
+    "description": "このツールを使用すると、XMLをJSONに迅速に変換できます。拡張マークアップ言語（XML）を使用すると、データを共有可能な方法で定義および保存できます。XMLは、コンピュータシステム間（Webサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
   },
   "JSONToXML": {
-    "title": "JSONからXMLへのコンバーター",
-    "description": "このツールを使用すると、JSONをXMLに迅速に変換できます。拡張可能なマークアップ言語（XML）は、データを共有可能な方法で定義および保存することを可能にします。XMLは、コンピュータシステム間（ウェブサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
+    "title": "JSONからXMLへの変換",
+    "description": "このツールを使用すると、JSONをXMLに迅速に変換できます。拡張マークアップ言語（XML）を使用すると、データを共有可能な方法で定義および保存できます。XMLは、コンピュータシステム間（Webサイト、データベース、サードパーティアプリケーションなど）の情報交換をサポートします。事前定義されたルールにより、ネットワーク上でXML形式のデータを送信するプロセスが簡素化され、受信者はこれらのルールを使用してデータを正確かつ効率的に読み取ることができます。"
   },
   "markdownToHTML": {
-    "title": "MarkdownからHTMLへのコンバーター",
+    "title": "MarkdownからHTMLへの変換",
     "description": "このツールを使用すると、Markdownコンテンツを迅速にHTML形式に変換でき、PDFファイルとしてダウンロードするオプションも提供されます。"
   },
   "escapeHTMLEntities": {
     "title": "HTMLエンティティのエスケープ",
-    "description": "<、>、&、\"、' などのHTMLエンティティをエスケープして、他のコード形式に安全に挿入できるようにし、エラーを防ぎます。"
+    "description": "<、>、&、\"、'などのHTMLエンティティをエスケープして、他のコード形式に安全に挿入できるようにし、エラーを防ぎます。",
+    "escape_title": "HTMLエンティティのエスケープ",
+    "unescape_title": "HTMLエンティティのエスケープ解除",
+    "escape_from": "入力文字列",
+    "escape_to": "エスケープされた文字列",
+    "unescape_from": "エスケープされた文字列",
+    "unescape_to": "エスケープ解除された文字列"
   },
   "YAMLToTOML": {
-    "title": "YAMLからTOMLへのコンバーター",
+    "title": "YAMLからTOMLへの変換",
     "description": "YAMLからTOMLへのオンラインツールを使用すると、YAML形式のコードを簡単にTOML形式に変換できます。"
   },
   "TOMLToYAML": {
-    "title": "TOMLからYAMLへのコンバーター",
+    "title": "TOMLからYAMLへの変換",
     "description": "TOMLからYAMLへのオンラインツールを使用すると、TOML形式のコードを簡単にYAML形式に変換できます。"
   },
   "JSONToTOML": {
-    "title": "JSONからTOMLへのコンバーター",
-    "description": "このツールを使用すると、ユーザーはJSONデータをTOML構成に簡単に変換できます。これは、異なる構成ファイル形式を変換する必要があるユーザーに役立ちます。"
+    "title": "JSONからTOMLへの変換",
+    "description": "このツールを使用すると、ユーザーはJSONデータを簡単にTOML構成に変換でき、さまざまな構成ファイル形式間の変換が必要なユーザーに便利です。"
   },
   "TOMLToJSON": {
-    "title": "TOMLからJSONへのコンバーター",
-    "description": "このツールを使用すると、ユーザーはTOML構成をJSON形式に簡単に変換できます。TOML構成を表示する必要があるユーザーに便利です。"
+    "title": "TOMLからJSONへの変換",
+    "description": "このツールを使用すると、TOML構成を簡単にJSON形式に変換でき、TOML構成を表示する必要があるユーザーに便利です。"
   },
   "JSONFormatter": {
     "title": "JSONフォーマッター",
-    "description": "JSONビューアは、JSONデータを美しく整形し、検索、折りたたみ、展開、パス、置換、ハイライトなどの便利な機能を提供します。"
+    "description": "JSONビューアを使用すると、JSONデータを美しく整形でき、検索、折りたたみ、展開、パス、置換、ハイライトなどの便利な機能を提供します。"
   },
   "URLEncodeDecoder": {
     "title": "URLエンコード/デコード",
-    "description": "特定の特殊なテキストをURLで使用できるようにするために、このツールを使用してURLをエンコードできます。また、このツールを使用して、受信したURLをデコードすることもできます。"
+    "description": "特定の特殊なテキストをURLで使用できるようにするには、このツールを使用してURLをエンコードできます。また、このツールを使用して、受信したURLをデコードすることもできます。",
+    "encode_title": "URLエンコード",
+    "decode_title": "URLデコード"
   },
   "URLParser": {
     "title": "URLパーサー",
-    "description": "このツールは、プロトコル、ドメイン、ポート、クエリパラメータなど、URLのさまざまなコンポーネントをユーザーが明確かつ簡単に表示できるように設計されています。"
+    "description": "このツールは、ユーザーがプロトコル、ドメイン、ポート、クエリパラメータなど、URLのさまざまなコンポーネントを明確かつ簡単に表示できるように設計されています。",
+    "your_url": "解析するURL"
   },
   "MIMETypes": {
     "title": "MIMEタイプ",
-    "description": "このツールを使用すると、ファイルタイプとMIMEタイプ間で迅速に変換できます。また、クイック検索表も提供しています。"
+    "description": "このツールを使用すると、ファイルタイプとMIMEタイプを迅速に変換できます。また、クイック参照表も提供されています。",
+    "mime_to_extension": "MIMEタイプから拡張子へ",
+    "mime_to_extension_desc": "MIMEタイプに関連付けられているファイル拡張子を確認",
+    "extension_to_mime": "ファイル拡張子からMIMEタイプへ",
+    "extension_to_mime_desc": "ファイル拡張子に関連付けられているMIMEタイプを確認"
   },
   "basicAuthGenerator": {
     "title": "ベーシック認証ジェネレーター",
-    "description": "ユーザー名とパスワードを入力して、ベーシック認証資格情報を迅速に生成します。PostManなどのツールでリクエストを送信する際に便利です。"
+    "description": "ユーザー名とパスワードを入力してベーシック認証の資格情報を迅速に生成し、PostManなどのツールでリクエストを送信する際に便利です。"
   },
   "XMLFormatter": {
     "title": "XMLフォーマッター",
-    "description": "XMLを迅速に整形およびハイライトし、XMLデータの表示に便利です。"
+    "description": "XMLを迅速にフォーマットしてハイライトし、XMLデータの表示に便利です。",
+    "indent": "インデントサイズ",
+    "collapse": "コンテンツを折りたたむ"
   },
   "JWTParser": {
     "title": "JWTパーサー",
-    "description": "JWTを迅速に解析して、ヘッダー、ペイロード、および署名を取得します。JWTデータの抽出や検証に使用でき、デバッグに便利です。"
+    "description": "JWTを迅速に解析して、ヘッダー、ペイロード、および署名を取得し、JWTデータを抽出および検証するのに役立ち、デバッグに便利です。",
+    "uppercase": "大文字",
+    "lowercase": "小文字",
+    "number": "数字",
+    "symbols": "記号",
+    "length": "長さ",
+    "generate": "生成"
   },
   "tokenGenerator": {
     "title": "トークンジェネレーター",
-    "description": "ユーザーが選択した文字タイプと長さに基づいて、ランダムにトークンを生成します。大文字、小文字、数字、特殊記号を含めることができます。"
+    "description": "ユーザーが選択した文字タイプと長さに基づいてランダムにトークンを生成します。大文字、小文字、数字、特殊記号を含めることができます。",
+    "uppercase": "大文字",
+    "lowercase": "小文字",
+    "number": "数字",
+    "symbols": "記号",
+    "length": "長さ",
+    "generate": "生成"
   },
   "passwordGenerator": {
     "title": "パスワードジェネレーター",
-    "description": "必要に応じてランダムで強力なパスワードを生成します。すべての操作はブラウザ内でローカルに実行され、セキュリティとプライバシーが確保されます。長さをカスタマイズし、大文字、小文字、数字、特殊記号を含めることができます。"
+    "description": "必要に応じてランダムな強力なパスワードを生成します。すべての操作はブラウザ内でローカルに実行され、セキュリティとプライバシーが確保されます。大文字、小文字、数字、特殊記号を含めることができ、長さをカスタマイズできます。",
+    "uppercase": "大文字",
+    "lowercase": "小文字",
+    "number": "数字",
+    "symbols": "記号",
+    "length": "長さ",
+    "generate": "生成"
   },
   "hashText": {
-    "title": "テキストのハッシュ化",
+    "title": "ハッシュテキスト",
     "description": "MD5、SHA1、SHA256、SHA224、SHA512、SHA384、SHA3、またはRIPEMD160を使用してテキストを暗号化します。"
   },
   "bcrypt": {
     "title": "Bcrypt",
-    "description": "Bcryptは、適応型パスワードハッシュ関数です。Blowfish暗号アルゴリズムに基づいており、安全なパスワードの保存用に特別に設計されています。"
+    "description": "Bcryptは、適応型パスワードハッシュ関数です。Blowfish暗号アルゴリズムに基づいており、安全なパスワード保存のために特別に設計されています。",
+    "hash_from": "入力文字列",
+    "salt_count": "ソルト数",
+    "compare_title": "文字列とハッシュを比較",
+    "compare_from": "入力文字列",
+    "compare_to": "ハッシュ",
+    "match": "一致"
   },
   "encryptDecryptText": {
     "title": "テキストの暗号化/復号化",
-    "description": "AES、TripleDES、Rabbit、またはRC4を使用してテキストを暗号化および復号化します。"
+    "description": "AES、TripleDES、Rabbit、またはRC4を使用してテキストを暗号化および復号化します。",
+    "encrypt_title": "暗号化",
+    "decrypt_title": "復号化",
+    "text": "テキスト",
+    "secret_key": "秘密鍵",
+    "algorithm": "アルゴリズム",
+    "result": "結果"
   },
   "hmacGenerator": {
     "title": "HMACジェネレーター",
-    "description": "HMAC（ハッシュベースのメッセージ認証コード）は、ハッシュ関数と秘密鍵に基づくメッセージ認証コードであり、メッセージの完全性と真正性を検証するために使用されます。HMACは、MD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512、RIPEMD160など、さまざまなハッシュ関数とともに使用できます。"
+    "description": "HMAC（ハッシュベースのメッセージ認証コード）は、ハッシュ関数と秘密鍵に基づくメッセージ認証コードであり、メッセージの完全性と真正性を確認するために使用されます。HMACはMD5、SHA-1、SHA-3、SHA-224、SHA-256、SHA-384、SHA-512、およびRIPEMD160などのさまざまなハッシュ関数と一緒に使用できます。",
+    "text": "プレーンテキスト",
+    "secret_key": "秘密鍵",
+    "algorithm": "ハッシュ関数",
+    "output_encode": "出力エンコード",
+    "output": "テキストのHMAC"
   },
   "crontabGenerator": {
     "title": "Crontabジェネレーター",
-    "description": "cron式を入力し、人間が読みやすい言語に変換します。cron式のクイックリファレンステーブルも提供します。"
+    "description": "cron式を入力して、人間が読みやすい言語に変換します。cron式のクイックリファレンステーブルも提供されます。"
   },
   "SQLFormatter": {
     "title": "SQLフォーマッター",
-    "description": "整理されていないSQLを整形して、読みやすく理解しやすくします。コード送信前にSQLを美しく整形することもでき、メンテナンスが容易になります。"
+    "description": "乱雑なSQLをフォーマットして、読みやすく理解しやすくします。コード提出前にSQLを美化することも可能で、メンテナンスが容易になります。",
+    "from": "SQLクエリ",
+    "to": "美化されたクエリ",
+    "dialect": "方言",
+    "keyword_case": "キーワードの大文字小文字",
+    "indent_style": "インデントスタイル"
   },
   "javascriptMinify": {
-    "title": "JavaScriptの圧縮",
-    "description": "JavaScriptコードの圧縮は、機能を変更せずにソースコードからすべての不要な文字を削除するプロセスを指します。これらの不要な文字には、空白、改行、コメント、ブロック区切りなどがあり、コードの可読性を向上させるために使用されますが、実行には必要ありません。"
+    "title": "Javascript圧縮",
+    "description": "JavaScriptコードの圧縮とは、機能を変更せずにソースコードからすべての不要な文字を削除するプロセスを指します。これらの不要な文字には、空白、改行、コメント、ブロック区切り文字などが含まれ、コードの可読性を向上させるために使用されますが、実行には必要ありません。",
+    "from": "入力コード",
+    "to": "圧縮されたコード"
   },
   "YAMLFormatter": {
     "title": "YAMLフォーマッター",
-    "description": "YAMLフォーマットツールは、YAML構成を美しく整形し、ハイライトすることで、可読性を向上させ、メンテナンスを容易にします。"
+    "description": "YAMLフォーマッティングツールは、YAML設定を美しく整形し、ハイライトして可読性を向上させ、メンテナンスを容易にします。",
+    "sort_key": "キーの並べ替え",
+    "indent_size": "インデントサイズ"
   },
   "MACAddressLookup": {
     "title": "MACアドレス検索",
-    "description": "このツールを使用すると、MACアドレスに基づいてデバイスのベンダーや製造元を迅速かつ簡単に検索できます。"
+    "description": "このツールを使用すると、MACアドレスに基づいてデバイスのベンダーや製造元を迅速かつ簡単に検索できます。",
+    "mac_address": "MACアドレス",
+    "vendor_info": "ベンダー情報"
   },
   "textDiff": {
-    "title": "テキストの差分",
-    "description": "2つのエディターにテキストを入力すると、比較アルゴリズムが差分をハイライトします。テキストを比較する必要があるユーザーに非常に便利です。"
+    "title": "テキスト差分",
+    "description": "2つのエディタにテキストを入力すると、比較アルゴリズムが違いを強調表示し、テキストを比較する必要があるユーザーにとって非常に便利です。"
   },
   "xssDefence": {
     "title": "XSS防御",
-    "description": "このツールは、XSS攻撃に対して脆弱である可能性のあるコードの部分を特定し、ハイライト表示します。XSSについて学び、XSS攻撃から防御するために非常に便利で役立ちます。"
+    "description": "このツールは、XSS攻撃に対して脆弱な可能性のあるコードの部分を特定し、強調表示します。XSSについて学び、XSS攻撃に対する防御に非常に便利です。",
+    "remove": "削除"
   }
 }
