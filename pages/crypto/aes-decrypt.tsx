@@ -6,8 +6,11 @@ import { ChangeEvent, useMemo, useState } from "react";
 import forge from "node-forge";
 import TextAreaUI from "@/components/ui/TextAreaUI";
 import { getErrorMsg } from "@/utils/error";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function AESDecrypt() {
+  const { t } = useTranslation("toolList");
   const [mode, setMode] = useState<forge.cipher.Algorithm>("AES-CBC");
   const [key, setKey] = useState("");
   const [iv, setIv] = useState("");
@@ -183,6 +186,14 @@ export default function AESDecrypt() {
       </OneColumn>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const modeList = [

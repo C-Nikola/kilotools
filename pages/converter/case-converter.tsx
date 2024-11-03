@@ -20,10 +20,14 @@ import TextArea from "antd/es/input/TextArea";
 import _ from "lodash";
 import TransformCustom from "@/components/TransformCustom";
 import { getErrorMsg } from "@/utils/error";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 type CaseKeys = keyof typeof typeList;
 
 export default function CaseConverter() {
+  const { t } = useTranslation("toolList");
+
   const [input, setInput] = useState("");
   const [caseType, setCaseType] = useState<keyof typeof typeList>("Lowercase");
 
@@ -98,6 +102,14 @@ export default function CaseConverter() {
       />
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const typeList = {

@@ -4,6 +4,8 @@ import { InboxOutlined } from "@ant-design/icons";
 import { Card, Col, Divider, Row, Space, Upload } from "antd";
 import { UploadChangeParam, UploadFile } from "antd/es/upload";
 import { useCallback, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Dragger } = Upload;
 
@@ -11,6 +13,8 @@ const MAX_FILE_SIZE = 4 * 1024 * 1024;
 type Status = "idle" | "loading" | "error" | "unsupported";
 
 export default function ImageToBase64() {
+  const { t } = useTranslation("toolList");
+
   const [status, setStatus] = useState<Status>("idle");
   const [base64, setBase64] = useState("");
 
@@ -120,6 +124,14 @@ export default function ImageToBase64() {
       </Row>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const StatusComponent = (props: StatusComponentProps) => (

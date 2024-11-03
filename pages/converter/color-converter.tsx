@@ -11,13 +11,17 @@ import namesPlugin from "colord/plugins/names";
 import lchPlugin from "colord/plugins/lch";
 import { ChangeEvent, useState } from "react";
 import { AggregationColor } from "antd/es/color-picker/color";
-import { withDefaultOnError } from "@/utils/defaults";
 import ErrorMsg from "@/components/ErrorMsg";
 import { getErrorMsg } from "@/utils/error";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 extend([cmykPlugin, hwbPlugin, namesPlugin, lchPlugin]);
 
 export default function ColorConverter() {
+  const { t } = useTranslation("toolList");
+
   const [error, setError] = useState<{
     errMsg: string;
     key: keyof typeof formats;
@@ -137,6 +141,14 @@ export default function ColorConverter() {
       </OneColumn>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const formats: {

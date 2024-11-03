@@ -6,6 +6,8 @@ import { getErrorMsg } from "@/utils/error";
 import { IconChevronDownLeft } from "@tabler/icons-react";
 import { Col, Divider, Row, Space } from "antd";
 import { ChangeEvent, useEffect, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const properties: { title: string; key: keyof URL }[] = [
   { title: "Protocol", key: "protocol" },
@@ -22,6 +24,7 @@ const defaultValue =
   "https://user:pwd@example.com:3000/url-parser?key1=value&key2=value2#hash";
 
 export default function UrlParser() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState(defaultValue);
   const [output, setOutput] = useState<URL | undefined>(undefined);
   const [isErr, setIsErr] = useState(false);
@@ -104,4 +107,11 @@ export default function UrlParser() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

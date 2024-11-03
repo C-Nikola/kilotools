@@ -5,9 +5,12 @@ import { Col, Divider, Row, Space, Switch, Table, Typography } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
 import cronstrue from "cronstrue";
 import { getErrorMsg } from "@/utils/error";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const { Text } = Typography;
 
 export default function CrontabGenerator() {
+  const { t } = useTranslation("toolList");
   const [cron, setCron] = useState("10 * * * *");
   const [verbose, setVerbose] = useState(true);
   const [dayOfWeekStartIndexZero, setDayOfWeekStartIndexZero] = useState(true);
@@ -101,4 +104,11 @@ export default function CrontabGenerator() {
       </Space>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

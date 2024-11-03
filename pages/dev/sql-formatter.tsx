@@ -10,8 +10,11 @@ import {
   KeywordCase,
   SqlLanguage,
 } from "sql-formatter";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function SQLFormatter() {
+  const { t } = useTranslation("toolList");
   const [rawSQL, setRawSQL] = useState("");
   const [config, setConfig] = useState<FormatOptionsWithLanguage>({
     keywordCase: "upper",
@@ -134,4 +137,11 @@ export default function SQLFormatter() {
       </TransformTextAreaToCode>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

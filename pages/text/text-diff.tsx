@@ -2,6 +2,8 @@ import Full from "@/components/Full";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import { Divider, List, Tag, Typography } from "antd";
 import dynamic from "next/dynamic";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Title } = Typography;
 
@@ -12,6 +14,7 @@ const DiffEditorUI = dynamic(() => import("@/components/ui/DiffEditorUI"), {
 });
 
 export default function TextDiff() {
+  const { t } = useTranslation("toolList");
   return (
     <>
       <ToolPageHeader title="Text diff" toolName="text-diff" />
@@ -46,6 +49,13 @@ const keymap = [
     desc: "previous diff (please activate modified editor)",
   },
 ];
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
+}
 
 const defaultOriginal = `original text
 a

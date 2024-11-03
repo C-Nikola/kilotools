@@ -11,10 +11,6 @@ import { useTranslation } from "next-i18next";
 
 const { Title } = Typography;
 
-interface Locale {
-  locale: string;
-}
-
 function Home() {
   const { t } = useTranslation("toolList");
   const { value: localFavoriteTools } = useLocalStorageListener<string[]>(

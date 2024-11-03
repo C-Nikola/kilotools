@@ -4,8 +4,11 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Card, Col, Row, Space } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function UrlEncoder() {
+  const { t } = useTranslation("toolList");
   const [encodeInput, setEncodeInput] = useState("");
   const [encodeOutput, setEncodeOutput] = useState("");
   const [decodeInput, setDecodeInput] = useState("");
@@ -78,4 +81,11 @@ export default function UrlEncoder() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

@@ -4,8 +4,11 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { toBase64 } from "@/utils/components/base64.utils";
 import { Col, Divider, Input, Row, Space } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function BasicAuthGenerator() {
+  const { t } = useTranslation("toolList");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
@@ -61,4 +64,11 @@ export default function BasicAuthGenerator() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

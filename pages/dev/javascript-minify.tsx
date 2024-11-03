@@ -6,8 +6,11 @@ import { getErrorMsg } from "@/utils/error";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { ChangeEvent, useMemo, useState } from "react";
 import { minify_sync } from "terser";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function JavascriptMinify() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
 
   const handleChangeInput = (e: ChangeEvent<HTMLTextAreaElement>) => {
@@ -80,4 +83,11 @@ export default function JavascriptMinify() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

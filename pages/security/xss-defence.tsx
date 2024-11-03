@@ -1,16 +1,14 @@
 import Full from "@/components/Full";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import DiffEditorUI from "@/components/ui/DiffEditorUI";
-import { Button, Col, Flex, Row } from "antd";
+import { Button, Flex } from "antd";
 import DOMPurify from "dompurify";
-import dynamic from "next/dynamic";
 import { useRef, useState } from "react";
-
-// const DiffEditorUI = dynamic(() => import("@/components/ui/DiffEditorUI"), {
-//   ssr: false,
-// });
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function XssDefence() {
+  const { t } = useTranslation("toolList");
   const editorRef = useRef<{
     getOriginalValue: () => string | undefined;
     getModifiedValue: () => string | undefined;
@@ -41,4 +39,11 @@ export default function XssDefence() {
       </Full>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

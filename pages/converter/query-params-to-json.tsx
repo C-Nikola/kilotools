@@ -3,7 +3,12 @@ import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import { convertQueryParamsToJSON } from "@/utils/components/query-params-to-json.utils";
 import { useCallback, useState } from "react";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
+
 export default function QueryParamsToJSON() {
+  const { t } = useTranslation("toolList");
+
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [isError, setIsError] = useState(false);
@@ -48,4 +53,11 @@ export default function QueryParamsToJSON() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

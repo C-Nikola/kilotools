@@ -76,7 +76,9 @@ const SideMenu = ({ t }: { t: TFunction }) => {
           <div className={styles.textWrapper}>
             <div className={styles.title}>KILOTOOLS</div>
             <div className={styles.divider} />
-            <div className={styles.subtitle}>Handy tools for developers</div>
+            <div className={styles.subtitle}>
+              One-Stop Shop for Developer Tools
+            </div>
           </div>
         </div>
       </Link>

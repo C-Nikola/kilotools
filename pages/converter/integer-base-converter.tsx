@@ -5,12 +5,16 @@ import { convertBase } from "@/utils/components/integer-base-converter.utils";
 import { getErrorMsg } from "@/utils/error";
 import { Col, Divider, Input, InputNumber, Row, Space } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const inputFlex = "0 1 100px";
 const outputFlex = "0 1 150px";
 const gutter = 8;
 
 export default function IntegerBaseConverter() {
+  const { t } = useTranslation("toolList");
+
   const [input, setInput] = useState("");
   const [inputBase, setInputBase] = useState<number>(10);
   const [outputBase, setOuputBase] = useState<number>(42);
@@ -155,4 +159,11 @@ export default function IntegerBaseConverter() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

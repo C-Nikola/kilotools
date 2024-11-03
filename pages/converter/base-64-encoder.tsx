@@ -7,10 +7,14 @@ import TextAreaUI from "@/components/ui/TextAreaUI";
 import { getErrorMsg } from "@/utils/error";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import ToolPageHeader from "@/components/ToolPageHeader";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Title, Text } = Typography;
 
 export default function Base64Encoder() {
+  const { t } = useTranslation("toolList");
+
   const [encodeInput, setEncodeInput] = useState("");
   const [encodeUrlSafe, setEncodeUrlSafe] = useState(false);
   const [decodeInput, setDecodeInput] = useState("");
@@ -131,4 +135,11 @@ export default function Base64Encoder() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

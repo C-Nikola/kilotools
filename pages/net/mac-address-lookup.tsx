@@ -5,8 +5,11 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Space } from "antd";
 import { ChangeEvent, useState } from "react";
 import db from "oui-data";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function MACAddressLookup() {
+  const { t } = useTranslation("toolList");
   const [macAddress, setMacAddress] = useState("");
   const [output, setOutput] = useState({
     isErr: false,
@@ -62,6 +65,14 @@ export default function MACAddressLookup() {
       </OneColumn>
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const getVendorValue = (address: string) =>

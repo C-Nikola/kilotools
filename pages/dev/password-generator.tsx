@@ -2,7 +2,9 @@ import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { createToken } from "@/utils/components/token-generator.utils";
 import { Button, Card, Col, Flex, InputNumber, Row, Space, Switch } from "antd";
-import { useEffect, useMemo, useState } from "react";
+import { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 interface Params {
   withUppercase: boolean;
@@ -13,6 +15,7 @@ interface Params {
 }
 
 export default function PasswordGenerator() {
+  const { t } = useTranslation("toolList");
   const [params, setParams] = useState<Params>({
     withUppercase: true,
     withLowercase: true,
@@ -152,4 +155,11 @@ export default function PasswordGenerator() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

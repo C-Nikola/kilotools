@@ -7,9 +7,12 @@ import {
   extensions as mimeTypeToExtension,
 } from "mime-types";
 import { useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const { Title, Text } = Typography;
 
 export default function MimeType() {
+  const { t } = useTranslation("toolList");
   const [mimeTypeInput, setMimeTypeInput] = useState<string | null>();
   const [extensionOutput, setExtensionOutput] = useState<string[]>([]);
 
@@ -107,6 +110,13 @@ export default function MimeType() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const mimeToExtensionsOptions = Object.keys(mimeTypeToExtension).map(

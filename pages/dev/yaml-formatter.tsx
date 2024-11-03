@@ -4,8 +4,11 @@ import { getErrorMsg } from "@/utils/error";
 import { Col, InputNumber, Row, Space, Switch } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
 import yaml from "yaml";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function YAMLFormatter() {
+  const { t } = useTranslation("toolList");
   const [rawYaml, setRawYaml] = useState("");
   const [sortKeys, setSortKeys] = useState(false);
   const [indentSize, setIndentSize] = useState<number | null>(2);
@@ -83,4 +86,11 @@ export default function YAMLFormatter() {
       </TransformTextAreaToCode>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

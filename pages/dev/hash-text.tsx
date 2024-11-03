@@ -17,6 +17,8 @@ import {
 } from "crypto-js";
 import { ChangeEvent, useState } from "react";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const algos = {
   MD5,
   SHA1,
@@ -40,6 +42,7 @@ function formatWithEncoding(words: lib.WordArray, encoding: Encoding) {
 }
 
 export default function HashText() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [encoding, setEncoding] = useState<Encoding>("Hex");
 
@@ -112,4 +115,11 @@ export default function HashText() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

@@ -7,6 +7,8 @@ import { getErrorMsg } from "@/utils/error";
 import { Button, Col, InputNumber, message, Row, Space } from "antd";
 import { useState } from "react";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const defaultValue = {
   isErr: false,
   errMsg: "",
@@ -14,6 +16,7 @@ const defaultValue = {
 };
 
 export default function RsaKeyPairGenerator() {
+  const { t } = useTranslation("toolList");
   const [bits, setBits] = useState<number | null>(1024);
   const [messageApi, contextHolder] = message.useMessage();
   const [loading, setLoading] = useState(false);
@@ -140,4 +143,11 @@ export default function RsaKeyPairGenerator() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

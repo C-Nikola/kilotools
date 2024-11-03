@@ -3,8 +3,11 @@ import { ChangeEvent, useCallback, useState } from "react";
 import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import { getErrorMsg } from "@/utils/error";
 import ToolPageHeader from "@/components/ToolPageHeader";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function YAMLtoJSON() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [output, setOutput] = useState<{
     isErr: boolean;
@@ -48,4 +51,11 @@ export default function YAMLtoJSON() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

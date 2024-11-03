@@ -8,10 +8,13 @@ import {
 import { Space, Typography } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { ChangeEvent, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Title, Text } = Typography;
 
 export default function TexToUnicode() {
+  const { t } = useTranslation("toolList");
   const [textInput, setTextInput] = useState("");
   const [textOutput, setTextOutput] = useState("");
   const [unicodeInput, setUnicodeInput] = useState("");
@@ -84,4 +87,11 @@ export default function TexToUnicode() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

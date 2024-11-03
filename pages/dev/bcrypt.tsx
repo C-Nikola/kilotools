@@ -13,9 +13,12 @@ import {
 import { ChangeEvent, useState } from "react";
 import { compareSync, hashSync } from "bcryptjs";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const { Title } = Typography;
 
 export default function Bcrypt() {
+  const { t } = useTranslation("toolList");
   const { useToken } = antdTheme;
   const { token } = useToken();
 
@@ -117,4 +120,11 @@ export default function Bcrypt() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

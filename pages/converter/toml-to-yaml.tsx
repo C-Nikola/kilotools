@@ -4,8 +4,11 @@ import { parseTOML } from "confbox";
 import { useState } from "react";
 import yaml from "js-yaml";
 import { getErrorMsg } from "@/utils/error";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function TOMLToYAML() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [output, setOutput] = useState({
     isErr: false,
@@ -53,4 +56,11 @@ export default function TOMLToYAML() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

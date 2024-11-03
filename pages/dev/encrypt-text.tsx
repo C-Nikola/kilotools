@@ -14,11 +14,14 @@ import TextArea from "antd/es/input/TextArea";
 import { AES, RC4, Rabbit, TripleDES, enc } from "crypto-js";
 import { ChangeEvent, useMemo, useState } from "react";
 
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const algos = { AES, TripleDES, Rabbit, RC4 };
 
 const { Title } = Typography;
 
 export default function EncryptText() {
+  const { t } = useTranslation("toolList");
   const [encryptInput, setEncryptInput] = useState("");
   const [encryptAlgo, setEncryptAlgo] = useState<keyof typeof algos>("AES");
   const [encryptKey, setEncryptKey] = useState("");
@@ -174,4 +177,11 @@ export default function EncryptText() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

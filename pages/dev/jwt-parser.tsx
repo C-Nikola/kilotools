@@ -4,10 +4,13 @@ import { decodeJWT } from "@/utils/components/jwt-parser.utils";
 import { Card, Col, Divider, Row, Space, Typography } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { ChangeEvent, useCallback, useState } from "react";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
-const { Title, Text } = Typography;
+const { Text } = Typography;
 
 export default function JwtParser() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [header, setHeader] = useState("");
   const [payload, setPayload] = useState("");
@@ -82,4 +85,11 @@ export default function JwtParser() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

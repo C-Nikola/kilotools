@@ -5,6 +5,8 @@ import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { useCallback, useState } from "react";
 import SyntaxHighlighterUI from "@/components/ui/SyntaxHighligherUI";
 import JSON5 from "json5";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 import {
   Content,
@@ -17,6 +19,8 @@ import { stringifyTOML } from "confbox";
 import { getErrorMsg } from "@/utils/error";
 
 export default function JSONToTOML() {
+  const { t } = useTranslation("toolList");
+
   const [output, setOutput] = useState("");
 
   const handleChange = (
@@ -77,4 +81,11 @@ export default function JSONToTOML() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

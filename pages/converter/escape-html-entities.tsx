@@ -3,13 +3,18 @@ import TowColumns from "@/components/TowColumns";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Space, Typography } from "antd";
 import { ChangeEvent, useState } from "react";
-import { escape, result, unescape } from "lodash";
+import { escape, unescape } from "lodash";
 import { getErrorMsg } from "@/utils/error";
 import TextAreaUI from "@/components/ui/TextAreaUI";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Title, Text } = Typography;
 
 export default function EscapeHTMLEntities() {
+  const { t } = useTranslation("toolList");
+
   const [escapeInput, setEscapeInput] = useState("");
   const [escapeOutput, setEscapeOutput] = useState({
     isErr: false,
@@ -115,4 +120,12 @@ export default function EscapeHTMLEntities() {
       />
     </>
   );
+}
+
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

@@ -3,9 +3,13 @@ import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import { getErrorMsg } from "@/utils/error";
 import { Col, InputNumber, Row, Space, Switch } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
-import xmlFormat, { type XMLFormatterOptions } from "xml-formatter";
+import xmlFormat from "xml-formatter";
+
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function XMLFormatter() {
+  const { t } = useTranslation("toolList");
   const [rawXML, setRawXML] = useState("");
   const [collapseContent, setCollapseContent] = useState(true);
   const [indentation, setIndentation] = useState<number | null>(2);
@@ -86,4 +90,11 @@ export default function XMLFormatter() {
       </TransformTextAreaToCode>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

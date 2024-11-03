@@ -4,8 +4,12 @@ import { useCallback, useState } from "react";
 import BaseUtils from "@/utils/baseUtils";
 import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import ToolPageHeader from "@/components/ToolPageHeader";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function CSVToJson() {
+  const { t } = useTranslation("toolList");
+
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [lowercase, setLowercase] = useState(false);
@@ -75,4 +79,11 @@ export default function CSVToJson() {
       </TransformTextAreaToCode>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

@@ -5,7 +5,8 @@ import TextAreaUI from "@/components/ui/TextAreaUI";
 import { convertHexToBin } from "@/utils/components/hash.utils";
 import { getErrorMsg } from "@/utils/error";
 import { Col, Input, Row, Select, Space } from "antd";
-import TextArea from "antd/es/input/TextArea";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 import type { lib } from "crypto-js";
 import {
@@ -35,6 +36,7 @@ const algos = {
 type Encoding = keyof typeof enc | "Bin";
 
 export default function HmacGenerator() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [secretKey, setSecretKey] = useState("");
   const [hashFunction, setHashFunction] =
@@ -162,4 +164,11 @@ export default function HmacGenerator() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

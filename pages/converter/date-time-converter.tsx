@@ -31,6 +31,8 @@ import {
 import { useState } from "react";
 import { useInterval } from "react-use";
 import { withDefaultOnError } from "@/utils/defaults";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 type ToDateMapper = (value: string) => Date;
 
@@ -111,6 +113,8 @@ const formats: DateFormat[] = [
 ];
 
 export default function DateTimeConverter() {
+  const { t } = useTranslation("toolList");
+
   const [inputDate, setInputDate] = useState("");
   const [formatIndex, setFormatIndex] = useState(6);
   const [output, setOutput] = useState({ isErr: false, date: new Date() });
@@ -228,4 +232,11 @@ export default function DateTimeConverter() {
       </Row>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

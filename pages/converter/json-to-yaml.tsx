@@ -11,8 +11,12 @@ import {
 } from "vanilla-jsoneditor";
 import TransformCustom from "@/components/TransformCustom";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function JsonToYaml() {
+  const { t } = useTranslation("toolList");
+
   const [output, setOutput] = useState("");
 
   const handleChange = useCallback(
@@ -74,4 +78,11 @@ export default function JsonToYaml() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

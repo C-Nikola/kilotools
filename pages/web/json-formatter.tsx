@@ -4,10 +4,13 @@ import JSONEditorUI from "@/components/ui/JSONEditor";
 import { Splitter } from "antd";
 import { useCallback, useState } from "react";
 import { Content, MenuItem, Mode } from "vanilla-jsoneditor";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 const { Panel } = Splitter;
 
 export default function JsonFormatter() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState<Content>({ json: {} });
   const handleChange = (content: Content) => {
     setInput(content);
@@ -42,4 +45,11 @@ export default function JsonFormatter() {
       </Full>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }

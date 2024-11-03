@@ -7,9 +7,12 @@ import { SHA1, SHA224, SHA256, SHA3, SHA384, SHA512 } from "crypto-js";
 import { getErrorMsg } from "@/utils/error";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { SHA_ALGORITHM } from "@/utils/const";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 const { Text } = Typography;
 
 export default function SHA1Page() {
+  const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [algorithm, setAlgorithm] = useState("SHA1");
   const [hashLength, setHashLength] = useState(512);
@@ -127,6 +130,13 @@ export default function SHA1Page() {
       </OneColumn>
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
 
 const algorithmList = [

@@ -14,8 +14,12 @@ import {
 import convert from "xml-js";
 import JSON5 from "json5";
 import { getErrorMsg } from "@/utils/error";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import { useTranslation } from "next-i18next";
 
 export default function JSONToXML() {
+  const { t } = useTranslation("toolList");
+
   const [output, setOutput] = useState({
     isErr: false,
     result: "",
@@ -92,4 +96,11 @@ export default function JSONToXML() {
       />
     </>
   );
+}
+export async function getStaticProps({ locale }: Locale) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["toolList"])),
+    },
+  };
 }
