@@ -215,7 +215,7 @@
     "description": "方便快速地解析 JWT， 得到 Header、Payload、Signature，可以用于获取 JWT 数据，校验 JWT 数据，对 debug 非常有用"
   },
   "tokenGenerator": {
-    "title": "token 生成",
+    "title": "Token 生成",
     "description": "按用户选择的字符种类和长度随机生成 token，可以包含大小写、数字、特殊符号",
     "uppercase": "大写",
     "lowercase": "小写",
