@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Favori araçlar",
+    "crypto": "Kripto/Kodlama",
+    "converter": "Dönüştürücü",
+    "web": "Web",
+    "development": "Geliştirme",
+    "network": "Ağ",
+    "text": "Metin",
+    "security": "Güvenlik"
+  },
   "rsa": {
     "title": "RSA anahtar çifti oluşturucu",
     "description": "Bu araç, kullanıcıların güvenli RSA genel ve özel anahtarlarını hızlı bir şekilde oluşturmasına yardımcı olmak için tasarlanmış çevrimiçi bir RSA anahtar oluşturucusudur. RSA (Rivest-Shamir-Adleman), veri şifreleme ve dijital imzalar için yaygın olarak kullanılan bir açık anahtarlı kriptografi algoritmasıdır.",

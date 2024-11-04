@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Strumenti preferiti",
+    "crypto": "Cripto/Codifica",
+    "converter": "Convertitore",
+    "web": "Web",
+    "development": "Sviluppo",
+    "network": "Rete",
+    "text": "Testo",
+    "security": "Sicurezza"
+  },
   "rsa": {
     "title": "Generatore di coppia di chiavi RSA",
     "description": "Questo strumento è un generatore di chiavi RSA online progettato per aiutare gli utenti a generare rapidamente chiavi pubbliche e private RSA sicure. RSA (Rivest-Shamir-Adleman) è un algoritmo crittografico a chiave pubblica ampiamente utilizzato, principalmente per la crittografia dei dati e le firme digitali.",

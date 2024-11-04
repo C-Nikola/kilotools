@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Favoritverktyg",
+    "crypto": "Krypto/Kodning",
+    "converter": "Omvandlare",
+    "web": "Webb",
+    "development": "Utveckling",
+    "network": "Nätverk",
+    "text": "Text",
+    "security": "Säkerhet"
+  },
   "rsa": {
     "title": "RSA nyckelparsgenerator",
     "description": "Detta verktyg är en online RSA-nyckelgenerator som är utformad för att hjälpa användare att snabbt generera säkra RSA offentliga och privata nycklar. RSA (Rivest-Shamir-Adleman) är en allmänt använd kryptografisk algoritm med offentlig nyckel, främst använd för datakryptering och digitala signaturer.",

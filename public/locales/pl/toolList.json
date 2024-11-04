@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Ulubione narzędzia",
+    "crypto": "Kryptografia/Kodowanie",
+    "converter": "Konwerter",
+    "web": "Web",
+    "development": "Rozwój",
+    "network": "Sieć",
+    "text": "Tekst",
+    "security": "Bezpieczeństwo"
+  },
   "rsa": {
     "title": "Generator par kluczy RSA",
     "description": "To narzędzie to internetowy generator kluczy RSA, zaprojektowany, aby pomóc użytkownikom szybko generować bezpieczne klucze publiczne i prywatne RSA. RSA (Rivest-Shamir-Adleman) to szeroko stosowany algorytm kryptograficzny z kluczem publicznym, głównie używany do szyfrowania danych i podpisów cyfrowych.",

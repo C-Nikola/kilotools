@@ -1,5 +1,6 @@
 {
   "rsa": {
+    "favorite": "Lieblingswerkzeuge",
     "title": "RSA-Schlüsselpaar-Generator",
     "description": "Dieses Tool ist ein Online-RSA-Schlüsselgenerator, der Benutzern hilft, schnell sichere RSA-öffentliche und private Schlüssel zu generieren. RSA (Rivest-Shamir-Adleman) ist ein weit verbreiteter kryptografischer Algorithmus mit öffentlichem Schlüssel, der hauptsächlich für die Datenverschlüsselung und digitale Signaturen verwendet wird.",
     "generate": "Schlüsselpaar generieren",
