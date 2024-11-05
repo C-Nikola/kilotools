@@ -20,6 +20,7 @@
   "dependencies": {
     "@ant-design/cssinjs": "^1.21.1",
     "@ant-design/icons": "^5.5.1",
+    "@giscus/react": "^3.0.0",
     "@monaco-editor/react": "^4.6.0",
     "@reduxjs/toolkit": "^2.3.0",
     "@tabler/icons-react": "^3.19.0",

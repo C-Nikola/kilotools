@@ -1,4 +1,4 @@
-import { Button, Col, Drawer, Row } from "antd";
+import { Button, Col, Divider, Drawer, Row, Space } from "antd";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import SideMenu from "./SideMenu";
 import { GithubOutlined, MenuOutlined } from "@ant-design/icons";
@@ -11,6 +11,7 @@ import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { useDispatch } from "react-redux";
 import { initialFavoriteTools } from "@/store/favoriteTools/favoriteToolsReducer";
 import LanguageSelector from "./LanguageSelector";
+import Giscus from "@giscus/react";
 
 export default function Layout({ children }: { children?: ReactNode }) {
   const [showMenu, setShowMenu] = useState(true);
@@ -68,6 +69,21 @@ export default function Layout({ children }: { children?: ReactNode }) {
           style={{ padding: "25px 26px 26px", height: "calc(100% - 83px)" }}
         >
           {children}
+          <div className="pt-16">
+            <Giscus
+              repo="C-Nikola/kilotools"
+              repoId="R_kgDONGxPpA"
+              category="Announcements"
+              categoryId="DIC_kwDONGxPpM4Cj_l2"
+              mapping="title"
+              strict="0"
+              reactionsEnabled="1"
+              emitMetadata="0"
+              inputPosition="top"
+              theme="preferred_color_scheme"
+              lang="en"
+            />
+          </div>
         </OverlayScrollbarsComponent>
       </Col>
       <Drawer

@@ -9,6 +9,7 @@ import { useState } from "react";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 const defaultValue = {
   isErr: false,
   errMsg: "",
@@ -85,6 +86,10 @@ export default function RsaKeyPairGenerator() {
   return (
     <>
       {contextHolder}
+      <NextSeo
+        title="RSA key pair generator"
+        description={t("rsa.description")}
+      />
       <ToolPageHeader
         title={t("rsa.title")}
         toolName="rsa-key-pair-generator"
