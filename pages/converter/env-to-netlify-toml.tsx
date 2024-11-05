@@ -5,6 +5,7 @@ import { useCallback, useState } from "react";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function EnvToNetlifyToml() {
   const { t } = useTranslation("toolList");
@@ -30,6 +31,10 @@ export default function EnvToNetlifyToml() {
   );
   return (
     <>
+      <NextSeo
+        title={t("envToNetlifyToml.title")}
+        description={t("envToNetlifyToml.description")}
+      />
       <ToolPageHeader
         title={t("envToNetlifyToml.title")}
         toolName="env-to-netlify-toml"

@@ -13,6 +13,7 @@ import TransformCustom from "@/components/TransformCustom";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function JsonToYaml() {
   const { t } = useTranslation("toolList");
@@ -46,6 +47,10 @@ export default function JsonToYaml() {
   }, []);
   return (
     <>
+      <NextSeo
+        title={t("JSONToYAML.title")}
+        description={t("JSONToYAML.description")}
+      />
       <ToolPageHeader title={t("JSONToYAML.title")} toolName="json-to-yaml" />
       <TransformCustom
         inputLabel="JSON"

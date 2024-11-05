@@ -5,6 +5,7 @@ import { parseTOML } from "confbox";
 import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function TOMLToJSON() {
   const { t } = useTranslation("toolList");
@@ -43,6 +44,10 @@ export default function TOMLToJSON() {
 
   return (
     <>
+      <NextSeo
+        title={t("TOMLToJSON.title")}
+        description={t("TOMLToJSON.description")}
+      />
       <ToolPageHeader title={t("TOMLToJSON.title")} toolName="toml-to-json" />
       <TransformTextAreaToCode
         inputLabel="TOML"

@@ -1,4 +1,3 @@
-import CopyButton from "@/components/CopyButton";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Card, Col, Row, Space } from "antd";
@@ -6,6 +5,7 @@ import TextArea from "antd/es/input/TextArea";
 import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function UrlEncoder() {
   const { t } = useTranslation("toolList");
@@ -40,6 +40,10 @@ export default function UrlEncoder() {
 
   return (
     <>
+      <NextSeo
+        title={t("URLEncodeDecoder.title")}
+        description={t("URLEncodeDecoder.description")}
+      />
       <ToolPageHeader
         title={t("URLEncodeDecoder.title")}
         toolName="url-encoder"

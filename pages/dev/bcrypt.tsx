@@ -15,6 +15,8 @@ import { compareSync, hashSync } from "bcryptjs";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+
 const { Title } = Typography;
 
 export default function Bcrypt() {
@@ -56,6 +58,10 @@ export default function Bcrypt() {
 
   return (
     <>
+      <NextSeo
+        title={t("bcrypt.title")}
+        description={t("bcrypt.description")}
+      />
       <ToolPageHeader title={t("bcrypt.title")} toolName="bcrypt" />
       <Row className="w-full" gutter={[16, 16]} justify="center">
         <Col flex="0 1 600px">

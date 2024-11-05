@@ -3,11 +3,11 @@ import CopyToClipboard from "react-copy-to-clipboard";
 import { CopyOutlined } from "@ant-design/icons";
 
 /**
- * 用于输出的可复制的 Input
+ *
  * @param props
  * @returns
  */
-// TODO: 需要限制value类型为 string
+// TODO
 export default function InputCopyable(props: InputProps) {
   const { value = "" } = props;
   const [messageApi, contextHolder] = message.useMessage();

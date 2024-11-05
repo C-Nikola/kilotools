@@ -7,6 +7,7 @@ import SyntaxHighlighterUI from "@/components/ui/SyntaxHighligherUI";
 import JSON5 from "json5";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 import {
   Content,
@@ -49,6 +50,10 @@ export default function JSONToTOML() {
   }, []);
   return (
     <>
+      <NextSeo
+        title={t("JSONToTOML.title")}
+        description={t("JSONToTOML.description")}
+      />
       <ToolPageHeader title={t("JSONToTOML.title")} toolName="json-to-toml" />
       <TransformCustom
         inputLabel="JSON"

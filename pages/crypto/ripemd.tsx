@@ -6,6 +6,7 @@ import { ChangeEvent, useState } from "react";
 import { RIPEMD160 } from "crypto-js";
 import { getErrorMsg } from "@/utils/error";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
+import { NextSeo } from "next-seo";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
@@ -38,6 +39,10 @@ export default function MD5Page() {
 
   return (
     <>
+      <NextSeo
+        title={t("RIPEMD.title")}
+        description={t("RIPEMD.description")}
+      />
       <ToolPageHeader title={t("RIPEMD.title")} toolName="ripemd" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">

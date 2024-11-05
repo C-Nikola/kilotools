@@ -4,6 +4,7 @@ import { Divider, List, Tag, Typography } from "antd";
 import dynamic from "next/dynamic";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Title } = Typography;
 
@@ -17,6 +18,10 @@ export default function TextDiff() {
   const { t } = useTranslation("toolList");
   return (
     <>
+      <NextSeo
+        title={t("textDiff.title")}
+        description={t("textDiff.description")}
+      />
       <ToolPageHeader title={t("textDiff.title")} toolName="text-diff" />
       <Full scrollable>
         <DiffEditorUI original={defaultOriginal} modified={defaultModified} />

@@ -8,6 +8,7 @@ import { Col, Divider, Row, Space } from "antd";
 import { ChangeEvent, useEffect, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const properties: { title: string; key: keyof URL }[] = [
   { title: "Protocol", key: "protocol" },
@@ -53,6 +54,10 @@ export default function UrlParser() {
 
   return (
     <>
+      <NextSeo
+        title={t("URLParser.title")}
+        description={t("URLParser.description")}
+      />
       <ToolPageHeader title={t("URLParser.title")} toolName="url-parser" />
       <OneColumn>
         <Space direction="vertical" className="w-full">

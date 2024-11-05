@@ -12,6 +12,7 @@ import {
 } from "sql-formatter";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function SQLFormatter() {
   const { t } = useTranslation("toolList");
@@ -66,6 +67,10 @@ export default function SQLFormatter() {
 
   return (
     <>
+      <NextSeo
+        title={t("SQLFormatter.title")}
+        description={t("SQLFormatter.description")}
+      />
       <ToolPageHeader
         title={t("SQLFormatter.title")}
         toolName="sql-formatter"

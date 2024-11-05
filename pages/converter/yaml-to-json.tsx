@@ -5,6 +5,7 @@ import { getErrorMsg } from "@/utils/error";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function YAMLtoJSON() {
   const { t } = useTranslation("toolList");
@@ -38,6 +39,10 @@ export default function YAMLtoJSON() {
 
   return (
     <>
+      <NextSeo
+        title={t("YAMLToJSON.title")}
+        description={t("YAMLToJSON.description")}
+      />
       <ToolPageHeader title={t("YAMLToJSON.title")} toolName="yaml-to-json" />
       <TransformTextAreaToCode
         inputLabel="YAML"

@@ -7,6 +7,7 @@ import cronstrue from "cronstrue";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 const { Text } = Typography;
 
 export default function CrontabGenerator() {
@@ -53,6 +54,10 @@ export default function CrontabGenerator() {
 
   return (
     <>
+      <NextSeo
+        title={t("crontabGenerator.title")}
+        description={t("crontabGenerator.description")}
+      />
       <ToolPageHeader
         title={t("crontabGenerator.title")}
         toolName="crontab-generator"

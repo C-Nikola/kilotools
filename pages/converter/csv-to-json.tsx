@@ -6,6 +6,7 @@ import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function CSVToJson() {
   const { t } = useTranslation("toolList");
@@ -60,6 +61,10 @@ export default function CSVToJson() {
 
   return (
     <>
+      <NextSeo
+        title={t("CSVToJSON.title")}
+        description={t("CSVToJSON.description")}
+      />
       <ToolPageHeader title={t("CSVToJSON.title")} toolName="csv-to-json" />
       <TransformTextAreaToCode
         inputLabel="CSV"

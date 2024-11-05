@@ -2,7 +2,7 @@ import { Input, InputProps } from "antd";
 import ErrorMsg from "@/components/ErrorMsg";
 
 /**
- * 用于输入的 Input
+ *
  * @param props
  * @returns
  */

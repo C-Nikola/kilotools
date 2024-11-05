@@ -8,6 +8,7 @@ import { getErrorMsg } from "@/utils/error";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Text } = Typography;
 
@@ -38,6 +39,7 @@ export default function MD5Page() {
 
   return (
     <>
+      <NextSeo title={t("MD5.title")} description={t("MD5.description")} />
       <ToolPageHeader title={t("MD5.title")} toolName="md5" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">

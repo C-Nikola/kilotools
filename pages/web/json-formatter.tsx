@@ -6,6 +6,7 @@ import { useCallback, useState } from "react";
 import { Content, MenuItem, Mode } from "vanilla-jsoneditor";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Panel } = Splitter;
 
@@ -22,6 +23,10 @@ export default function JsonFormatter() {
 
   return (
     <>
+      <NextSeo
+        title={t("JSONFormatter.title")}
+        description={t("JSONFormatter.description")}
+      />
       <ToolPageHeader
         title={t("JSONFormatter.title")}
         toolName="json-formatter"

@@ -9,6 +9,7 @@ import TextAreaUI from "@/components/ui/TextAreaUI";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Title, Text } = Typography;
 
@@ -62,6 +63,10 @@ export default function EscapeHTMLEntities() {
 
   return (
     <>
+      <NextSeo
+        title={t("escapeHTMLEntities.title")}
+        description={t("escapeHTMLEntities.description")}
+      />
       <ToolPageHeader
         title={t("escapeHTMLEntities.title")}
         toolName="escape-html-entities"

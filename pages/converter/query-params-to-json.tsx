@@ -2,9 +2,9 @@ import ToolPageHeader from "@/components/ToolPageHeader";
 import TransformTextAreaToCode from "@/components/TransformTextAreaToCode";
 import { convertQueryParamsToJSON } from "@/utils/components/query-params-to-json.utils";
 import { useCallback, useState } from "react";
-
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function QueryParamsToJSON() {
   const { t } = useTranslation("toolList");
@@ -37,6 +37,10 @@ export default function QueryParamsToJSON() {
 
   return (
     <>
+      <NextSeo
+        title={t("queryParamsToJSON.title")}
+        description={t("queryParamsToJSON.description")}
+      />
       <ToolPageHeader
         title={t("queryParamsToJSON.title")}
         toolName="query-params-to-json"

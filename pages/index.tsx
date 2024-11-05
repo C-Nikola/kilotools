@@ -25,7 +25,6 @@ function Home() {
       return;
     }
     setFavoriteTools(
-      // 计算收藏的工具
       tools.filter(({ key }) => {
         return localFavoriteTools.includes(key);
       })

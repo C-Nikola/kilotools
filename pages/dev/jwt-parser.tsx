@@ -6,6 +6,7 @@ import TextArea from "antd/es/input/TextArea";
 import { ChangeEvent, useCallback, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Text } = Typography;
 
@@ -39,6 +40,10 @@ export default function JwtParser() {
 
   return (
     <>
+      <NextSeo
+        title={t("JWTParser.title")}
+        description={t("JWTParser.description")}
+      />
       <ToolPageHeader title={t("JWTParser.title")} toolName="jwt-parser" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">

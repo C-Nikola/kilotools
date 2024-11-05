@@ -7,6 +7,7 @@ import { Col, Divider, Input, InputNumber, Row, Space } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const inputFlex = "0 1 100px";
 const outputFlex = "0 1 150px";
@@ -55,6 +56,10 @@ export default function IntegerBaseConverter() {
 
   return (
     <>
+      <NextSeo
+        title={t("integerBaseConverter.title")}
+        description={t("integerBaseConverter.description")}
+      />
       <ToolPageHeader
         title={t("integerBaseConverter.title")}
         toolName="integer-base-converter"

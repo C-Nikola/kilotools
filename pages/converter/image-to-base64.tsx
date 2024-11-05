@@ -6,6 +6,7 @@ import { UploadChangeParam, UploadFile } from "antd/es/upload";
 import { useCallback, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Dragger } = Upload;
 
@@ -54,6 +55,10 @@ export default function ImageToBase64() {
 
   return (
     <>
+      <NextSeo
+        title={t("imageToBase64Converter.title")}
+        description={t("imageToBase64Converter.description")}
+      />
       <ToolPageHeader
         title={t("imageToBase64Converter.title")}
         toolName="csv-to-json"

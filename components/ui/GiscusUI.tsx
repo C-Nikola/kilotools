@@ -10,7 +10,7 @@ export default function GiscusUI() {
         repoId="R_kgDONGxPpA"
         category="Announcements"
         categoryId="DIC_kwDONGxPpM4Cj_l2"
-        mapping="title"
+        mapping="pathname"
         strict="0"
         reactionsEnabled="1"
         emitMetadata="0"

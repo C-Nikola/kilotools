@@ -5,6 +5,7 @@ import { ChangeEvent, useState } from "react";
 import convert from "xml-js";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function XmlToJson() {
   const { t } = useTranslation("toolList");
@@ -30,6 +31,10 @@ export default function XmlToJson() {
 
   return (
     <>
+      <NextSeo
+        title={t("XMLToJSON.title")}
+        description={t("XMLToJSON.description")}
+      />
       <ToolPageHeader title={t("XMLToJSON.title")} toolName="xml-to-json" />
       <TransformTextAreaToCode
         inputLabel="XML"

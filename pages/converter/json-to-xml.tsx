@@ -16,6 +16,7 @@ import JSON5 from "json5";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function JSONToXML() {
   const { t } = useTranslation("toolList");
@@ -64,6 +65,10 @@ export default function JSONToXML() {
   }, []);
   return (
     <>
+      <NextSeo
+        title={t("JSONToXML.title")}
+        description={t("JSONToXML.description")}
+      />
       <ToolPageHeader title={t("JSONToXML.title")} toolName="json-to-xml" />
       <TransformCustom
         inputLabel="JSON"

@@ -73,14 +73,8 @@ export default function ConfigProvider({ children }: ConfigProviderProps) {
     <AntdConfigProvider
       locale={language}
       theme={{
-        // 启用 css 变量模式
-        //   同一组件在不同主题下的样式可以共享，减少了样式体积
-        // 切换主题时不再需要重新序列化样式，提升了主题切换的性能
         cssVar: true,
-        // 如果你的应用中只存在一个版本的 antd，你可以选择关闭 hash 来进一步减小样式体积
-        // hashed: false,
         ...themeConfig,
-        // ...darkTheme
       }}
     >
       {children}

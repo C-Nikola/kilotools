@@ -16,6 +16,8 @@ import { ChangeEvent, useMemo, useState } from "react";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+
 const algos = { AES, TripleDES, Rabbit, RC4 };
 
 const { Title } = Typography;
@@ -72,6 +74,10 @@ export default function EncryptText() {
 
   return (
     <>
+      <NextSeo
+        title={t("encryptDecryptText.title")}
+        description={t("encryptDecryptText.description")}
+      />
       <ToolPageHeader
         title={t("encryptDecryptText.title")}
         toolName="encrypt-text"

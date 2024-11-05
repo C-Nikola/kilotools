@@ -28,7 +28,6 @@ export default function ToolPageHeader({
       const newValue = localFavoriteTools.filter(
         (tool) => !(tool === toolName)
       );
-      // 触发 localStorage 修改事件
       dispatchStorageListener(JSON.stringify(newValue));
     } else {
       dispatchStorageListener(

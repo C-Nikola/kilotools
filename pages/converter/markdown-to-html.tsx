@@ -12,6 +12,7 @@ import Title from "antd/es/typography/Title";
 import { PrinterOutlined } from "@ant-design/icons";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function MarkdownToHtml() {
   const { t } = useTranslation("toolList");
@@ -45,6 +46,10 @@ export default function MarkdownToHtml() {
 
   return (
     <>
+      <NextSeo
+        title={t("markdownToHTML.title")}
+        description={t("markdownToHTML.description")}
+      />
       <ToolPageHeader
         toolName="markdown-to-html"
         title={t("markdownToHTML.title")}

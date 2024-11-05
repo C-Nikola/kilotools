@@ -7,6 +7,7 @@ import { ChangeEvent, useState } from "react";
 import db from "oui-data";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function MACAddressLookup() {
   const { t } = useTranslation("toolList");
@@ -35,6 +36,10 @@ export default function MACAddressLookup() {
 
   return (
     <>
+      <NextSeo
+        title={t("MACAddressLookup.title")}
+        description={t("MACAddressLookup.description")}
+      />
       <ToolPageHeader
         title={t("MACAddressLookup.title")}
         toolName="mac-address-lookup"

@@ -72,7 +72,7 @@ export default function Base64Encoder() {
     <>
       <NextSeo
         title={t("base64EncodeDecode.title")}
-        description="A short description goes here."
+        description={t("base64EncodeDecode.description")}
       />
       <ToolPageHeader title="Base64 Encode/Decode" toolName="base64-encode" />
       <TowColumns

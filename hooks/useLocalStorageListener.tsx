@@ -2,15 +2,6 @@ import { getErrorMsg } from "@/utils/error";
 import { useEffect } from "react";
 import { useLocalStorage } from "react-use";
 
-/**
- * 修改，移除，监听 localStorage
- * @param key localStorage 里面的key
- * @param callback 回调
- * @returns value 值
- * remove： 移除
- * dispatchStorageListener: 触发 storage 修改事件，需要触发这个才能让事件监听到
- *
- */
 function useLocalStorageListener<T>(
   key: string,
   type: string,

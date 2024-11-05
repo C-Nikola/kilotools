@@ -9,6 +9,8 @@ import {
 import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+
 const { Title, Text } = Typography;
 
 export default function MimeType() {
@@ -31,6 +33,10 @@ export default function MimeType() {
 
   return (
     <>
+      <NextSeo
+        title={t("MIMETypes.title")}
+        description={t("MIMETypes.description")}
+      />
       <ToolPageHeader title={t("MIMETypes.title")} toolName="mime-types" />
       <TowColumns
         children1={

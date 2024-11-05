@@ -1,15 +1,7 @@
-import {
-  DiffEditor,
-  loader,
-  Monaco,
-  MonacoDiffEditor,
-} from "@monaco-editor/react";
-import * as monaco from "monaco-editor";
+import { DiffEditor, Monaco, MonacoDiffEditor } from "@monaco-editor/react";
 
 import { useTheme } from "next-themes";
-import { forwardRef, useEffect, useImperativeHandle, useRef } from "react";
-
-// loader.config({ monaco });
+import { forwardRef, useImperativeHandle, useRef } from "react";
 
 const DiffEditorUI = forwardRef<
   {

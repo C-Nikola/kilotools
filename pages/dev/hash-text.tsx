@@ -19,6 +19,8 @@ import { ChangeEvent, useState } from "react";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+
 const algos = {
   MD5,
   SHA1,
@@ -56,6 +58,10 @@ export default function HashText() {
 
   return (
     <>
+      <NextSeo
+        title={t("hashText.title")}
+        description={t("hashText.description")}
+      />
       <ToolPageHeader title={t("hashText.title")} toolName="hash-text" />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">

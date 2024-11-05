@@ -6,6 +6,7 @@ import { ChangeEvent, useMemo, useState } from "react";
 import yaml from "yaml";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function YAMLFormatter() {
   const { t } = useTranslation("toolList");
@@ -53,6 +54,10 @@ export default function YAMLFormatter() {
 
   return (
     <>
+      <NextSeo
+        title={t("YAMLFormatter.title")}
+        description={t("YAMLFormatter.description")}
+      />
       <ToolPageHeader
         title={t("YAMLFormatter.title")}
         toolName="yaml-formatter"

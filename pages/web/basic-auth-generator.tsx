@@ -6,6 +6,7 @@ import { Col, Divider, Input, Row, Space } from "antd";
 import { ChangeEvent, useMemo, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function BasicAuthGenerator() {
   const { t } = useTranslation("toolList");
@@ -28,6 +29,10 @@ export default function BasicAuthGenerator() {
 
   return (
     <>
+      <NextSeo
+        title={t("basicAuthGenerator.title")}
+        description={t("basicAuthGenerator.description")}
+      />
       <ToolPageHeader
         title={t("basicAuthGenerator.title")}
         toolName="basic-auth-genrator"

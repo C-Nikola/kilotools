@@ -7,11 +7,8 @@ import Layout from "@/components/Layout";
 import { Provider } from "react-redux";
 import store from "@/store/store";
 import { appWithTranslation } from "next-i18next";
-// import { useTranslation } from "next-i18next";
 
 const App = ({ Component, pageProps }: AppProps) => {
-  // const { t } = useTranslation("toolList");
-
   return (
     <Provider store={store}>
       <ThemeProvider>

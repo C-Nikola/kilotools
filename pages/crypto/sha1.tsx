@@ -9,6 +9,8 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { SHA_ALGORITHM } from "@/utils/const";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
+
 const { Text } = Typography;
 
 export default function SHA1Page() {
@@ -79,6 +81,7 @@ export default function SHA1Page() {
 
   return (
     <>
+      <NextSeo title={t("SHA.title")} description={t("SHA.description")} />
       <ToolPageHeader title={t("SHA.title")} toolName="sha1" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">

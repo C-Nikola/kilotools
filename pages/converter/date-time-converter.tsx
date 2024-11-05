@@ -33,6 +33,7 @@ import { useInterval } from "react-use";
 import { withDefaultOnError } from "@/utils/defaults";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 type ToDateMapper = (value: string) => Date;
 
@@ -179,6 +180,10 @@ export default function DateTimeConverter() {
 
   return (
     <>
+      <NextSeo
+        title={t("dateTimeConverter.title")}
+        description={t("dateTimeConverter.description")}
+      />
       <ToolPageHeader
         title={t("dateTimeConverter.title")}
         toolName="date-time-converter"

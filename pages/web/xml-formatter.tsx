@@ -7,6 +7,7 @@ import xmlFormat from "xml-formatter";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function XMLFormatter() {
   const { t } = useTranslation("toolList");
@@ -54,6 +55,10 @@ export default function XMLFormatter() {
 
   return (
     <>
+      <NextSeo
+        title={t("XMLFormatter.title")}
+        description={t("XMLToJSON.description")}
+      />
       <ToolPageHeader
         title={t("XMLFormatter.title")}
         toolName="xml-formatter"

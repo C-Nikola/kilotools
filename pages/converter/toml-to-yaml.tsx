@@ -6,6 +6,7 @@ import yaml from "js-yaml";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function TOMLToYAML() {
   const { t } = useTranslation("toolList");
@@ -43,6 +44,10 @@ export default function TOMLToYAML() {
   };
   return (
     <>
+      <NextSeo
+        title={t("TOMLToYAML.title")}
+        description={t("TOMLToYAML.description")}
+      />
       <ToolPageHeader title={t("TOMLToYAML.title")} toolName="toml-to-yaml" />
       <TransformTextAreaToCode
         inputLabel="TOML"

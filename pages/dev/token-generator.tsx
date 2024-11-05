@@ -5,6 +5,7 @@ import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { generateMultiple } from "generate-password";
+import { NextSeo } from "next-seo";
 
 export default function TokenGenerator() {
   const { t } = useTranslation("toolList");
@@ -30,6 +31,10 @@ export default function TokenGenerator() {
 
   return (
     <>
+      <NextSeo
+        title={t("tokenGenerator.title")}
+        description={t("tokenGenerator.description")}
+      />
       <ToolPageHeader
         title={t("tokenGenerator.title")}
         toolName="token-generator"

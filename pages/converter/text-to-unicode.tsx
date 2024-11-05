@@ -10,6 +10,7 @@ import TextArea from "antd/es/input/TextArea";
 import { ChangeEvent, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 const { Title, Text } = Typography;
 
@@ -36,6 +37,10 @@ export default function TexToUnicode() {
 
   return (
     <>
+      <NextSeo
+        title={t("textToUnicode.title")}
+        description={t("textToUnicode.description")}
+      />
       <ToolPageHeader
         title={t("textToUnicode.title")}
         toolName="text-to-unicode"

@@ -1,11 +1,6 @@
 import { useTheme } from "next-themes";
 import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
 import { PrismLight } from "react-syntax-highlighter";
-import toml from "react-syntax-highlighter/dist/esm/languages/prism/toml";
-// import {
-//   atomOneDark,
-//   atomOneLight,
-// } from "react-syntax-highlighter/dist/esm/styles/hljs";
 import {
   oneDark,
   oneLight,
@@ -83,7 +78,6 @@ export default function SyntaxHighlighterUI({
         }}
         wrapLongLines
         language={isError ? "string" : outputLanguage}
-        // style={theme === "light" ? atomOneLight : atomOneDark}
         style={theme === "light" ? oneLight : oneDark}
       >
         {output}

@@ -1,4 +1,4 @@
-import { Card, Space, Splitter, Typography } from "antd";
+import { Card, Splitter, Typography } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import { ChangeEventHandler, ReactNode, useCallback } from "react";
 import SyntaxHighlighterUI from "./ui/SyntaxHighligherUI";

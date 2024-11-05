@@ -8,6 +8,7 @@ import TextAreaUI from "@/components/ui/TextAreaUI";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function AESDecrypt() {
   const { t } = useTranslation("toolList");
@@ -88,6 +89,10 @@ export default function AESDecrypt() {
 
   return (
     <>
+      <NextSeo
+        title={t("AESDecrypt.title")}
+        description={t("AESDecrypt.description")}
+      />
       <ToolPageHeader title={t("AESDecrypt.title")} toolName="aes-decrypt" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">

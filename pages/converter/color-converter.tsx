@@ -16,6 +16,7 @@ import { getErrorMsg } from "@/utils/error";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 extend([cmykPlugin, hwbPlugin, namesPlugin, lchPlugin]);
 
@@ -97,6 +98,10 @@ export default function ColorConverter() {
 
   return (
     <>
+      <NextSeo
+        title={t("colorConverter.title")}
+        description={t("colorConverter.description")}
+      />
       <ToolPageHeader
         title={t("colorConverter.title")}
         toolName="color-converter"

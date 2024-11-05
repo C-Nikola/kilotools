@@ -8,6 +8,7 @@ import { ChangeEvent, useMemo, useState } from "react";
 import { minify_sync } from "terser";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function JavascriptMinify() {
   const { t } = useTranslation("toolList");
@@ -35,6 +36,10 @@ export default function JavascriptMinify() {
 
   return (
     <>
+      <NextSeo
+        title={t("javascriptMinify.title")}
+        description={t("javascriptMinify.description")}
+      />
       <ToolPageHeader
         title={t("javascriptMinify.title")}
         toolName="javascript-minify"

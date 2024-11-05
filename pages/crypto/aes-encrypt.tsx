@@ -8,6 +8,7 @@ import TextAreaUI from "@/components/ui/TextAreaUI";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function AESEncrypt() {
   const { t } = useTranslation("toolList");
@@ -86,6 +87,10 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
 
   return (
     <>
+      <NextSeo
+        title={t("AESEncrypt.title")}
+        description={t("AESEncrypt.description")}
+      />
       <ToolPageHeader title={t("AESEncrypt.title")} toolName="aes-encrypt" />
       <OneColumn>
         <Space direction="vertical" size="middle" className="w-full">

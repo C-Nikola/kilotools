@@ -13,6 +13,7 @@ import TransformCustom from "@/components/TransformCustom";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function JsonToCsv() {
   const { t } = useTranslation("toolList");
@@ -46,6 +47,10 @@ export default function JsonToCsv() {
 
   return (
     <>
+      <NextSeo
+        title={t("JSONToCSV.title")}
+        description={t("JSONToCSV.description")}
+      />
       <ToolPageHeader title={t("JSONToCSV.title")} toolName="json-to-csv" />
       <TransformCustom
         inputLabel="JSON"

@@ -6,6 +6,7 @@ import DOMPurify from "dompurify";
 import { useRef, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 export default function XssDefence() {
   const { t } = useTranslation("toolList");
@@ -23,6 +24,10 @@ export default function XssDefence() {
 
   return (
     <>
+      <NextSeo
+        title={t("xssDefence.title")}
+        description={t("xssDefence.description")}
+      />
       <ToolPageHeader title={t("xssDefence.title")} toolName="xss-defence" />
       <Full scrollable>
         <Flex className="m-2">

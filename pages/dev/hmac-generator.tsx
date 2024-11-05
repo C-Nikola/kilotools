@@ -21,6 +21,7 @@ import {
   enc,
 } from "crypto-js";
 import { ChangeEvent, useMemo, useState } from "react";
+import { NextSeo } from "next-seo";
 
 const algos = {
   MD5: HmacMD5,
@@ -86,6 +87,10 @@ export default function HmacGenerator() {
 
   return (
     <>
+      <NextSeo
+        title={t("hmacGenerator.title")}
+        description={t("hmacGenerator.description")}
+      />
       <ToolPageHeader
         title={t("hmacGenerator.title")}
         toolName="hmac-generator"

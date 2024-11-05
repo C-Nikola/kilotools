@@ -22,6 +22,7 @@ import TransformCustom from "@/components/TransformCustom";
 import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import { NextSeo } from "next-seo";
 
 type CaseKeys = keyof typeof typeList;
 
@@ -71,6 +72,10 @@ export default function CaseConverter() {
 
   return (
     <>
+      <NextSeo
+        title={t("caseConverter.title")}
+        description={t("caseConverter.description")}
+      />
       <ToolPageHeader title="Case Converter" toolName="case-converter" />
       <TransformCustom
         inputLabel="Your string"
