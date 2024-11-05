@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Outils favoris",
+    "crypto": "Crypto/Encodage",
+    "converter": "Convertisseur",
+    "web": "Web",
+    "development": "Développement",
+    "network": "Réseau",
+    "text": "Texte",
+    "security": "Sécurité"
+  },
   "rsa": {
     "title": "Générateur de paire de clés RSA",
     "description": "Cet outil est un générateur de clés RSA en ligne conçu pour aider les utilisateurs à générer rapidement des clés publiques et privées RSA sécurisées. RSA (Rivest-Shamir-Adleman) est un algorithme de cryptographie à clé publique largement utilisé, principalement pour le chiffrement des données et les signatures numériques.",

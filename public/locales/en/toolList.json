@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Favorite",
+    "crypto": "Crypto/Encode",
+    "converter": "Converter",
+    "web": "Web",
+    "development": "Development",
+    "network": "Network",
+    "text": "Text",
+    "security": "Security"
+  },
   "rsa": {
     "title": "RSA key pair generator",
     "description": "This tool is an online RSA key generator designed to help users quickly generate secure RSA public and private keys. RSA (Rivest-Shamir-Adleman) is a widely used public-key cryptographic algorithm, mainly used for data encryption and digital signatures.",

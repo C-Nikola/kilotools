@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "Favoriete tools",
+    "crypto": "Crypto/Codering",
+    "converter": "Converter",
+    "web": "Web",
+    "development": "Ontwikkeling",
+    "network": "Netwerk",
+    "text": "Tekst",
+    "security": "Beveiliging"
+  },
   "rsa": {
     "title": "RSA-sleutelpaar generator",
     "description": "Deze tool is een online RSA-sleutelgenerator die is ontworpen om gebruikers te helpen snel veilige RSA-publieke en privé-sleutels te genereren. RSA (Rivest-Shamir-Adleman) is een veelgebruikte cryptografische algoritme met publieke sleutel, voornamelijk gebruikt voor gegevensversleuteling en digitale handtekeningen.",

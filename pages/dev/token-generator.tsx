@@ -1,47 +1,39 @@
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
-import { createToken } from "@/utils/components/token-generator.utils";
 import { Button, Card, Col, Flex, InputNumber, Row, Space, Switch } from "antd";
 import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
-
-interface Params {
-  withUppercase: boolean;
-  withLowercase: boolean;
-  withNumbers: boolean;
-  withSymbols: boolean;
-  length: number;
-}
+import { generateMultiple } from "generate-password";
 
 export default function TokenGenerator() {
   const { t } = useTranslation("toolList");
-  const [params, setParams] = useState<Params>({
-    withUppercase: true,
-    withLowercase: true,
-    withNumbers: true,
-    withSymbols: true,
+  const [params, setParams] = useState<TokenGeneratorParams>({
+    uppercase: true,
+    lowercase: true,
+    numbers: true,
+    symbols: true,
     length: 8,
   });
-  const [token, setToken] = useState<string[]>([]);
+  const [tokenList, setTokenList] = useState<string[]>([]);
 
   const generateToken = (props: {
-    withUppercase: boolean;
-    withLowercase: boolean;
-    withNumbers: boolean;
-    withSymbols: boolean;
+    uppercase: boolean;
+    lowercase: boolean;
+    numbers: boolean;
+    symbols: boolean;
     length: number;
   }) => {
-    let tokenArr = [];
-    for (let i = 0; i < 10; i++) {
-      tokenArr[i] = createToken(props);
-    }
-    setToken(tokenArr);
+    const tokenArr = generateMultiple(10, { ...params, strict: true });
+    setTokenList(tokenArr);
   };
 
   return (
     <>
-      <ToolPageHeader title="Token generator" toolName="token-generator" />
+      <ToolPageHeader
+        title={t("tokenGenerator.title")}
+        toolName="token-generator"
+      />
       <Row className="w-full" justify="center">
         <Col flex="0 1 600px">
           <Card className="w-full">
@@ -50,15 +42,15 @@ export default function TokenGenerator() {
                 <Space direction="vertical" size="middle">
                   <Space>
                     <Switch
-                      value={params.withUppercase}
+                      value={params.uppercase}
                       onChange={(value) => {
                         setParams({
                           ...params,
-                          withUppercase: value,
+                          uppercase: value,
                         });
                         generateToken({
                           ...params,
-                          withUppercase: value,
+                          uppercase: value,
                         });
                       }}
                     />
@@ -66,15 +58,15 @@ export default function TokenGenerator() {
                   </Space>
                   <Space>
                     <Switch
-                      value={params.withNumbers}
+                      value={params.numbers}
                       onChange={(value) => {
                         setParams({
                           ...params,
-                          withNumbers: value,
+                          numbers: value,
                         });
                         generateToken({
                           ...params,
-                          withNumbers: value,
+                          numbers: value,
                         });
                       }}
                     />
@@ -103,15 +95,15 @@ export default function TokenGenerator() {
                 <Space direction="vertical" size="middle">
                   <Space>
                     <Switch
-                      value={params.withLowercase}
+                      value={params.lowercase}
                       onChange={(value) => {
                         setParams({
                           ...params,
-                          withLowercase: value,
+                          lowercase: value,
                         });
                         generateToken({
                           ...params,
-                          withLowercase: value,
+                          lowercase: value,
                         });
                       }}
                     />
@@ -119,15 +111,15 @@ export default function TokenGenerator() {
                   </Space>
                   <Space>
                     <Switch
-                      value={params.withSymbols}
+                      value={params.symbols}
                       onChange={(value) => {
                         setParams({
                           ...params,
-                          withSymbols: value,
+                          symbols: value,
                         });
                         generateToken({
                           ...params,
-                          withSymbols: value,
+                          symbols: value,
                         });
                       }}
                     />
@@ -138,7 +130,7 @@ export default function TokenGenerator() {
                   </Button>
                 </Space>
               </Flex>
-              {token.map((token, i) => (
+              {tokenList.map((token, i) => (
                 <TextAreaCopyable
                   key={i}
                   value={token}

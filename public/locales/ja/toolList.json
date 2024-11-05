@@ -1,4 +1,14 @@
 {
+  "category": {
+    "favorite": "お気に入りのツール",
+    "crypto": "暗号化/エンコード",
+    "converter": "コンバーター",
+    "web": "ウェブ",
+    "development": "開発",
+    "network": "ネットワーク",
+    "text": "テキスト",
+    "security": "セキュリティ"
+  },
   "rsa": {
     "title": "RSA鍵ペアジェネレーター",
     "description": "このツールは、ユーザーが安全なRSA公開鍵と秘密鍵を迅速に生成できるように設計されたオンラインRSA鍵ジェネレーターです。RSA（Rivest-Shamir-Adleman）は、データ暗号化やデジタル署名に主に使用される広く使用されている公開鍵暗号アルゴリズムです。",

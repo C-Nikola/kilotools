@@ -119,7 +119,7 @@ function getSubMenu(
 
 const toolsByCategory: Array<ToolCategory> = [
   {
-    name: "Crypto/Encode",
+    name: "category.crypto",
     components: [
       {
         title: "rsa.title",
@@ -166,7 +166,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Converter",
+    name: "category.converter",
     components: [
       {
         title: "base64EncodeDecode.title",
@@ -318,7 +318,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Web",
+    name: "category.web",
     components: [
       {
         title: "JSONFormatter.title",
@@ -365,7 +365,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Development",
+    name: "category.development",
     components: [
       {
         title: "JWTParser.title",
@@ -447,7 +447,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Network",
+    name: "category.network",
     components: [
       {
         title: "MACAddressLookup.title",
@@ -459,7 +459,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Text",
+    name: "category.text",
     components: [
       {
         title: "textDiff.title",
@@ -471,7 +471,7 @@ const toolsByCategory: Array<ToolCategory> = [
     ],
   },
   {
-    name: "Security",
+    name: "category.security",
     components: [
       {
         title: "xssDefence.title",

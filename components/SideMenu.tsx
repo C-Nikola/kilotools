@@ -62,7 +62,7 @@ const SideMenu = ({ t }: { t: TFunction }) => {
       });
     });
     const favoriteSubMenu: SubMenuType<MenuItemType> = {
-      label: "Favorite",
+      label: t("category.favorite"),
       key: "favorite",
       children: tools,
     };
