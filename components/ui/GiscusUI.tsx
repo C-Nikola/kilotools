@@ -7,11 +7,11 @@ export default function GiscusUI() {
     <div className="pt-16">
       <Giscus
         repo="C-Nikola/kilotools"
-        repoId="R_kgDONGxPpA"
+        repoId="R_kgDONLENMg"
         category="Announcements"
         categoryId="DIC_kwDONGxPpM4Cj_l2"
         mapping="pathname"
-        strict="0"
+        strict="1"
         reactionsEnabled="1"
         emitMetadata="0"
         inputPosition="top"
