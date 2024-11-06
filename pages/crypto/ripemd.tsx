@@ -12,7 +12,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 const { Text } = Typography;
 
-export default function MD5Page() {
+export default function Ripemd() {
   const { t } = useTranslation("toolList");
   const [input, setInput] = useState("");
   const [output, setOuput] = useState({
