@@ -23,7 +23,6 @@ export default function Layout({ children }: { children?: ReactNode }) {
     setShowDrawerMenu((showDrawerMenu) => !showDrawerMenu);
   };
   const { asPath } = useRouter();
-  const [key, setKey] = useState(0);
 
   const dispatch = useDispatch();
 
@@ -35,10 +34,6 @@ export default function Layout({ children }: { children?: ReactNode }) {
       initialFavoriteTools(initialToolNames ? JSON.parse(initialToolNames) : [])
     );
   }, [dispatch]);
-
-  useEffect(() => {
-    setKey((prevKey) => prevKey + 1);
-  }, [asPath]);
 
   return (
     <Row className={styles.index} wrap={false}>
@@ -73,13 +68,21 @@ export default function Layout({ children }: { children?: ReactNode }) {
         <OverlayScrollbarsComponent
           element="div"
           defer
-          options={{ scrollbars: { autoHide: "scroll" } }}
+          options={{
+            scrollbars: { autoHide: "scroll" },
+            update: {
+              // detect giscus and update OverlayScrollbars
+              elementEvents: [["#comment", "transitionend"]],
+            },
+          }}
           style={{ padding: "25px 26px 26px", height: "calc(100% - 83px)" }}
         >
           {children}
-          <OneColumn>
-            <GiscusUI key={key} />
-          </OneColumn>
+          {asPath !== "/" && (
+            <OneColumn>
+              <GiscusUI path={asPath} key={asPath} />
+            </OneColumn>
+          )}
         </OverlayScrollbarsComponent>
       </Col>
       <Drawer
