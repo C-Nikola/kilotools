@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import InputCopyable from "@/components/ui/InputCopyable";
 import { convertBase } from "@/utils/components/integer-base-converter.utils";
@@ -64,7 +64,7 @@ export default function IntegerBaseConverter() {
         title={t("integerBaseConverter.title")}
         toolName="integer-base-converter"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" className="w-full">
           <Row gutter={gutter}>
             <Col className="text-right" flex={inputFlex}>
@@ -161,7 +161,7 @@ export default function IntegerBaseConverter() {
             </Col>
           </Row>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import InputCopyable from "@/components/ui/InputCopyable";
 import { Col, ColorPicker, Row, Space } from "antd";
@@ -106,7 +106,7 @@ export default function ColorConverter() {
         title={t("colorConverter.title")}
         toolName="color-converter"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space className="w-full" direction="vertical">
           {Object.entries(formats).map(([key, value]) => {
             return (
@@ -146,7 +146,7 @@ export default function ColorConverter() {
             );
           })}
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TowColumns from "@/components/TowColumns";
 import { Divider, Select, Space, Table, Tag, Typography } from "antd";
@@ -105,13 +105,13 @@ export default function MimeType() {
         }
       />
       <Divider />
-      <OneColumn>
+      <OneColumnWithCard>
         <Table
           pagination={false}
           columns={tableColums}
           dataSource={mimeInfos}
         />
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

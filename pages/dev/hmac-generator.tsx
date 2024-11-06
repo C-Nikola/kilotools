@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import TextAreaUI from "@/components/ui/TextAreaUI";
@@ -95,7 +95,7 @@ export default function HmacGenerator() {
         title={t("hmacGenerator.title")}
         toolName="hmac-generator"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space className="w-full" direction="vertical" size="large">
           <Space className="w-full" direction="vertical">
             {t("hmacGenerator.text")}
@@ -169,7 +169,7 @@ export default function HmacGenerator() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

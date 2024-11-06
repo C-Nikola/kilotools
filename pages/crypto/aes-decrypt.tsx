@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Col, Divider, Input, Row, Select, Space } from "antd";
@@ -94,7 +94,7 @@ export default function AESDecrypt() {
         description={t("AESDecrypt.description")}
       />
       <ToolPageHeader title={t("AESDecrypt.title")} toolName="aes-decrypt" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Row gutter={8} align="middle">
             <Col flex="0 1 110px">Mode:</Col>
@@ -188,7 +188,7 @@ export default function AESDecrypt() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

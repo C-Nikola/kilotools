@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaUI from "@/components/ui/TextAreaUI";
 import { Space, Typography } from "antd";
@@ -41,7 +41,7 @@ export default function MD5Page() {
     <>
       <NextSeo title={t("MD5.title")} description={t("MD5.description")} />
       <ToolPageHeader title={t("MD5.title")} toolName="md5" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
             <Text strong>{t("MD5.from")}</Text>
@@ -62,7 +62,7 @@ export default function MD5Page() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

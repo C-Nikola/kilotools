@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { Col, Divider, Input, Row, Select, Space } from "antd";
@@ -92,7 +92,7 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
         description={t("AESEncrypt.description")}
       />
       <ToolPageHeader title={t("AESEncrypt.title")} toolName="aes-encrypt" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Row gutter={8} align="middle">
             <Col flex="0 1 110px">Mode:</Col>
@@ -175,7 +175,7 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

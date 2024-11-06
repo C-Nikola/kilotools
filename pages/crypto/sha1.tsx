@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaUI from "@/components/ui/TextAreaUI";
 import { Col, Row, Select, Space, Typography } from "antd";
@@ -83,7 +83,7 @@ export default function SHA1Page() {
     <>
       <NextSeo title={t("SHA.title")} description={t("SHA.description")} />
       <ToolPageHeader title={t("SHA.title")} toolName="sha1" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
             <Row gutter={8} align="middle">
@@ -130,7 +130,7 @@ export default function SHA1Page() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaUI from "@/components/ui/TextAreaUI";
 import { Space, Typography } from "antd";
@@ -44,7 +44,7 @@ export default function MD5Page() {
         description={t("RIPEMD.description")}
       />
       <ToolPageHeader title={t("RIPEMD.title")} toolName="ripemd" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
             <Text strong>{t("RIPEMD.from")}</Text>
@@ -65,7 +65,7 @@ export default function MD5Page() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

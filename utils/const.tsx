@@ -10,3 +10,7 @@ export const SHA_ALGORITHM = {
   SHA384: "SHA384",
   SHA3: "SHA3",
 };
+
+export const COLOR = {
+  HEART_TWO_TONE_COLOR: "#D43632",
+};

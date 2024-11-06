@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { toBase64 } from "@/utils/components/base64.utils";
@@ -37,7 +37,7 @@ export default function BasicAuthGenerator() {
         title={t("basicAuthGenerator.title")}
         toolName="basic-auth-genrator"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" className="w-full">
           <Row gutter={8}>
             <Col flex="80px">Username</Col>
@@ -66,7 +66,7 @@ export default function BasicAuthGenerator() {
           Authorization header:
           <TextAreaCopyable value={output} readOnly autoSize={{ minRows: 4 }} />
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

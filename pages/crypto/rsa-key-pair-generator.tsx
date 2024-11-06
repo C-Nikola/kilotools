@@ -1,5 +1,5 @@
 import ErrorMsg from "@/components/ErrorMsg";
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { generateKeyPair } from "@/utils/components/rsa-key-pair-generator.utils";
@@ -9,6 +9,7 @@ import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import RsaKeyPairGeneratorDesc from "@/components/pageDescription/RsaKeyPairGeneratorDesc";
 
 const defaultValue = {
   isErr: false,
@@ -76,7 +77,6 @@ export default function RsaKeyPairGenerator() {
       });
       return;
     }
-    // generateKeys(value);
   };
 
   const handleRefresh = () => {
@@ -91,7 +91,7 @@ export default function RsaKeyPairGenerator() {
         title={t("rsa.title")}
         toolName="rsa-key-pair-generator"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full mt-6">
           <Row justify="center" gutter={16}>
             <Col flex="0 1 200px">
@@ -144,7 +144,8 @@ export default function RsaKeyPairGenerator() {
             </Col>
           </Row>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
+      <RsaKeyPairGeneratorDesc />
     </>
   );
 }

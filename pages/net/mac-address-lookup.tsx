@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import InputUI from "@/components/ui/InputUI";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
@@ -44,7 +44,7 @@ export default function MACAddressLookup() {
         title={t("MACAddressLookup.title")}
         toolName="mac-address-lookup"
       />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" size="middle" className="w-full">
           <Space direction="vertical" className="w-full">
             {t("MACAddressLookup.mac_address")}
@@ -67,7 +67,7 @@ export default function MACAddressLookup() {
             />
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

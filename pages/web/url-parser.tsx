@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import InputCopyable from "@/components/ui/InputCopyable";
 import TextAreaUI from "@/components/ui/TextAreaUI";
@@ -59,7 +59,7 @@ export default function UrlParser() {
         description={t("URLParser.description")}
       />
       <ToolPageHeader title={t("URLParser.title")} toolName="url-parser" />
-      <OneColumn>
+      <OneColumnWithCard>
         <Space direction="vertical" className="w-full">
           <Space direction="vertical" className="w-full">
             {t("URLParser.your_url")}
@@ -109,7 +109,7 @@ export default function UrlParser() {
             })}
           </Space>
         </Space>
-      </OneColumn>
+      </OneColumnWithCard>
     </>
   );
 }

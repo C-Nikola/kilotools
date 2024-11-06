@@ -1,4 +1,4 @@
-import OneColumn from "@/components/OneColumn";
+import OneColumnWithCard from "@/components/OneColumnWithCard";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import InputUI from "@/components/ui/InputUI";
 import { Col, Divider, Row, Space, Switch, Table, Typography } from "antd";
@@ -63,7 +63,7 @@ export default function CrontabGenerator() {
         toolName="crontab-generator"
       />
       <Space direction="vertical" size="large" className="w-full">
-        <OneColumn>
+        <OneColumnWithCard>
           <Space direction="vertical" className="w-full">
             <Text>Paste your cron here:</Text>
             {/* TODO: UI */}
@@ -108,7 +108,7 @@ export default function CrontabGenerator() {
               </Col>
             </Row>
           </Space>
-        </OneColumn>
+        </OneColumnWithCard>
       </Space>
     </>
   );
