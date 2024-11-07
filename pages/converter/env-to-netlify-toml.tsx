@@ -6,6 +6,7 @@ import { useCallback, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import EnvToNetlifyTomlDesc from "@/components/pageDescription/EnvToNetlifyTomlDesc";
 
 export default function EnvToNetlifyToml() {
   const { t } = useTranslation("toolList");
@@ -49,6 +50,7 @@ export default function EnvToNetlifyToml() {
         output={output}
         isError={isError}
       />
+      <EnvToNetlifyTomlDesc />
     </>
   );
 }

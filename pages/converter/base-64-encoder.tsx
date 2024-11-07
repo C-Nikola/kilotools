@@ -9,6 +9,7 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import ToolPageHeader from "@/components/ToolPageHeader";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Base64EncoderDesc from "@/components/pageDescription/Base64EncoderDesc";
 
 const { Title, Text } = Typography;
 
@@ -133,6 +134,7 @@ export default function Base64Encoder() {
           </Space>
         }
       />
+      <Base64EncoderDesc />
     </>
   );
 }

@@ -10,6 +10,7 @@ import { SHA_ALGORITHM } from "@/utils/const";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import SHA1PageDesc from "@/components/pageDescription/SHA1PageDesc";
 
 const { Text } = Typography;
 
@@ -131,6 +132,7 @@ export default function SHA1Page() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <SHA1PageDesc />
     </>
   );
 }

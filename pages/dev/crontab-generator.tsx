@@ -8,6 +8,7 @@ import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import CrontabGeneratorDesc from "@/components/pageDescription/CrontabGeneratorDesc";
 const { Text } = Typography;
 
 export default function CrontabGenerator() {
@@ -110,6 +111,7 @@ export default function CrontabGenerator() {
           </Space>
         </OneColumnWithCard>
       </Space>
+      <CrontabGeneratorDesc />
     </>
   );
 }

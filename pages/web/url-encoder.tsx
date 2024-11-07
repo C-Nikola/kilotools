@@ -6,6 +6,7 @@ import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import UrlEncoderDesc from "@/components/pageDescription/UrlEncoderDesc";
 
 export default function UrlEncoder() {
   const { t } = useTranslation("toolList");
@@ -86,6 +87,7 @@ export default function UrlEncoder() {
           </Card>
         </Col>
       </Row>
+      <UrlEncoderDesc />
     </>
   );
 }

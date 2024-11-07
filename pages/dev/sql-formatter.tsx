@@ -13,6 +13,7 @@ import {
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import SQLFormatterDesc from "@/components/pageDescription/SQLFormatterDesc";
 
 export default function SQLFormatter() {
   const { t } = useTranslation("toolList");
@@ -143,6 +144,7 @@ export default function SQLFormatter() {
           </Col>
         </Row>
       </TransformTextAreaToCode>
+      <SQLFormatterDesc />
     </>
   );
 }

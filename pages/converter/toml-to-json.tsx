@@ -6,6 +6,7 @@ import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import TOMLToJSONDesc from "@/components/pageDescription/TOMLToJSONDesc";
 
 export default function TOMLToJSON() {
   const { t } = useTranslation("toolList");
@@ -59,6 +60,7 @@ export default function TOMLToJSON() {
         output={output.result}
         isError={output.isErr}
       />
+      <TOMLToJSONDesc />
     </>
   );
 }

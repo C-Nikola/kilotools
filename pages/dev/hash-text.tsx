@@ -20,6 +20,7 @@ import { ChangeEvent, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import HashTextDesc from "@/components/pageDescription/HashTextDesc";
 
 const algos = {
   MD5,
@@ -119,6 +120,7 @@ export default function HashText() {
           </Card>
         </Col>
       </Row>
+      <HashTextDesc />
     </>
   );
 }

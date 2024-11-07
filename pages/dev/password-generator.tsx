@@ -6,6 +6,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { generateMultiple } from "generate-password";
 import { NextSeo } from "next-seo";
+import PasswordGeneratorDesc from "@/components/pageDescription/PasswordGeneratorDesc";
 
 export default function PasswordGenerator() {
   const { t } = useTranslation("toolList");
@@ -147,6 +148,7 @@ export default function PasswordGenerator() {
           </Card>
         </Col>
       </Row>
+      <PasswordGeneratorDesc />
     </>
   );
 }

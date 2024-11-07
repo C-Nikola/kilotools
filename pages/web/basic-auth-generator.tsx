@@ -7,6 +7,7 @@ import { ChangeEvent, useMemo, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import BasicAuthGeneratorDesc from "@/components/pageDescription/BasicAuthGeneratorDesc";
 
 export default function BasicAuthGenerator() {
   const { t } = useTranslation("toolList");
@@ -67,6 +68,7 @@ export default function BasicAuthGenerator() {
           <TextAreaCopyable value={output} readOnly autoSize={{ minRows: 4 }} />
         </Space>
       </OneColumnWithCard>
+      <BasicAuthGeneratorDesc />
     </>
   );
 }

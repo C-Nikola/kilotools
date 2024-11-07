@@ -18,7 +18,7 @@
     "private_key": "秘密鍵"
   },
   "MD5": {
-    "title": "MD5暗号化",
+    "title": "MD5",
     "description": "MD5（Message-Digest Algorithm 5）を使用して、テキストコンテンツのハッシュ計算を行います。",
     "from": "入力文字列",
     "to": "結果"

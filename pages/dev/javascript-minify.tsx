@@ -9,6 +9,7 @@ import { minify_sync } from "terser";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import JavascriptMinifyDesc from "@/components/pageDescription/JavascriptMinifyDesc";
 
 export default function JavascriptMinify() {
   const { t } = useTranslation("toolList");
@@ -89,6 +90,7 @@ export default function JavascriptMinify() {
           </OverlayScrollbarsComponent>
         }
       />
+      <JavascriptMinifyDesc />
     </>
   );
 }

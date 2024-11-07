@@ -7,6 +7,7 @@ import yaml from "yaml";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import YAMLFormatterDesc from "@/components/pageDescription/YAMLFormatterDesc";
 
 export default function YAMLFormatter() {
   const { t } = useTranslation("toolList");
@@ -92,6 +93,7 @@ export default function YAMLFormatter() {
           </Col>
         </Row>
       </TransformTextAreaToCode>
+      <YAMLFormatterDesc />
     </>
   );
 }

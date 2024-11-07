@@ -18,7 +18,7 @@
     "private_key": "Chiave privata"
   },
   "MD5": {
-    "title": "Crittografia MD5",
+    "title": "MD5",
     "description": "Utilizza MD5 (Message-Digest Algorithm 5) per eseguire calcoli di hash sul contenuto testuale.",
     "from": "La tua stringa",
     "to": "Risultato"

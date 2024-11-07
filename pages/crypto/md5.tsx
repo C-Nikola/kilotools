@@ -9,6 +9,7 @@ import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import MD5PageDesc from "@/components/pageDescription/MD5PageDesc";
 
 const { Text } = Typography;
 
@@ -63,6 +64,7 @@ export default function MD5Page() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <MD5PageDesc />
     </>
   );
 }

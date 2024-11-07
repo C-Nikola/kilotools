@@ -18,7 +18,7 @@
     "private_key": "Private key"
   },
   "MD5": {
-    "title": "MD5 encrypt",
+    "title": "MD5",
     "description": "Use MD5 (Message-Digest Algorithm 5) to perform hash calculations on text content.",
     "from": "Your string",
     "to": "Result"

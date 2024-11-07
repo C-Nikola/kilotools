@@ -7,6 +7,7 @@ import { useCallback, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import ImageToBase64Desc from "@/components/pageDescription/ImageToBase64Desc";
 
 const { Dragger } = Upload;
 
@@ -133,6 +134,7 @@ export default function ImageToBase64() {
           </Card>
         </Col>
       </Row>
+      <ImageToBase64Desc />
     </>
   );
 }

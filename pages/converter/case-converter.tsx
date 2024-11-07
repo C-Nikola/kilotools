@@ -23,6 +23,7 @@ import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import CaseConverterDesc from "@/components/pageDescription/CaseConverterDesc";
 
 type CaseKeys = keyof typeof typeList;
 
@@ -114,6 +115,7 @@ export default function CaseConverter() {
           />
         }
       />
+      <CaseConverterDesc />
     </>
   );
 }

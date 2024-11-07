@@ -11,6 +11,7 @@ import { ChangeEvent, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import TexToUnicodeDesc from "@/components/pageDescription/TexToUnicodeDesc";
 
 const { Title, Text } = Typography;
 
@@ -93,6 +94,7 @@ export default function TexToUnicode() {
           </Space>
         }
       />
+      <TexToUnicodeDesc />
     </>
   );
 }

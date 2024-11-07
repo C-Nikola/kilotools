@@ -18,6 +18,7 @@ import {
 } from "vanilla-jsoneditor";
 import { stringifyTOML } from "confbox";
 import { getErrorMsg } from "@/utils/error";
+import JSONToTOMLDesc from "@/components/pageDescription/JSONToTOMLDesc";
 
 export default function JSONToTOML() {
   const { t } = useTranslation("toolList");
@@ -84,6 +85,7 @@ export default function JSONToTOML() {
           </OverlayScrollbarsComponent>
         }
       />
+      <JSONToTOMLDesc />
     </>
   );
 }

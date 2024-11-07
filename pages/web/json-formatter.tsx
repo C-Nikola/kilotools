@@ -7,6 +7,7 @@ import { Content, MenuItem, Mode } from "vanilla-jsoneditor";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import JsonFormatterDesc from "@/components/pageDescription/JsonFormatterDesc";
 
 const { Panel } = Splitter;
 
@@ -51,6 +52,7 @@ export default function JsonFormatter() {
           </Panel>
         </Splitter>
       </Full>
+      <JsonFormatterDesc />
     </>
   );
 }

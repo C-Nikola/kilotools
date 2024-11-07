@@ -18,7 +18,7 @@
     "private_key": "Clé privée"
   },
   "MD5": {
-    "title": "Chiffrement MD5",
+    "title": "MD5",
     "description": "Utilisez MD5 (Message-Digest Algorithm 5) pour effectuer des calculs de hachage sur le contenu textuel.",
     "from": "Votre chaîne",
     "to": "Résultat"

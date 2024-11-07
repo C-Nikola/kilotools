@@ -18,7 +18,7 @@
     "private_key": "Özel anahtar"
   },
   "MD5": {
-    "title": "MD5 şifreleme",
+    "title": "MD5",
     "description": "MD5 (Mesaj-Özeti Algoritması 5) kullanarak metin içeriği üzerinde hash hesaplamaları yapın.",
     "from": "Metniniz",
     "to": "Sonuç"

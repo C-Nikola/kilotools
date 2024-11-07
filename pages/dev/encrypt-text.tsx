@@ -17,6 +17,7 @@ import { ChangeEvent, useMemo, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import EncryptTextDesc from "@/components/pageDescription/EncryptTextDesc";
 
 const algos = { AES, TripleDES, Rabbit, RC4 };
 
@@ -184,6 +185,7 @@ export default function EncryptText() {
           </Card>
         </Col>
       </Row>
+      <EncryptTextDesc />
     </>
   );
 }

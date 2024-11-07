@@ -8,6 +8,7 @@ import xmlFormat from "xml-formatter";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import XMLFormatterDesc from "@/components/pageDescription/XMLFormatterDesc";
 
 export default function XMLFormatter() {
   const { t } = useTranslation("toolList");
@@ -96,6 +97,7 @@ export default function XMLFormatter() {
           </Col>
         </Row>
       </TransformTextAreaToCode>
+      <XMLFormatterDesc />
     </>
   );
 }

@@ -9,6 +9,7 @@ import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import AESDecryptDesc from "@/components/pageDescription/AESDecryptDesc";
 
 export default function AESDecrypt() {
   const { t } = useTranslation("toolList");
@@ -189,6 +190,7 @@ export default function AESDecrypt() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <AESDecryptDesc />
     </>
   );
 }

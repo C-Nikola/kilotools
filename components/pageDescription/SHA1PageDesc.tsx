@@ -12,8 +12,8 @@ export default function SHA1PageDesc() {
       <Paragraph className="text-base" type="secondary">
         Built with <HeartTwoTone twoToneColor={COLOR.HEART_TWO_TONE_COLOR} />,
         using the open-source package{" "}
-        <Link href="https://github.com/digitalbazaar/forge" target="_blank">
-          node-forge
+        <Link href="https://github.com/brix/crypto-js" target="_blank">
+          crypto-js
         </Link>
         .
       </Paragraph>

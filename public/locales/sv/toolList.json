@@ -18,7 +18,7 @@
     "private_key": "Privat nyckel"
   },
   "MD5": {
-    "title": "MD5 kryptering",
+    "title": "MD5",
     "description": "Använd MD5 (Message-Digest Algorithm 5) för att utföra hashberäkningar på textinnehåll.",
     "from": "Din sträng",
     "to": "Resultat"

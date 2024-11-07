@@ -18,7 +18,7 @@
     "private_key": "Clave privada"
   },
   "MD5": {
-    "title": "Cifrado MD5",
+    "title": "MD5",
     "description": "Usa MD5 (Algoritmo de Resumen de Mensaje 5) para realizar cálculos hash en contenido de texto.",
     "from": "Tu cadena",
     "to": "Resultado"

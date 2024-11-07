@@ -7,6 +7,7 @@ import { useRef, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import XssDefenceDesc from "@/components/pageDescription/XssDefenceDesc";
 
 export default function XssDefence() {
   const { t } = useTranslation("toolList");
@@ -42,6 +43,7 @@ export default function XssDefence() {
           <DiffEditorUI ref={editorRef} modified={modifiedValue} />
         </div>
       </Full>
+      <XssDefenceDesc />
     </>
   );
 }

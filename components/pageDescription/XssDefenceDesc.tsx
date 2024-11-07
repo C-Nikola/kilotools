@@ -12,8 +12,15 @@ export default function XssDefenceDesc() {
       <Paragraph className="text-base" type="secondary">
         Built with <HeartTwoTone twoToneColor={COLOR.HEART_TWO_TONE_COLOR} />,
         using the open-source package{" "}
-        <Link href="https://github.com/digitalbazaar/forge" target="_blank">
-          node-forge
+        <Link href="https://github.com/cure53/DOMPurify" target="_blank">
+          dompurify
+        </Link>
+        ,{" "}
+        <Link
+          href="https://github.com/suren-atoyan/monaco-react"
+          target="_blank"
+        >
+          @monaco-editor/react
         </Link>
         .
       </Paragraph>

@@ -9,7 +9,7 @@
     "private_key": "Privater Schlüssel"
   },
   "MD5": {
-    "title": "MD5-Verschlüsselung",
+    "title": "MD5",
     "description": "Verwenden Sie MD5 (Message-Digest Algorithm 5), um Hash-Berechnungen auf Textinhalten durchzuführen.",
     "from": "Ihr String",
     "to": "Ergebnis"

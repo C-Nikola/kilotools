@@ -9,6 +9,7 @@ import { ChangeEvent, useEffect, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import UrlParserDesc from "@/components/pageDescription/UrlParserDesc";
 
 const properties: { title: string; key: keyof URL }[] = [
   { title: "Protocol", key: "protocol" },
@@ -110,6 +111,7 @@ export default function UrlParser() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <UrlParserDesc />
     </>
   );
 }

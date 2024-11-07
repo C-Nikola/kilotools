@@ -16,6 +16,7 @@ import { compareSync, hashSync } from "bcryptjs";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import BcryptDesc from "@/components/pageDescription/BcryptDesc";
 
 const { Title } = Typography;
 
@@ -124,6 +125,7 @@ export default function Bcrypt() {
           </Card>
         </Col>
       </Row>
+      <BcryptDesc />
     </>
   );
 }

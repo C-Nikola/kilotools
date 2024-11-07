@@ -7,6 +7,7 @@ import { ChangeEvent, useCallback, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import JwtParserDesc from "@/components/pageDescription/JwtParserDesc";
 
 const { Text } = Typography;
 
@@ -88,6 +89,7 @@ export default function JwtParser() {
           </Card>
         </Col>
       </Row>
+      <JwtParserDesc />
     </>
   );
 }

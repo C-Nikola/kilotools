@@ -6,6 +6,7 @@ import ToolPageHeader from "@/components/ToolPageHeader";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import YAMLtoJSONDesc from "@/components/pageDescription/YAMLtoJSONDesc";
 
 export default function YAMLtoJSON() {
   const { t } = useTranslation("toolList");
@@ -54,6 +55,7 @@ export default function YAMLtoJSON() {
         output={output.result}
         isError={output.isErr}
       />
+      <YAMLtoJSONDesc />
     </>
   );
 }

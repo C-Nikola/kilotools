@@ -6,14 +6,14 @@ import Link from "next/link";
 
 const { Paragraph } = Typography;
 
-export default function RsaKeyPairGeneratorDesc() {
+export default function CrontabGeneratorDesc() {
   return (
     <OneColumn>
       <Paragraph className="text-base" type="secondary">
         Built with <HeartTwoTone twoToneColor={COLOR.HEART_TWO_TONE_COLOR} />,
         using the open-source package{" "}
-        <Link href="https://github.com/digitalbazaar/forge" target="_blank">
-          node-forge
+        <Link href="https://github.com/bradymholt/cronstrue" target="_blank">
+          cronstrue
         </Link>
         .
       </Paragraph>

@@ -10,6 +10,7 @@ import { stringifyTOML } from "confbox";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import YAMLToTOMLDesc from "@/components/pageDescription/YAMLToTOMLDesc";
 
 export default function YAMLToTOML() {
   const { t } = useTranslation("toolList");
@@ -85,6 +86,7 @@ export default function YAMLToTOML() {
           </OverlayScrollbarsComponent>
         }
       />
+      <YAMLToTOMLDesc />
     </>
   );
 }

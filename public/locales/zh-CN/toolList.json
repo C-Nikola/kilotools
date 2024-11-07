@@ -18,7 +18,7 @@
     "private_key": "密钥"
   },
   "MD5": {
-    "title": "MD5 加密",
+    "title": "MD5",
     "description": "使用MD5 (Message-Digest Algorithm 5)对文本内容进行哈希/散列计算。",
     "from": "你的字符串",
     "to": "结果"

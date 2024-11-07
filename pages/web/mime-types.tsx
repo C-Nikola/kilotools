@@ -10,6 +10,7 @@ import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import MimeTypeDesc from "@/components/pageDescription/MimeTypeDesc";
 
 const { Title, Text } = Typography;
 
@@ -112,6 +113,7 @@ export default function MimeType() {
           dataSource={mimeInfos}
         />
       </OneColumnWithCard>
+      <MimeTypeDesc />
     </>
   );
 }

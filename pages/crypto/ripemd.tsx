@@ -10,6 +10,7 @@ import { NextSeo } from "next-seo";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import RipemdDesc from "@/components/pageDescription/RipemdDesc";
 const { Text } = Typography;
 
 export default function Ripemd() {
@@ -66,6 +67,7 @@ export default function Ripemd() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <RipemdDesc />
     </>
   );
 }

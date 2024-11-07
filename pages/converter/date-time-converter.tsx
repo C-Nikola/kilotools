@@ -34,6 +34,7 @@ import { withDefaultOnError } from "@/utils/defaults";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import DateTimeConverterDesc from "@/components/pageDescription/DateTimeConverterDesc";
 
 type ToDateMapper = (value: string) => Date;
 
@@ -235,6 +236,7 @@ export default function DateTimeConverter() {
           </Card>
         </Col>
       </Row>
+      <DateTimeConverterDesc />
     </>
   );
 }

@@ -8,6 +8,7 @@ import { ChangeEvent, useMemo, useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import IntegerBaseConverterDesc from "@/components/pageDescription/IntegerBaseConverterDesc";
 
 const inputFlex = "0 1 100px";
 const outputFlex = "0 1 150px";
@@ -162,6 +163,7 @@ export default function IntegerBaseConverter() {
           </Row>
         </Space>
       </OneColumnWithCard>
+      <IntegerBaseConverterDesc />
     </>
   );
 }

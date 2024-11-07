@@ -8,6 +8,7 @@ import db from "oui-data";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import MACAddressLookupDesc from "@/components/pageDescription/MACAddressLookupDesc";
 
 export default function MACAddressLookup() {
   const { t } = useTranslation("toolList");
@@ -68,6 +69,7 @@ export default function MACAddressLookup() {
           </Space>
         </Space>
       </OneColumnWithCard>
+      <MACAddressLookupDesc />
     </>
   );
 }

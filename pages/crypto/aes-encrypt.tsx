@@ -9,6 +9,7 @@ import { getErrorMsg } from "@/utils/error";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import AESEncryptDesc from "@/components/pageDescription/AESEncryptDesc";
 
 export default function AESEncrypt() {
   const { t } = useTranslation("toolList");
@@ -176,6 +177,7 @@ A key size of 16 bytes will use AES-128, 24 => AES-192, 32 => AES-256`,
           </Space>
         </Space>
       </OneColumnWithCard>
+      <AESEncryptDesc />
     </>
   );
 }

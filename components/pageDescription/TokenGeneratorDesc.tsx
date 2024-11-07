@@ -12,8 +12,11 @@ export default function TokenGeneratorDesc() {
       <Paragraph className="text-base" type="secondary">
         Built with <HeartTwoTone twoToneColor={COLOR.HEART_TWO_TONE_COLOR} />,
         using the open-source package{" "}
-        <Link href="https://github.com/digitalbazaar/forge" target="_blank">
-          node-forge
+        <Link
+          href="https://github.com/brendanashworth/generate-password"
+          target="_blank"
+        >
+          generate-password
         </Link>
         .
       </Paragraph>

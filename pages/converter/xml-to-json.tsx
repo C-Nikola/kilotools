@@ -6,6 +6,7 @@ import convert from "xml-js";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { NextSeo } from "next-seo";
+import XmlToJsonDesc from "@/components/pageDescription/XmlToJsonDesc";
 
 export default function XmlToJson() {
   const { t } = useTranslation("toolList");
@@ -46,6 +47,7 @@ export default function XmlToJson() {
         output={output}
         isError={isError}
       />
+      <XmlToJsonDesc />
     </>
   );
 }
