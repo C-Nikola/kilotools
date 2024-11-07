@@ -1,12 +1,24 @@
 import ToolPageHeader from "@/components/ToolPageHeader";
 import TextAreaCopyable from "@/components/ui/TextAreaCopyable";
-import { Button, Card, Col, Flex, InputNumber, Row, Space, Switch } from "antd";
+import {
+  Button,
+  Card,
+  Col,
+  Flex,
+  InputNumber,
+  message,
+  Row,
+  Space,
+  Switch,
+} from "antd";
 import { useState } from "react";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { generateMultiple } from "generate-password";
 import { NextSeo } from "next-seo";
 import PasswordGeneratorDesc from "@/components/pageDescription/PasswordGeneratorDesc";
+import { getErrorMsg } from "@/utils/error";
+import ErrorMsg from "@/components/ErrorMsg";
 
 export default function PasswordGenerator() {
   const { t } = useTranslation("toolList");
@@ -17,7 +29,15 @@ export default function PasswordGenerator() {
     symbols: true,
     length: 8,
   });
-  const [tokenList, setTokenList] = useState<string[]>([]);
+  const [output, setOutput] = useState<{
+    isErr: boolean;
+    message: string;
+    result: string[];
+  }>({
+    isErr: false,
+    message: "",
+    result: [],
+  });
 
   const generateToken = (props: {
     uppercase: boolean;
@@ -26,8 +46,20 @@ export default function PasswordGenerator() {
     symbols: boolean;
     length: number;
   }) => {
-    const tokenArr = generateMultiple(10, { ...params, strict: true });
-    setTokenList(tokenArr);
+    try {
+      const tokenArr = generateMultiple(10, { ...props, strict: true });
+      setOutput({
+        isErr: false,
+        message: "",
+        result: tokenArr,
+      });
+    } catch (err) {
+      setOutput({
+        isErr: true,
+        message: getErrorMsg(err),
+        result: [],
+      });
+    }
   };
 
   return (
@@ -135,8 +167,9 @@ export default function PasswordGenerator() {
                     {t("passwordGenerator.generate")}
                   </Button>
                 </Space>
+                {output.isErr && <ErrorMsg errMsg={output.message} />}
               </Flex>
-              {tokenList.map((token, i) => (
+              {output.result.map((token, i) => (
                 <TextAreaCopyable
                   key={i}
                   value={token}
