@@ -12,8 +12,6 @@ import { useDispatch } from "react-redux";
 import { initialFavoriteTools } from "@/store/favoriteTools/favoriteToolsReducer";
 import LanguageSelector from "./LanguageSelector";
 import { useRouter } from "next/router";
-import GiscusUI from "./ui/GiscusUI";
-import OneColumn from "./OneColumn";
 
 export default function Layout({ children }: { children?: ReactNode }) {
   const [showMenu, setShowMenu] = useState(true);
@@ -70,19 +68,10 @@ export default function Layout({ children }: { children?: ReactNode }) {
           defer
           options={{
             scrollbars: { autoHide: "scroll" },
-            update: {
-              // detect giscus and update OverlayScrollbars
-              elementEvents: [["#comment", "transitionend"]],
-            },
           }}
           style={{ padding: "25px 26px 26px", height: "calc(100% - 83px)" }}
         >
           {children}
-          {asPath !== "/" && (
-            <OneColumn>
-              <GiscusUI path={asPath} key={asPath} />
-            </OneColumn>
-          )}
         </OverlayScrollbarsComponent>
       </Col>
       <Drawer
