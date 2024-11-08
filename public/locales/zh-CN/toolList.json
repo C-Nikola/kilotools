@@ -306,5 +306,9 @@
     "title": "XSS 防御",
     "description": "该工具会找出你的代码中可能会受到 XSS 攻击的部分，并高亮。对学习 XSS 知识和防御 XSS 工具非常有用且方便",
     "remove": "移除"
+  },
+  "speakingUrlGenerator": {
+    "title": "音译 URL",
+    "description": "todo"
   }
 }

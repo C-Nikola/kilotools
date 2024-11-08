@@ -312,5 +312,9 @@
     "title": "Xss defence",
     "description": "This tool identifies parts of your code that may be vulnerable to XSS attacks and highlights them. It is very useful and convenient for learning about XSS and defending against XSS attacks.",
     "remove": "Remove"
+  },
+  "speakingUrlGenerator": {
+    "title": "Speaking Url Generator",
+    "description": "Generate a slug with a lot of options; create a so-called Semantic URL or 'Clean URL' or 'Pretty URL' or 'nice-looking URL' or 'Speaking URL' or 'user-friendly URL' or 'SEO-friendly URL' from a string. This tool aims to transliterate the input string."
   }
 }
