@@ -8,4 +8,5 @@ interface TokenGeneratorParams {
   numbers: boolean;
   symbols: boolean;
   length: number;
+  exclude?: string;
 }

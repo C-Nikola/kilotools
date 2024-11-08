@@ -5,6 +5,7 @@ import {
   Card,
   Col,
   Flex,
+  Input,
   InputNumber,
   message,
   Row,
@@ -27,6 +28,7 @@ export default function PasswordGenerator() {
     lowercase: true,
     numbers: true,
     symbols: true,
+    exclude: "",
     length: 8,
   });
   const [output, setOutput] = useState<{
@@ -39,13 +41,7 @@ export default function PasswordGenerator() {
     result: [],
   });
 
-  const generateToken = (props: {
-    uppercase: boolean;
-    lowercase: boolean;
-    numbers: boolean;
-    symbols: boolean;
-    length: number;
-  }) => {
+  const generateToken = (props: TokenGeneratorParams) => {
     try {
       const tokenArr = generateMultiple(10, { ...props, strict: true });
       setOutput({
@@ -76,8 +72,8 @@ export default function PasswordGenerator() {
         <Col flex="0 1 600px">
           <Card className="w-full">
             <Space direction="vertical" className="w-full" size="middle">
-              <Flex justify="space-around" wrap>
-                <Space direction="vertical" size="middle">
+              <Row>
+                <Col span={12}>
                   <Space>
                     <Switch
                       value={params.uppercase}
@@ -94,6 +90,28 @@ export default function PasswordGenerator() {
                     />
                     {t("passwordGenerator.uppercase")} (ABC...)
                   </Space>
+                </Col>
+                <Col span={12}>
+                  <Space>
+                    <Switch
+                      value={params.lowercase}
+                      onChange={(value) => {
+                        setParams({
+                          ...params,
+                          lowercase: value,
+                        });
+                        generateToken({
+                          ...params,
+                          lowercase: value,
+                        });
+                      }}
+                    />
+                    {t("passwordGenerator.lowercase")} (abc...)
+                  </Space>
+                </Col>
+              </Row>
+              <Row>
+                <Col span={12}>
                   <Space>
                     <Switch
                       value={params.numbers}
@@ -110,6 +128,48 @@ export default function PasswordGenerator() {
                     />
                     {t("passwordGenerator.number")} (123...)
                   </Space>
+                </Col>
+                <Col span={12}>
+                  <Space>
+                    <Switch
+                      value={params.symbols}
+                      onChange={(value) => {
+                        setParams({
+                          ...params,
+                          symbols: value,
+                        });
+                        generateToken({
+                          ...params,
+                          symbols: value,
+                        });
+                      }}
+                    />
+                    {t("passwordGenerator.symbols")} (!-;...)
+                  </Space>
+                </Col>
+              </Row>
+              <Row align="middle">
+                <Col flex="0 1 60px">Exclude:</Col>
+                <Col flex={1}>
+                  <Input
+                    value={params.exclude}
+                    placeholder="Every character here will not appear in passwords"
+                    onChange={(e) => {
+                      const value = e.currentTarget.value;
+                      setParams({
+                        ...params,
+                        exclude: value,
+                      });
+                      generateToken({
+                        ...params,
+                        exclude: value,
+                      });
+                    }}
+                  />
+                </Col>
+              </Row>
+              <Row>
+                <Col span={12}>
                   <Space>
                     {t("passwordGenerator.length")}:
                     <InputNumber
@@ -128,47 +188,14 @@ export default function PasswordGenerator() {
                       }}
                     />
                   </Space>
-                </Space>
-
-                <Space direction="vertical" size="middle">
-                  <Space>
-                    <Switch
-                      value={params.lowercase}
-                      onChange={(value) => {
-                        setParams({
-                          ...params,
-                          lowercase: value,
-                        });
-                        generateToken({
-                          ...params,
-                          lowercase: value,
-                        });
-                      }}
-                    />
-                    {t("passwordGenerator.lowercase")} (abc...)
-                  </Space>
-                  <Space>
-                    <Switch
-                      value={params.symbols}
-                      onChange={(value) => {
-                        setParams({
-                          ...params,
-                          symbols: value,
-                        });
-                        generateToken({
-                          ...params,
-                          symbols: value,
-                        });
-                      }}
-                    />
-                    {t("passwordGenerator.symbols")} (!-;...)
-                  </Space>
+                </Col>
+                <Col span={12}>
                   <Button onClick={() => generateToken(params)}>
                     {t("passwordGenerator.generate")}
                   </Button>
-                </Space>
-                {output.isErr && <ErrorMsg errMsg={output.message} />}
-              </Flex>
+                </Col>
+              </Row>
+              {output.isErr && <ErrorMsg errMsg={output.message} />}
               {output.result.map((token, i) => (
                 <TextAreaCopyable
                   key={i}
