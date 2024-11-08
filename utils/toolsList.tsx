@@ -41,6 +41,7 @@ import {
   IconToml,
   IconUnlink,
 } from "@tabler/icons-react";
+import { Tooltip } from "antd";
 import { MenuItemType, SubMenuType } from "antd/es/menu/interface";
 import Link from "next/link";
 import { ForwardRefExoticComponent, ReactNode, RefAttributes } from "react";
@@ -71,6 +72,7 @@ function getItem(
   parentKey: string,
   key: React.Key,
   link: string,
+  description: string,
   icon?: ReactNode
 ): MenuItemType {
   return {
@@ -78,16 +80,17 @@ function getItem(
     key: `${parentKey}-${key}`,
     icon,
     label: (
-      <Link
-        className="truncate"
-        style={{
-          maxWidth: "calc(100% - 24px)",
-        }}
-        href={link}
-        title={label}
-      >
-        <span>{label}</span>
-      </Link>
+      <Tooltip placement="right" title={description}>
+        <Link
+          className="truncate"
+          style={{
+            maxWidth: "calc(100% - 24px)",
+          }}
+          href={link}
+        >
+          <span>{label}</span>
+        </Link>
+      </Tooltip>
     ),
   };
 }

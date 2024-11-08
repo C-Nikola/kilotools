@@ -30,6 +30,7 @@ const SideMenu = ({ t }: { t: TFunction }) => {
             t(category.name),
             tool.key,
             tool.link,
+            t(tool.description),
             <Icon size={24} />
           );
         });
@@ -55,6 +56,7 @@ const SideMenu = ({ t }: { t: TFunction }) => {
               `${tool.key}`,
               "favorite",
               tool.link,
+              t(tool.description),
               <Icon size={24} />
             ),
           ];
