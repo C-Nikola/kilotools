@@ -3,12 +3,17 @@ import { Typography } from "antd";
 import OneColumn from "../OneColumn";
 import { COLOR } from "@/utils/const";
 import Link from "next/link";
+import { TFunction } from "i18next";
+import { withTranslation } from "next-i18next";
 
 const { Paragraph } = Typography;
 
-export default function SQLFormatterDesc() {
+export function SQLFormatterDesc({ t }: { t: TFunction }) {
   return (
     <OneColumn>
+      <Paragraph className="text-base" type="secondary">
+        {t("SQLFormatter.description")}
+      </Paragraph>
       <Paragraph className="text-base" type="secondary">
         Built with <HeartTwoTone twoToneColor={COLOR.HEART_TWO_TONE_COLOR} />,
         using the open-source package{" "}
@@ -23,3 +28,4 @@ export default function SQLFormatterDesc() {
     </OneColumn>
   );
 }
+export default withTranslation("toolList")(SQLFormatterDesc);
