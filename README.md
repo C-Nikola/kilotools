@@ -1,68 +1,98 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
+# Kilotools
+
+Heavily inspired by [it-tools](https://github.com/CorentinTh/it-tools), [jam-dev-utilities](https://github.com/jamdotdev/jam-dev-utilities), [CyberChef](https://github.com/gchq/CyberChef)
+
+- [Open source](https://github.com/giscus/giscus). 🌏
+- Light / dark theme
+- I18n
+- Cmdk
+
+### Kilotools Utilities 
+
+- [RSA key pair generator](https://kilotools.com/crypto/rsa-key-pair-generator)
+- [MD5](https://kilotools.com/crypto/md5)
+- [SHA encrypt](https://kilotools.com/crypto/sha1)
+- [RIPEMD](https://kilotools.com/crypto/ripemd)
+- [AES encrypt](https://kilotools.com/crypto/aes-encrypt)
+- [AES decrypt](https://kilotools.com/crypto/aes-decrypt)
+- [Base64 Encode/Decode](https://kilotools.com/converter/base-64-encoder)
+- [CSV to JSON converter](https://kilotools.com/converter/csv-to-json)
+- [YAML to JSON converter](https://kilotools.com/converter/yaml-to-json)
+- [JSON to CSV converter](https://kilotools.com/converter/json-to-csv)
+- [JSON to YAML converter](https://kilotools.com/converter/json-to-yaml)
+- [Date-time Converter](https://kilotools.com/converter/date-time-converter)
+- [Query Params to JSON converter](https://kilotools.com/converter/query-params-to-json)
+- [.env to netlify.toml converter](https://kilotools.com/converter/env-to-netlify-toml)
+- [Image to Base64 Converter](https://kilotools.com/converter/image-to-base64)
+- [Integer base converter](https://kilotools.com/converter/integer-base-converter)
+- [Color converter](https://kilotools.com/converter/color-converter)
+- [Case converter](https://kilotools.com/converter/case-converter)
+- [Text to unicode converter](https://kilotools.com/converter/text-to-unicode)
+- [XML to JSON converter](https://kilotools.com/converter/xml-to-json)
+- [JSON to XML converter](https://kilotools.com/converter/json-to-xml)
+- [Markdown to HTML converter](https://kilotools.com/converter/markdown-to-html)
+- [Escape HTML entities](https://kilotools.com/converter/escape-html-entities)
+- [YAML to TOML converter](https://kilotools.com/converter/yaml-to-toml)
+- [TOML to YAML converter](https://kilotools.com/converter/toml-to-yaml)
+- [JSON to TOML converter](https://kilotools.com/converter/json-to-toml)
+- [TOML to JSON converter](https://kilotools.com/converter/toml-to-json)
+- [JSON Formatter](https://kilotools.com/web/json-formatter)
+- [URL Encoder/decoder](https://kilotools.com/web/url-encoder)
+- [URL parser](https://kilotools.com/web/url-parser)
+- [MIME types](https://kilotools.com/web/mime-types)
+- [Basic auth generator](https://kilotools.com/web/basic-auth-generator)
+- [XML formatter](https://kilotools.com/web/xml-formatter)
+- [Speaking Url Generator](https://kilotools.com/web/speaking-url-generator)
+- [JWT parser](https://kilotools.com/dev/jwt-parser)
+- [Token Generator](https://kilotools.com/dev/token-generator)
+- [Password generator](https://kilotools.com/dev/password-generator)
+- [Hash text](https://kilotools.com/dev/hash-text)
+- [Bcrypt](https://kilotools.com/dev/bcrypt)
+- [Encrypt / decrypt text](https://kilotools.com/dev/encrypt-text)
+- [Hmac generator](https://kilotools.com/dev/hmac-generator)
+- [Crontab generator](https://kilotools.com/dev/crontab-generator)
+- [SQL formatter](https://kilotools.com/dev/sql-formatter)
+- [Javascript minify](https://kilotools.com/dev/javascript-minify)
+- [YAML formatter](https://kilotools.com/dev/yaml-formatter)
+- [MAC address lookup](https://kilotools.com/net/mac-address-lookup)
+- [Text diff](https://kilotools.com/text/text-diff)
+- [Xss defence](https://kilotools.com/security/xss-defence)
+
+
+
+### Built With
+
+- [Next.js](https://nextjs.org/)
+- [React.js](https://reactjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [ant-design](https://github.com/ant-design/ant-design)
+- [cmdk](https://cmdk.paco.me/)
+- [next-i18next](https://github.com/i18next/next-i18next)
+
+
+
+
 
 ## Getting Started
 
-First, run the development server:
+Install the dependencies:
+
+```
+pnpm install
+```
+
+run the development server
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Cloudflare integration
 
-Besides the `dev` script mentioned above `c3` has added a few extra scripts that allow you to integrate the application with the [Cloudflare Pages](https://pages.cloudflare.com/) environment, these are:
-  - `pages:build` to build the application for Pages using the [`@cloudflare/next-on-pages`](https://github.com/cloudflare/next-on-pages) CLI
-  - `preview` to locally preview your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
-  - `deploy` to deploy your Pages application using the [Wrangler](https://developers.cloudflare.com/workers/wrangler/) CLI
 
-> __Note:__ while the `dev` script is optimal for local development you should preview your Pages application as well (periodically or before deployments) in order to make sure that it can properly work in the Pages environment (for more details see the [`@cloudflare/next-on-pages` recommended workflow](https://github.com/cloudflare/next-on-pages/blob/main/internal-packages/next-dev/README.md#recommended-development-workflow))
+## Reporting Issues
 
-### Bindings
+If you encounter any issues, you can 1-click log them with [kilottols](https://kilotools.com/)  to this repo's [issue tracker](https://github.com/C-Nikola/kilotools/issues).
 
-Cloudflare [Bindings](https://developers.cloudflare.com/pages/functions/bindings/) are what allows you to interact with resources available in the Cloudflare Platform.
-
-You can use bindings during development, when previewing locally your application and of course in the deployed application:
-
-- To use bindings in dev mode you need to define them in the `next.config.js` file under `setupDevBindings`, this mode uses the `next-dev` `@cloudflare/next-on-pages` submodule. For more details see its [documentation](https://github.com/cloudflare/next-on-pages/blob/05b6256/internal-packages/next-dev/README.md).
-
-- To use bindings in the preview mode you need to add them to the `pages:preview` script accordingly to the `wrangler pages dev` command. For more details see its [documentation](https://developers.cloudflare.com/workers/wrangler/commands/#dev-1) or the [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
-
-- To use bindings in the deployed application you will need to configure them in the Cloudflare [dashboard](https://dash.cloudflare.com/). For more details see the  [Pages Bindings documentation](https://developers.cloudflare.com/pages/functions/bindings/).
-
-#### KV Example
-
-`c3` has added for you an example showing how you can use a KV binding.
-
-In order to enable the example:
-- Search for javascript/typescript lines containing the following comment:
-  ```ts
-  // KV Example:
-  ```
-  and uncomment the commented lines below it.
-- Do the same in the `wrangler.toml` file, where
-  the comment is:
-  ```
-  # KV Example:
-  ```
-- If you're using TypeScript run the `cf-typegen` script to update the `env.d.ts` file:
-  ```bash
-  npm run cf-typegen
-  # or
-  yarn cf-typegen
-  # or
-  pnpm cf-typegen
-  # or
-  bun cf-typegen
-  ```
-
-After doing this you can run the `dev` or `preview` script and visit the `/api/hello` route to see the example in action.
-
-Finally, if you also want to see the example work in the deployed application make sure to add a `MY_KV_NAMESPACE` binding to your Pages application in its [dashboard kv bindings settings section](https://dash.cloudflare.com/?to=/:account/pages/view/:pages-project/settings/functions#kv_namespace_bindings_section). After having configured it make sure to re-deploy your application.
+We appreciate your feedback and will do our best to address the issues promptly!
