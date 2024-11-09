@@ -15,6 +15,7 @@ const nextConfig = {
   transpilePackages: ["@ant-design/icons", "react-syntax-highlighter"],
   i18n,
   images: {
+    domains: ["api.producthunt.com"],
     remotePatterns: [
       {
         protocol: "https",
