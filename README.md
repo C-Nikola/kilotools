@@ -2,12 +2,12 @@
 
 Heavily inspired by [it-tools](https://github.com/CorentinTh/it-tools), [jam-dev-utilities](https://github.com/jamdotdev/jam-dev-utilities), [CyberChef](https://github.com/gchq/CyberChef)
 
-- [Open source](https://github.com/giscus/giscus). 🌏
+- [Open source](https://github.com/C-Nikola/kilotools). 🌏
 - Light / dark theme
 - I18n
 - Cmdk
 
-### Kilotools Utilities 
+### Kilotools Utilities
 
 - [RSA key pair generator](https://kilotools.com/crypto/rsa-key-pair-generator)
 - [MD5](https://kilotools.com/crypto/md5)
@@ -58,8 +58,6 @@ Heavily inspired by [it-tools](https://github.com/CorentinTh/it-tools), [jam-dev
 - [Text diff](https://kilotools.com/text/text-diff)
 - [Xss defence](https://kilotools.com/security/xss-defence)
 
-
-
 ### Built With
 
 - [Next.js](https://nextjs.org/)
@@ -68,10 +66,6 @@ Heavily inspired by [it-tools](https://github.com/CorentinTh/it-tools), [jam-dev
 - [ant-design](https://github.com/ant-design/ant-design)
 - [cmdk](https://cmdk.paco.me/)
 - [next-i18next](https://github.com/i18next/next-i18next)
-
-
-
-
 
 ## Getting Started
 
@@ -89,10 +83,8 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-
-
 ## Reporting Issues
 
-If you encounter any issues, you can 1-click log them with [kilottols](https://kilotools.com/)  to this repo's [issue tracker](https://github.com/C-Nikola/kilotools/issues).
+If you encounter any issues, you can 1-click log them with [kilottols](https://kilotools.com/) to this repo's [issue tracker](https://github.com/C-Nikola/kilotools/issues).
 
 We appreciate your feedback and will do our best to address the issues promptly!
