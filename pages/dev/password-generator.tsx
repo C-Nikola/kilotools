@@ -4,10 +4,8 @@ import {
   Button,
   Card,
   Col,
-  Flex,
   Input,
   InputNumber,
-  message,
   Row,
   Space,
   Switch,
@@ -42,6 +40,41 @@ export default function PasswordGenerator() {
   });
 
   const generateToken = (props: TokenGeneratorParams) => {
+    const { exclude } = props;
+    if (exclude) {
+      if (numberCaseRegexp.test(exclude)) {
+        setOutput({
+          isErr: true,
+          message: "all numbers are excluded",
+          result: [],
+        });
+        return;
+      }
+      if (uppercaseRegexp.test(exclude)) {
+        setOutput({
+          isErr: true,
+          message: "all uppercase letters are excluded",
+          result: [],
+        });
+        return;
+      }
+      if (lowercaseRegexp.test(exclude)) {
+        setOutput({
+          isErr: true,
+          message: "all lowercase letters are excluded",
+          result: [],
+        });
+        return;
+      }
+      if (symbolsRegexp.test(exclude)) {
+        setOutput({
+          isErr: true,
+          message: "all symbols are excluded",
+          result: [],
+        });
+        return;
+      }
+    }
     try {
       const tokenArr = generateMultiple(10, { ...props, strict: true });
       setOutput({
@@ -220,3 +253,12 @@ export async function getStaticProps({ locale }: Locale) {
     },
   };
 }
+
+const numberCaseRegexp =
+  /^(?=.*0)(?=.*1)(?=.*2)(?=.*3)(?=.*4)(?=.*5)(?=.*6)(?=.*7)(?=.*8)(?=.*9).+$/;
+const lowercaseRegexp =
+  /^(?=.*a)(?=.*b)(?=.*c)(?=.*d)(?=.*e)(?=.*f)(?=.*g)(?=.*h)(?=.*i)(?=.*j)(?=.*k)(?=.*l)(?=.*m)(?=.*n)(?=.*o)(?=.*p)(?=.*q)(?=.*r)(?=.*s)(?=.*t)(?=.*u)(?=.*v)(?=.*w)(?=.*x)(?=.*y)(?=.*z).+$/;
+const uppercaseRegexp =
+  /^(?=.*A)(?=.*B)(?=.*C)(?=.*D)(?=.*E)(?=.*F)(?=.*G)(?=.*H)(?=.*I)(?=.*J)(?=.*K)(?=.*L)(?=.*M)(?=.*N)(?=.*O)(?=.*P)(?=.*Q)(?=.*R)(?=.*S)(?=.*T)(?=.*U)(?=.*V)(?=.*W)(?=.*X)(?=.*Y)(?=.*Z).+$/;
+const symbolsRegexp =
+  /^(?=.*!)(?=.*@)(?=.*#)(?=.*\$)(?=.*%)(?=.*\^)(?=.*&)(?=.*\*)(?=.*\()(?=.*\))(?=.*\+)(?=.*_)(?=.*\\)(?=.*-)(?=.*=)(?=.*\})(?=.*\{)(?=.*\[)(?=.*\])(?=.*\|)(?=.*:)(?=.*;)(?=.*")(?=.*\/)(?=.*\?)(?=.*\.)(?=.*>)(?=.*<)(?=.*,)(?=.*`)(?=.*~).+$/;

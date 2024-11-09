@@ -89,7 +89,6 @@ const SideMenu = ({ t }: { t: TFunction }) => {
         className={styles.sideMenu}
         defer
         options={{ scrollbars: { autoHide: "scroll" } }}
-        style={{ borderLeft: "1px solid var(--ant-color-split)" }}
       >
         <Menu
           style={{ width: "100%", height: "100%", paddingTop: 160, border: 0 }}
