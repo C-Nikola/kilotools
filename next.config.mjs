@@ -14,6 +14,16 @@ if (process.env.NODE_ENV === "development") {
 const nextConfig = {
   transpilePackages: ["@ant-design/icons", "react-syntax-highlighter"],
   i18n,
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "api.producthunt.com",
+        port: "",
+        pathname: "/widgets/**",
+      },
+    ],
+  },
 };
 
 export default nextConfig;

@@ -8,6 +8,7 @@ import useLocalStorageListener from "@/hooks/useLocalStorageListener";
 import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
 
 const { Title } = Typography;
 
@@ -34,6 +35,22 @@ function Home() {
   return (
     <>
       <NextSeo title="Kilotools" description="A short description goes here." />
+      <Row gutter={[16, 16]}>
+        <Col xs={24} md={12} lg={8} xl={6} key="ph">
+          <Link
+            href="https://www.producthunt.com/posts/kilotools?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kilotools"
+            target="_blank"
+          >
+            <Image
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=594414&theme=light"
+              alt="Kilotools - One&#0045;Stop&#0032;Shop&#0032;for&#0032;Developer&#0032;Tools | Product Hunt"
+              width="250"
+              height="54"
+            />
+          </Link>
+        </Col>
+      </Row>
+      <Divider />
       {favoriteTools.length > 0 && <Title level={2}>Favorite tools</Title>}
       <Row gutter={[16, 16]}>
         {favoriteTools.map((card) => (
