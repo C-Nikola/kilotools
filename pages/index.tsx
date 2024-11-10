@@ -56,14 +56,6 @@ function Home() {
                   target="_blank"
                 >
                   Github
-                </Link>{" "}
-                or a vote on{" "}
-                <Link
-                  href="https://www.producthunt.com/posts/kilotools?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kilotools"
-                  className="underline"
-                  target="_blank"
-                >
-                  Product hunt
                 </Link>
               </p>
             </Space>
