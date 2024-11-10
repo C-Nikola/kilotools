@@ -9,6 +9,7 @@ import { LOCAL_STORAGE_KEY } from "@/utils/const";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
+import { IconHearts } from "@tabler/icons-react";
 
 const { Title } = Typography;
 
@@ -35,19 +36,40 @@ function Home() {
   return (
     <>
       <NextSeo title="Kilotools" description="A short description goes here." />
-      <Link
-        href="https://www.producthunt.com/posts/kilotools?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kilotools"
-        target="_blank"
-        className="inline-block"
-      >
-        <Image
-          src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=594414&theme=light"
-          alt="Kilotools - One&#0045;Stop&#0032;Shop&#0032;for&#0032;Developer&#0032;Tools | Product Hunt"
-          width="250"
-          height="54"
-          unoptimized
-        />
-      </Link>
+      <Row gutter={[16, 16]}>
+        <Col xs={24} md={12} lg={8} xl={6}>
+          <Card
+            className="h-full border-2"
+            style={{
+              // from https://github.com/itmeo/webgradients
+              background: "linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%)",
+            }}
+          >
+            <Space direction="vertical">
+              <IconHearts />
+              <h3 className="text-lg font-bold mb-2">Like kilotools?</h3>
+              <p className={styles.cardDesc}>
+                Give us a star on{" "}
+                <Link
+                  href="https://github.com/C-Nikola/kilotools"
+                  className="underline"
+                  target="_blank"
+                >
+                  Github
+                </Link>{" "}
+                or a vote on{" "}
+                <Link
+                  href="https://www.producthunt.com/posts/kilotools?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-kilotools"
+                  className="underline"
+                  target="_blank"
+                >
+                  Product hunt
+                </Link>
+              </p>
+            </Space>
+          </Card>
+        </Col>
+      </Row>
       <Divider />
       {favoriteTools.length > 0 && <Title level={2}>Favorite tools</Title>}
       <Row gutter={[16, 16]}>
