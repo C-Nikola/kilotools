@@ -46,7 +46,7 @@ function Home() {
             }}
           >
             <Space direction="vertical">
-              <IconHearts />
+              <IconHearts size={40} />
               <h3 className="text-lg font-bold mb-2">Like kilotools?</h3>
               <p className={styles.cardDesc}>
                 Give us a star on{" "}
